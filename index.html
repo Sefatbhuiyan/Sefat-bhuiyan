@@ -79,6 +79,11 @@
 
   <div class="cursor" id="cursor"></div>
 
+  <!-- 3D Interactive Background Scene -->
+  <div class="shader-frame" aria-hidden="true">
+    <canvas id="particle-canvas" class="background-3d-canvas"></canvas>
+  </div>
+
   <!-- =========================
 
        HEADER
@@ -87,33 +92,36 @@
 
   <header class="topbar">
 
-    <a class="brand" href="#top" aria-label="Sefat Bhuiyan Portfolio Home">
+    <a class="brand brand-3d" href="#top" aria-label="Sefat Bhuiyan Portfolio Home">
 
-      <span class="brand-badge">SB</span>
+      <span class="brand-badge brand-badge-3d">
+        <span class="brand-badge-text">SB</span>
+        <span class="brand-badge-sheen" aria-hidden="true"></span>
+      </span>
 
-      <span>
+      <span class="brand-text-wrap">
 
-        Sefat Bhuiyan
+        <span class="brand-name">Sefat Bhuiyan</span>
 
-        <small>PORTFOLIO</small>
+        <small class="brand-role">PORTFOLIO</small>
 
       </span>
 
     </a>
 
-    <nav class="nav" id="mainNavigation" aria-label="Primary navigation">
+    <nav class="nav nav-3d" id="mainNavigation" aria-label="Primary navigation">
 
-  <a href="#top">Home</a>
+      <a href="#top" class="active">Home</a>
 
-  <a href="#about">About</a>
+      <a href="#about">About</a>
 
-  <a href="#education">Education</a>
+      <a href="#education">Education</a>
 
-  <a href="#career">Career</a>
+      <a href="#career">Career</a>
 
-  <a href="#projects">Projects</a>
+      <a href="#projects">Projects</a>
 
-</nav>
+    </nav>
 
 <!-- Mobile Menu Toggle -->
 
@@ -147,7 +155,7 @@
 
   <button
 
-    class="language-toggle"
+    class="language-toggle language-toggle-3d"
 
     id="languageToggle"
 
@@ -162,6 +170,10 @@
     aria-haspopup="true"
 
   >
+
+    <span class="lang-globe-icon" aria-hidden="true">
+      <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+    </span>
 
     <span id="languageCurrent">EN</span>
 
@@ -245,7 +257,7 @@
 
 <button
 
-  class="theme"
+  class="theme theme-3d-btn"
 
   id="themeBtn"
 
@@ -257,7 +269,9 @@
 
 >
 
-  ◔
+  <span class="theme-icon-slot" id="themeIconSlot" aria-hidden="true">
+    <svg class="theme-svg theme-svg-moon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+  </span>
 
 </button>
 
@@ -291,61 +305,77 @@
 
           </span>
 
-          <h1>
+          <h1 class="hero-title-clean" id="heroTitle">
 
-            Hi, I'm<br />
+            <span class="hero-greeting-line">Hi, I'm</span><br />
 
-            <span class="gradient">Sefat Bhuiyan</span>
+            <span class="hero-name-line">
+              <span class="gradient hero-name-vibrant">Sefat Bhuiyan</span>
+            </span>
 
           </h1>
 
-          <p class="lead">
+          <!-- 3D Interactive Role Flipper Ticker -->
+          <div class="hero-role-flipper" aria-label="Specialization">
+            <span class="role-pill-3d">
+              <span class="role-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              </span>
+              <span class="role-text" id="heroRoleText">Digital Marketer</span>
+              <span class="role-sheen" aria-hidden="true"></span>
+            </span>
+          </div>
 
-            I build creative digital experiences. Specialized in digital
-
-            marketing, content creation, graphic design, and modern social
-
-            media visuals.
-
+          <p class="lead" id="heroLead">
+            <span class="lead-typing-text" id="leadTypingText">I build creative digital experiences. Specialized in digital marketing, content creation, graphic design, and modern social media visuals.</span><span class="lead-cursor" id="leadCursor" aria-hidden="true">|</span>
           </p>
 
-          <div class="buttons">
+          <div class="buttons hero-action-buttons">
 
-            <a class="btn primary" href="#projects">
+            <!-- ThreeUI ShaderButtons: Translucent Violet Primary Action -->
+            <a class="btn primary start-simple shader-btn" href="#projects">
 
-              View Work&nbsp;→
+              <span class="label">View Work</span>
+              <svg class="shader-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>
+              <span class="shine" aria-hidden="true"></span>
 
             </a>
 
+            <!-- ThreeUI ShaderButtons: Pressed Ceramic Action -->
             <a
 
-  class="btn"
+              class="btn create-simple shader-btn"
 
-  id="resumeBtn"
+              id="resumeBtn"
 
-  href="https://drive.google.com/file/d/1zcAhfVE7Imbd7cJfwwncvRKoE4ADYErq/view?usp=sharing"
+              href="https://drive.google.com/file/d/1zcAhfVE7Imbd7cJfwwncvRKoE4ADYErq/view?usp=sharing"
 
-  target="_blank"
+              target="_blank"
 
-  rel="noopener noreferrer"
+              rel="noopener noreferrer"
 
-  aria-label="Open Sefat Bhuiyan resume"
+              aria-label="Open Sefat Bhuiyan resume"
 
-  title="Open Resume"
+              title="Open Resume"
 
->
+            >
 
-  Resume&nbsp;↗
+              <svg class="shader-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 8v8m-4-4h8"/></svg>
+              <span class="label">Resume</span>
 
-</a>
+            </a>
 
           </div>
 
           <!-- Social links -->
 
-          <div class="socials" aria-label="Social links">
+          <!-- 3D Holographic Social Orbit -->
+
+          <div class="socials socials-3d" aria-label="Social links">
 
             <a
+
+              class="social-btn-3d social-whatsapp"
 
               id="socialWhatsApp"
 
@@ -355,17 +385,22 @@
 
               rel="noopener noreferrer"
 
-              aria-label="WhatsApp"
+              aria-label="Chat on WhatsApp"
 
               title="WhatsApp"
 
             >
 
-              ◉
+              <span class="social-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67M9.53 7.5C9.36 7.5 9.09 7.57 8.87 7.8C8.64 8.05 8 8.65 8 9.87C8 11.09 8.89 12.27 9.01 12.44C9.14 12.61 10.74 15.19 13.25 16.18C15.34 17 15.77 16.84 16.22 16.8C16.67 16.75 17.68 16.2 17.89 15.61C18.1 15.02 18.1 14.52 18.04 14.41C17.97 14.31 17.79 14.25 17.53 14.12C17.27 14 15.99 13.37 15.75 13.29C15.52 13.2 15.35 13.16 15.18 13.41C15 13.65 14.5 14.25 14.34 14.43C14.19 14.61 14.04 14.63 13.78 14.5C13.52 14.37 12.44 14.02 11.16 12.87C10.16 11.98 9.48 10.88 9.29 10.55C9.1 10.22 9.27 10.04 9.4 9.91C9.52 9.79 9.66 9.6 9.8 9.44C9.93 9.27 9.98 9.15 10.06 8.98C10.15 8.81 10.11 8.66 10.04 8.53C9.98 8.4 9.53 7.3 9.35 6.84C9.17 6.39 8.99 6.45 8.85 6.45C8.72 6.45 8.55 6.44 8.38 6.44"/></svg>
+              </span>
+              <span class="social-shine" aria-hidden="true"></span>
 
             </a>
 
             <a
+
+              class="social-btn-3d social-facebook"
 
               id="socialFacebook"
 
@@ -375,17 +410,22 @@
 
               rel="noopener noreferrer"
 
-              aria-label="Facebook"
+              aria-label="Facebook Profile"
 
               title="Facebook"
 
             >
 
-              f
+              <span class="social-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"/></svg>
+              </span>
+              <span class="social-shine" aria-hidden="true"></span>
 
             </a>
 
             <a
+
+              class="social-btn-3d social-linkedin"
 
               id="socialLinkedIn"
 
@@ -395,29 +435,37 @@
 
               rel="noopener noreferrer"
 
-              aria-label="LinkedIn"
+              aria-label="LinkedIn Profile"
 
               title="LinkedIn"
 
             >
 
-              in
+              <span class="social-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
+              </span>
+              <span class="social-shine" aria-hidden="true"></span>
 
             </a>
 
             <a
 
+              class="social-btn-3d social-email"
+
               id="socialEmail"
 
               href="mailto:ksefat94@gmail.com"
 
-              aria-label="Email"
+              aria-label="Send Email"
 
               title="Email"
 
             >
 
-              ✉
+              <span class="social-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              </span>
+              <span class="social-shine" aria-hidden="true"></span>
 
             </a>
 
@@ -425,86 +473,156 @@
 
         </div>
 
-        <div class="hero-art">
+        <div class="hero-art" id="heroArtArea">
 
-          <div class="hanging"></div>
+          <!-- Unified Lanyard & Badge Assembly (Locked Together Rigidly) -->
+          <div class="lanyard-badge-assembly" id="lanyardAssembly">
+            
+            <!-- Sleek Minimalist Lanyard Strap & Swivel Clasp -->
+            <div class="lanyard-rig" id="lanyardRig" aria-hidden="true">
+              <div class="lanyard-mount"></div>
+              <div class="lanyard-strap" id="lanyardStrap"></div>
+              <div class="lanyard-hardware">
+                <div class="lanyard-ring"></div>
+                <div class="lanyard-clip">
+                  <span class="clip-jaw"></span>
+                </div>
+              </div>
+            </div>
 
-          <div class="id-card">
-
-            <div class="card-top">
-
-              <img
-
-                class="portrait"
-
-                src="assets/sefat02.png"
-
-                alt="Profile portrait of Sefat Bhuiyan"
-                loading="eager"
-                fetchpriority="high"
-                decoding="async"
+            <!-- 3D ID Badge (Physically Clamped to Lanyard Clip) -->
+            <div class="id-card id-card-interactive" id="heroIdCard" tabindex="0" role="region" aria-label="Interactive ID Badge: Drag or flick to spin">
               
+              <!-- Badge Header Zone (Clean and sleek clamp area) -->
+              <div class="card-header-bezel"></div>
 
-              />
+              <!-- CARD FRONT -->
+              <div class="card-face card-front">
+                <div class="card-top">
+                  <img
+                    class="portrait"
+                    src="assets/sefat02.png"
+                    alt="Profile portrait of Sefat Bhuiyan"
+                    loading="eager"
+                    fetchpriority="high"
+                    decoding="async"
+                  />
+                  <div class="card-glare-sweep"></div>
+                </div>
 
+                <div class="card-body">
+                  <div class="card-header-row">
+                    <h3>Sefat Bhuiyan</h3>
+                    <span class="badge-verify-pill" title="Verified Creator">
+                      <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                    </span>
+                  </div>
+
+                  <div class="card-role">
+                    Digital Marketer &amp; Graphic Designer
+                  </div>
+
+                  <div class="card-grid">
+                    <div>
+                      <div class="label">SPECIALTY</div>
+                      <div class="value">Marketing &amp; Design</div>
+                    </div>
+                    <div>
+                      <div class="label">LOCATION</div>
+                      <div class="value">Dhaka, Bangladesh</div>
+                    </div>
+                    <div>
+                      <div class="label">EXPERIENCE</div>
+                      <div class="value">Creative Projects</div>
+                    </div>
+                    <div>
+                      <div class="label">STATUS</div>
+                      <div class="value status">● Active</div>
+                    </div>
+                  </div>
+
+                  <div class="barcode">
+                    <div class="barcode-waveform" aria-hidden="true">
+                      <span class="bar-line"></span><span class="bar-line"></span><span class="bar-line"></span>
+                      <span class="bar-line"></span><span class="bar-line"></span><span class="bar-line"></span>
+                      <span class="bar-line"></span><span class="bar-line"></span><span class="bar-line"></span>
+                      <span class="bar-line"></span><span class="bar-line"></span><span class="bar-line"></span>
+                      <span class="bar-line"></span><span class="bar-line"></span><span class="bar-line"></span>
+                    </div>
+                    <div class="barcode-meta">
+                      <b class="barcode-serial">SB-89240-PRO</b>
+                      <span class="barcode-brand">LIGHTSWIND UI</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- CARD BACK (for full 360° 3D flip & details) -->
+              <div class="card-face card-back" aria-hidden="true">
+                <div class="card-back-content">
+                  <div class="card-back-top">
+                    <div class="back-nfc-chip">
+                      <div class="chip-contact"></div>
+                      <svg class="nfc-wave" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12.55a11 11 0 0 1 14.08 0M1.42 9a16 16 0 0 1 21.16 0M8.53 16.11a6 6 0 0 1 6.95 0M12 20h.01"/></svg>
+                    </div>
+                    <div class="back-holo-strip">
+                      <span class="holo-text">★ VERIFIED CREATOR ★</span>
+                      <span class="holo-shimmer"></span>
+                    </div>
+                  </div>
+
+                  <div class="card-back-main">
+                    <div class="back-avatar-circle">
+                      <span class="back-monogram">SB</span>
+                    </div>
+                    <h4 class="back-name">SEFAT BHUIYAN</h4>
+                    <p class="back-sub">Creative Director &amp; Marketing Strategist</p>
+                    
+                    <div class="back-specs-table">
+                      <div class="back-spec-row">
+                        <span class="b-lbl">ISSUED</span>
+                        <span class="b-val">2026 OFFICIAL</span>
+                      </div>
+                      <div class="back-spec-row">
+                        <span class="b-lbl">CREDENTIAL</span>
+                        <span class="b-val">EXECUTIVE TIER</span>
+                      </div>
+                      <div class="back-spec-row">
+                        <span class="b-lbl">CLEARANCE</span>
+                        <span class="b-val">FULL ACCESS</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card-back-bottom">
+                    <div class="back-qr-box">
+                      <div class="qr-target tl"></div>
+                      <div class="qr-target tr"></div>
+                      <div class="qr-target bl"></div>
+                      <div class="qr-matrix"></div>
+                    </div>
+                    <div class="back-qr-meta">
+                      <span class="qr-label">SCAN TO CONNECT</span>
+                      <span class="qr-url">sefatbhuiyan.online</span>
+                      <span class="qr-serial">REF: #DXB-99824-V3</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Interactive 3D Surface Specular Glare -->
+              <div class="card-specular-glare" id="cardSpecularGlare" aria-hidden="true"></div>
             </div>
+          </div>
 
-            <div class="card-body">
-
-              <h3>Sefat Bhuiyan</h3>
-
-              <div class="card-role">
-
-                Digital Marketer &amp; Graphic Designer
-
-              </div>
-
-              <div class="card-grid">
-
-                <div>
-
-                  <div class="label">SPECIALTY</div>
-
-                  <div class="value">Marketing &amp; Design</div>
-
-                </div>
-
-                <div>
-
-                  <div class="label">LOCATION</div>
-
-                  <div class="value">Dhaka, Bangladesh</div>
-
-                </div>
-
-                <div>
-
-                  <div class="label">EXPERIENCE</div>
-
-                  <div class="value">Creative Projects</div>
-
-                </div>
-
-                <div>
-
-                  <div class="label">STATUS</div>
-
-                  <div class="value status">● Active</div>
-
-                </div>
-
-              </div>
-
-              <div class="barcode">
-
-                <b>SB-PORTFOLIO</b>
-
-                <span>PERSONAL BRAND</span>
-
-              </div>
-
-            </div>
-
+          <!-- Drag & Spin Hint Controls -->
+          <div class="id-card-hint" id="idCardHint">
+            <span class="hint-text">Drag or click the card</span>
+            <button class="hint-spin-trigger" id="cardSpinTrigger" type="button" aria-label="Spin badge 360 degrees" title="Click to spin card">
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.19"/>
+              </svg>
+            </button>
           </div>
 
         </div>
@@ -529,9 +647,11 @@
 
     <section class="section container" id="about">
 
-      <div class="about-grid">
+      <div class="about-grid about-grid-3d">
 
-        <div class="about-copy">
+        <div class="about-copy about-copy-3d">
+
+          <div class="about-card-glow" aria-hidden="true"></div>
 
           <div class="eyebrow">About Me</div>
 
@@ -546,56 +666,79 @@
           <p class="section-desc">
 
             I am a creative digital marketer and designer focused on building
-
             clear, engaging, and visually strong digital experiences. I blend
-
             marketing strategy, content creation, and design to help brands
-
             communicate better.
 
           </p>
 
+          <span class="about-sheen" aria-hidden="true"></span>
+
         </div>
 
-        <div class="stats">
+        <div class="stats stats-grid-3d">
 
-          <div class="stat">
+          <div class="stat stat-3d">
 
-            <div class="icon">⌁</div>
+            <div class="stat-card-glow" aria-hidden="true"></div>
+
+            <div class="stat-icon-puck" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+            </div>
 
             <b>10+</b>
 
             <span>Creative Skills</span>
 
+            <span class="stat-sheen" aria-hidden="true"></span>
+
           </div>
 
-          <div class="stat">
+          <div class="stat stat-3d">
 
-            <div class="icon">⌘</div>
+            <div class="stat-card-glow" aria-hidden="true"></div>
+
+            <div class="stat-icon-puck" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+            </div>
 
             <b>50+</b>
 
             <span>Projects &amp; Designs</span>
 
+            <span class="stat-sheen" aria-hidden="true"></span>
+
           </div>
 
-          <div class="stat">
+          <div class="stat stat-3d">
 
-            <div class="icon">♙</div>
+            <div class="stat-card-glow" aria-hidden="true"></div>
+
+            <div class="stat-icon-puck" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
 
             <b>10+</b>
 
             <span>Clients / Collaborations</span>
 
+            <span class="stat-sheen" aria-hidden="true"></span>
+
           </div>
 
-          <div class="stat">
+          <div class="stat stat-3d">
 
-            <div class="icon">✦</div>
+            <div class="stat-card-glow" aria-hidden="true"></div>
+
+            <div class="stat-icon-puck" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3-1.9 5.8a2 2 0 0 1-1.3 1.3L3 12l5.8 1.9a2 2 0 0 1 1.3 1.3L12 21l1.9-5.8a2 2 0 0 1 1.3-1.3L21 12l-5.8-1.9a2 2 0 0 1-1.3-1.3L12 3z"/></svg>
+            </div>
 
             <b>05+</b>
 
             <span>Core Services</span>
+
+            <span class="stat-sheen" aria-hidden="true"></span>
 
           </div>
 
@@ -626,18 +769,21 @@
         <p class="section-desc">
 
           A compact service system based on the supplied reference layout.
-
           Replace the wording later without changing the design.
 
         </p>
 
       </div>
 
-      <div class="cards4">
+      <div class="cards4 cards4-3d">
 
-        <div class="service">
+        <div class="service service-3d">
 
-          <div class="icon">◫</div>
+          <div class="service-card-glow" aria-hidden="true"></div>
+
+          <div class="service-icon-puck" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 11 18-5v12L3 13v-2z"/><path d="M11.6 16.8a3 3 0 1 1-5.8-1.6"/></svg>
+          </div>
 
           <h3>Social Media Marketing</h3>
 
@@ -647,11 +793,17 @@
 
           </p>
 
+          <span class="service-sheen" aria-hidden="true"></span>
+
         </div>
 
-        <div class="service">
+        <div class="service service-3d">
 
-          <div class="icon">⌁</div>
+          <div class="service-card-glow" aria-hidden="true"></div>
+
+          <div class="service-icon-puck" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 19 7-7 3 3-7 7-3-3z"/><path d="m18 13-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><path d="m2 2 7.586 7.586"/><circle cx="11" cy="11" r="2"/></svg>
+          </div>
 
           <h3>Graphic Design</h3>
 
@@ -661,11 +813,17 @@
 
           </p>
 
+          <span class="service-sheen" aria-hidden="true"></span>
+
         </div>
 
-        <div class="service">
+        <div class="service service-3d">
 
-          <div class="icon">✦</div>
+          <div class="service-card-glow" aria-hidden="true"></div>
+
+          <div class="service-icon-puck" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 10l5-3v10l-5-3v-4z"/><rect width="13" height="12" x="2" y="6" rx="3"/></svg>
+          </div>
 
           <h3>Content Creation</h3>
 
@@ -675,11 +833,17 @@
 
           </p>
 
+          <span class="service-sheen" aria-hidden="true"></span>
+
         </div>
 
-        <div class="service">
+        <div class="service service-3d">
 
-          <div class="icon">◫</div>
+          <div class="service-card-glow" aria-hidden="true"></div>
+
+          <div class="service-icon-puck" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m4.93 4.93 4.24 4.24"/><path d="m14.83 9.17 4.24-4.24"/><path d="m14.83 14.83 4.24 4.24"/><path d="m9.17 14.83-4.24 4.24"/></svg>
+          </div>
 
           <h3>Brand Visuals</h3>
 
@@ -688,6 +852,8 @@
             Clean identity assets, campaign visuals, and consistent presentation.
 
           </p>
+
+          <span class="service-sheen" aria-hidden="true"></span>
 
         </div>
 
@@ -739,9 +905,10 @@
           </p>
         </div>
 
-        <div class="featured-project-grid">
+        <div class="featured-project-grid featured-grid-3d">
 
-          <article class="featured-project-card">
+          <article class="featured-project-card project-card-3d">
+            <div class="project-card-glow" aria-hidden="true"></div>
             <div class="featured-project-preview featured-preview-1" aria-hidden="true">
               <span class="preview-index">01</span>
               <span class="preview-label">SOCIAL</span>
@@ -759,19 +926,22 @@
               <h4>Social Media Campaign</h4>
               <p>Page visuals, content planning, and growth-focused creative direction.</p>
               <a
-                class="featured-project-link"
+                class="featured-project-link btn-3d-glow"
                 href="https://drive.google.com/file/d/1Pnhet0Yw46Bn68PqGluOJuRoGNqUbBhj/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Open social media campaign work"
               >
                 <span>View Collection</span>
-                <span aria-hidden="true">↗</span>
+                <span class="btn-arrow" aria-hidden="true">↗</span>
+                <span class="btn-shine" aria-hidden="true"></span>
               </a>
             </div>
+            <span class="project-card-sheen" aria-hidden="true"></span>
           </article>
 
-          <article class="featured-project-card">
+          <article class="featured-project-card project-card-3d">
+            <div class="project-card-glow" aria-hidden="true"></div>
             <div class="featured-project-preview featured-preview-2" aria-hidden="true">
               <span class="preview-index">02</span>
               <span class="preview-label">BRAND</span>
@@ -789,19 +959,22 @@
               <h4>Brand Visual Design</h4>
               <p>Clean visual assets, campaign creatives, and consistent brand presentation.</p>
               <a
-                class="featured-project-link"
+                class="featured-project-link btn-3d-glow"
                 href="https://drive.google.com/file/d/1Mx41R4mh6wBb_MWzTWb5ji8LdALnd33S/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Open brand visual design work"
               >
                 <span>View Collection</span>
-                <span aria-hidden="true">↗</span>
+                <span class="btn-arrow" aria-hidden="true">↗</span>
+                <span class="btn-shine" aria-hidden="true"></span>
               </a>
             </div>
+            <span class="project-card-sheen" aria-hidden="true"></span>
           </article>
 
-          <article class="featured-project-card">
+          <article class="featured-project-card project-card-3d">
+            <div class="project-card-glow" aria-hidden="true"></div>
             <div class="featured-project-preview featured-preview-3" aria-hidden="true">
               <span class="preview-index">03</span>
               <span class="preview-label">CONTENT</span>
@@ -818,22 +991,26 @@
               <h4>Content &amp; Ad Creative</h4>
               <p>Creative concepts, ad-ready visuals, scripts, and branded content direction.</p>
               <a
-                class="featured-project-link"
+                class="featured-project-link btn-3d-glow"
                 href="https://drive.google.com/file/d/1SbGnlIN3IYTsNqmap2QX8vh-jUJY6Kp_/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Open content and ad creative work"
               >
                 <span>View Collection</span>
-                <span aria-hidden="true">↗</span>
+                <span class="btn-arrow" aria-hidden="true">↗</span>
+                <span class="btn-shine" aria-hidden="true"></span>
               </a>
             </div>
+            <span class="project-card-sheen" aria-hidden="true"></span>
           </article>
 
         </div>
       </div>
 
-<div class="all-projects-card">
+      <div class="all-projects-card all-projects-3d">
+
+        <div class="all-projects-glow" aria-hidden="true"></div>
 
         <span class="all-projects-orb orb-left" aria-hidden="true"></span>
 
@@ -865,7 +1042,7 @@
 
         <a
 
-          class="all-projects-btn"
+          class="all-projects-btn all-projects-btn-3d"
 
           href="https://drive.google.com/drive/folders/1YdholGZazN0OUQjy9QdJAz3UexFg10zK?usp=drive_link"
 
@@ -880,6 +1057,8 @@
           <span>All Projects</span>
 
           <span class="all-projects-arrow" aria-hidden="true">↗</span>
+
+          <span class="all-projects-btn-glow" aria-hidden="true"></span>
 
         </a>
 
@@ -911,83 +1090,146 @@
 
         <div>
 
-          <div class="eyebrow">Career Journey</div>
+          <div class="eyebrow">
+            <span class="eyebrow-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="14" x="2" y="7" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+            </span>
+            Career Journey
+          </div>
 
-          <h2>My professional path.</h2>
+          <h2>My professional <span class="gradient">path.</span></h2>
 
         </div>
 
       </div>
 
-      <div class="timeline">
+      <div class="timeline timeline-pro">
 
         <div class="timeline-item">
 
-          <span class="timeline-dot"></span>
+          <span class="timeline-dot" aria-hidden="true">
+            <span class="dot-core"></span>
+          </span>
 
           <div class="timeline-card">
 
-            <div class="period">2026 — Present</div>
+            <div class="timeline-card-glow" aria-hidden="true"></div>
 
-            <h3>Digital Marketing &amp; Design</h3>
-
-            <div class="company">Freelance / Personal Projects</div>
-
-            <p>
-
-              Building campaigns, social visuals, creative content, and digital
-
-              brand materials with a strong focus on clarity and visual quality.
-
-            </p>
-
-          </div>
-
-        </div>
-
-        <div class="timeline-item">
-
-          <span class="timeline-dot"></span>
-
-          <div class="timeline-card">
-
-            <div class="period">2025 — 2026</div>
-
-            <h3>Graphic Design Practice</h3>
-
-            <div class="company">Creative Projects</div>
-
-            <p>
-
-              Designed social posts, banners, thumbnails, logos, and visual
-
-              assets while developing a consistent production workflow.
-
-            </p>
-
-          </div>
-
-        </div>
-
-        <div class="timeline-item">
-
-          <span class="timeline-dot"></span>
-
-          <div class="timeline-card">
-
-            <div class="period">2024 — 2025</div>
+            <div class="timeline-header">
+              <div class="period period-badge">2024 — 2025</div>
+              <span class="timeline-pill-scope">Foundation</span>
+            </div>
 
             <h3>Content &amp; Social Media</h3>
 
-            <div class="company">Independent Work</div>
+            <div class="company-wrap">
+              <span class="company-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"/><polyline points="16 6 12 2 8 6"/><line x1="12" x2="12" y1="2" y2="15"/></svg>
+              </span>
+              <span class="company">Independent Work</span>
+            </div>
 
             <p>
-
               Explored content creation, page growth, and social media strategy
-
               through hands-on projects and experimentation.
-
             </p>
+
+            <div class="timeline-tags">
+              <span class="t-tag">Content Direction</span>
+              <span class="t-tag">Social Growth</span>
+              <span class="t-tag">Audience Analytics</span>
+              <span class="t-tag">Short-form Video</span>
+            </div>
+
+            <span class="timeline-sheen" aria-hidden="true"></span>
+
+          </div>
+
+        </div>
+
+        <div class="timeline-item">
+
+          <span class="timeline-dot" aria-hidden="true">
+            <span class="dot-core"></span>
+          </span>
+
+          <div class="timeline-card">
+
+            <div class="timeline-card-glow" aria-hidden="true"></div>
+
+            <div class="timeline-header">
+              <div class="period period-badge">2025 — 2026</div>
+              <span class="timeline-pill-scope">Creative Practice</span>
+            </div>
+
+            <h3>Graphic Design Practice</h3>
+
+            <div class="company-wrap">
+              <span class="company-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 19 7-7 3 3-7 7-3-3z"/><path d="m18 13-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><path d="m2 2 7.586 7.586"/><circle cx="11" cy="11" r="2"/></svg>
+              </span>
+              <span class="company">Creative Projects</span>
+            </div>
+
+            <p>
+              Designed social posts, banners, thumbnails, logos, and visual
+              assets while developing a consistent production workflow.
+            </p>
+
+            <div class="timeline-tags">
+              <span class="t-tag">Visual Design</span>
+              <span class="t-tag">Logo &amp; Brand Assets</span>
+              <span class="t-tag">Ad Creatives</span>
+              <span class="t-tag">Canva Pro</span>
+            </div>
+
+            <span class="timeline-sheen" aria-hidden="true"></span>
+
+          </div>
+
+        </div>
+
+        <div class="timeline-item">
+
+          <span class="timeline-dot is-present" aria-hidden="true">
+            <span class="dot-core"></span>
+            <span class="dot-ripple"></span>
+          </span>
+
+          <div class="timeline-card">
+
+            <div class="timeline-card-glow" aria-hidden="true"></div>
+
+            <div class="timeline-header">
+              <div class="period period-badge is-active">
+                <span class="live-status-dot" aria-hidden="true"></span>
+                2026 — Present
+              </div>
+              <span class="timeline-pill-scope">Active Role</span>
+            </div>
+
+            <h3>Digital Marketing &amp; Design</h3>
+
+            <div class="company-wrap">
+              <span class="company-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="14" x="2" y="7" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+              </span>
+              <span class="company">Freelance / Personal Projects</span>
+            </div>
+
+            <p>
+              Building campaigns, social visuals, creative content, and digital
+              brand materials with a strong focus on clarity and visual quality.
+            </p>
+
+            <div class="timeline-tags">
+              <span class="t-tag">Campaign Strategy</span>
+              <span class="t-tag">Brand Identity</span>
+              <span class="t-tag">Social Visuals</span>
+              <span class="t-tag">Growth Marketing</span>
+            </div>
+
+            <span class="timeline-sheen" aria-hidden="true"></span>
 
           </div>
 
@@ -1029,57 +1271,69 @@
 
       </div>
 
-      <div class="edu-grid">
+      <div class="edu-grid edu-grid-3d">
 
-        <article class="edu-card">
+        <article class="edu-card edu-card-3d">
 
-          <span class="tag">Current</span>
+          <div class="edu-card-glow" aria-hidden="true"></div>
 
-          <div class="icon">🎓</div>
+          <div class="edu-header">
+            <div class="edu-icon-puck" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+            </div>
+            <span class="tag is-current">Current</span>
+          </div>
+
+          <div class="icon" style="display:none">🎓</div>
 
           <h3>Diploma in Computer Technology</h3>
 
           <div class="meta">
-
-            Bangladesh · Computer Technology
-
+            <span class="meta-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+            </span>
+            <span class="meta-text">Bangladesh · Computer Technology</span>
           </div>
 
-          <ul>
-
+          <ul class="edu-bullets">
             <li>Computer fundamentals and practical technology learning</li>
-
             <li>Digital tools and problem-solving practice</li>
-
             <li>Hands-on technical learning and projects</li>
-
           </ul>
+
+          <span class="edu-sheen" aria-hidden="true"></span>
 
         </article>
 
-        <article class="edu-card">
+        <article class="edu-card edu-card-3d">
 
-          <span class="tag">Completed</span>
+          <div class="edu-card-glow" aria-hidden="true"></div>
 
-          <div class="icon">📘</div>
+          <div class="edu-header">
+            <div class="edu-icon-puck is-completed" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"/><path d="M6 6h10M6 10h10"/></svg>
+            </div>
+            <span class="tag is-completed">Completed</span>
+          </div>
+
+          <div class="icon" style="display:none">📘</div>
 
           <h3>Secondary School Certificate</h3>
 
           <div class="meta">
-
-            Bangladesh · SSC
-
+            <span class="meta-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+            </span>
+            <span class="meta-text">Bangladesh · SSC</span>
           </div>
 
-          <ul>
-
+          <ul class="edu-bullets">
             <li>Completed secondary education</li>
-
             <li>Academic foundation for further technical study</li>
-
             <li>Transitioned into diploma and professional skill development</li>
-
           </ul>
+
+          <span class="edu-sheen" aria-hidden="true"></span>
 
         </article>
 
@@ -1189,59 +1443,49 @@
 
         </div>
 
-        <div class="skill-card">
+        <div class="skill-card skill-card-traits">
+
+          <div class="skill-card-glow" aria-hidden="true"></div>
 
           <h3>Professional Traits</h3>
 
-          <div class="chips">
+          <div class="chips chips-3d">
 
-            <span class="chip">Creative Thinking</span>
+            <span class="chip chip-3d">Creative Thinking</span>
 
-            <span class="chip">Problem Solving</span>
+            <span class="chip chip-3d">Problem Solving</span>
 
-            <span class="chip">Content Strategy</span>
+            <span class="chip chip-3d">Content Strategy</span>
 
-            <span class="chip">Visual Storytelling</span>
+            <span class="chip chip-3d">Visual Storytelling</span>
 
-            <span class="chip">Brand Consistency</span>
+            <span class="chip chip-3d">Brand Consistency</span>
 
-            <span class="chip">Client Communication</span>
+            <span class="chip chip-3d">Client Communication</span>
 
           </div>
 
-          <hr
+          <hr class="traits-divider" />
 
-            style="
+          <div class="constant-learner-box">
 
-              border: 0;
+            <div class="learner-icon-puck" aria-hidden="true">
+              <span class="learner-sparkle">✦</span>
+            </div>
 
-              border-top: 1px solid var(--line);
-
-              margin: 55px 0 22px;
-
-            "
-
-          />
-
-          <div style="display: flex; gap: 14px; align-items: flex-start;">
-
-            <div class="icon">✦</div>
-
-            <div>
+            <div class="learner-text-wrap">
 
               <b>Constant Learner</b>
 
-              <p style="color: var(--muted); margin: 4px 0 0;">
-
-                Continuously learning new tools, creative workflows, digital
-
-                marketing techniques, and design systems.
-
+              <p class="learner-desc" id="learnerDesc">
+                <span class="learner-typing-text" id="learnerTypingText">Continuously learning new tools, creative workflows, digital marketing techniques, and design systems.</span><span class="learner-cursor" id="learnerCursor" aria-hidden="true">|</span>
               </p>
 
             </div>
 
           </div>
+
+          <span class="skill-sheen" aria-hidden="true"></span>
 
         </div>
 
@@ -1269,69 +1513,97 @@
 
       </div>
 
-      <div class="testimonials">
+      <div class="testimonials testimonials-grid-3d">
 
-        <article class="testimonial">
+        <article class="testimonial testimonial-3d">
 
-          <div class="quote">“</div>
+          <div class="testimonial-glow" aria-hidden="true"></div>
+
+          <div class="testimonial-top">
+            <div class="quote-puck-3d" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                <path d="M4.583 17.321C3.553 16.227 3 15 3 13.011c0-3.5 2.457-6.637 6.03-8.188l.893 1.378c-3.335 1.804-3.987 4.145-4.247 5.621.537-.278 1.24-.375 1.929-.311 1.804.167 3.226 1.648 3.226 3.489a3.5 3.5 0 0 1-3.5 3.5c-1.073 0-2.099-.49-2.748-1.179zm10 0C13.553 16.227 13 15 13 13.011c0-3.5 2.457-6.637 6.03-8.188l.893 1.378c-3.335 1.804-3.987 4.145-4.247 5.621.537-.278 1.24-.375 1.929-.311 1.804.167 3.226 1.648 3.226 3.489a3.5 3.5 0 0 1-3.5 3.5c-1.073 0-2.099-.49-2.748-1.179z"/>
+              </svg>
+            </div>
+            <div class="testimonial-rating" aria-label="5 out of 5 stars">
+              <span class="star">★</span>
+              <span class="star">★</span>
+              <span class="star">★</span>
+              <span class="star">★</span>
+              <span class="star">★</span>
+            </div>
+          </div>
 
           <p>
-
             Creative, responsive, and easy to communicate with. The visuals
-
             were delivered cleanly and matched the direction very well.
-
           </p>
 
           <div class="person">
-
-            <div class="avatar">A</div>
-
-            <div>
-
-              <b>Client Name</b>
-
-              <div style="color: #777; font-size: 13px;">
-
-                Business / Brand
-
-              </div>
-
+            <div class="avatar avatar-3d">
+              <span>A</span>
+              <span class="avatar-ring" aria-hidden="true"></span>
             </div>
-
+            <div>
+              <b class="person-name">
+                <span class="person-name-text">Client</span>
+                <span class="verified-badge" aria-label="Verified">
+                  <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+                </span>
+              </b>
+              <div class="person-role">
+                Business / Brand
+              </div>
+            </div>
           </div>
+
+          <span class="testimonial-sheen" aria-hidden="true"></span>
 
         </article>
 
-        <article class="testimonial">
+        <article class="testimonial testimonial-3d">
 
-          <div class="quote">“</div>
+          <div class="testimonial-glow" aria-hidden="true"></div>
+
+          <div class="testimonial-top">
+            <div class="quote-puck-3d" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                <path d="M4.583 17.321C3.553 16.227 3 15 3 13.011c0-3.5 2.457-6.637 6.03-8.188l.893 1.378c-3.335 1.804-3.987 4.145-4.247 5.621.537-.278 1.24-.375 1.929-.311 1.804.167 3.226 1.648 3.226 3.489a3.5 3.5 0 0 1-3.5 3.5c-1.073 0-2.099-.49-2.748-1.179zm10 0C13.553 16.227 13 15 13 13.011c0-3.5 2.457-6.637 6.03-8.188l.893 1.378c-3.335 1.804-3.987 4.145-4.247 5.621.537-.278 1.24-.375 1.929-.311 1.804.167 3.226 1.648 3.226 3.489a3.5 3.5 0 0 1-3.5 3.5c-1.073 0-2.099-.49-2.748-1.179z"/>
+              </svg>
+            </div>
+            <div class="testimonial-rating" aria-label="5 out of 5 stars">
+              <span class="star">★</span>
+              <span class="star">★</span>
+              <span class="star">★</span>
+              <span class="star">★</span>
+              <span class="star">★</span>
+            </div>
+          </div>
 
           <p>
-
             Strong attention to detail and a very good sense of modern social
-
             media presentation. Would work together again.
-
           </p>
 
           <div class="person">
-
-            <div class="avatar">R</div>
-
-            <div>
-
-              <b>Client Name</b>
-
-              <div style="color: #777; font-size: 13px;">
-
-                Creative Collaboration
-
-              </div>
-
+            <div class="avatar avatar-3d">
+              <span>R</span>
+              <span class="avatar-ring" aria-hidden="true"></span>
             </div>
-
+            <div>
+              <b class="person-name">
+                <span class="person-name-text">Creative Partner</span>
+                <span class="verified-badge" aria-label="Verified">
+                  <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+                </span>
+              </b>
+              <div class="person-role">
+                Creative Collaboration
+              </div>
+            </div>
           </div>
+
+          <span class="testimonial-sheen" aria-hidden="true"></span>
 
         </article>
 
@@ -1346,237 +1618,242 @@
     ========================== -->
 
     <section class="section container" id="contact">
-
-      <div class="contact">
+      <div class="contact contact-3d-card" id="contactCard">
+        <!-- Ambient 3D Depth Flares -->
+        <div class="contact-card-sheen" aria-hidden="true"></div>
+        <div class="contact-card-glow contact-card-glow-1" aria-hidden="true"></div>
+        <div class="contact-card-glow contact-card-glow-2" aria-hidden="true"></div>
 
         <div class="contact-grid">
-
-          <div>
-
+          <div class="contact-info-col">
             <div class="eyebrow">Let's Connect</div>
-
             <h2>Have a project in mind?</h2>
-
             <p class="section-desc">
-
               Let's discuss your next campaign, design need, or digital project.
-
             </p>
 
             <div class="contact-list">
-
               <!-- WhatsApp -->
-
               <a
-
-                class="contact-item contact-link"
-
+                class="contact-item contact-link contact-item-3d"
                 href="https://wa.me/8801828157751"
-
                 target="_blank"
-
                 rel="noopener noreferrer"
-
                 aria-label="Chat on WhatsApp"
-
               >
-
-                <span>WhatsApp</span>
-
-                <b>01828157751</b>
-
+                <div class="contact-item-left">
+                  <span class="contact-channel-icon whatsapp-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67M9.53 7.5C9.36 7.5 9.09 7.57 8.87 7.8C8.64 8.05 8 8.65 8 9.87C8 11.09 8.89 12.27 9.01 12.44C9.14 12.61 10.74 15.19 13.25 16.18C15.34 17 15.77 16.84 16.22 16.8C16.67 16.75 17.68 16.2 17.89 15.61C18.1 15.02 18.1 14.52 18.04 14.41C17.97 14.31 17.79 14.25 17.53 14.12C17.27 14 15.99 13.37 15.75 13.29C15.52 13.2 15.35 13.16 15.18 13.41C15 13.65 14.5 14.25 14.34 14.43C14.19 14.61 14.04 14.63 13.78 14.5C13.52 14.37 12.44 14.02 11.16 12.87C10.16 11.98 9.48 10.88 9.29 10.55C9.1 10.22 9.27 10.04 9.4 9.91C9.52 9.79 9.66 9.6 9.8 9.44C9.93 9.27 9.98 9.15 10.06 8.98C10.15 8.81 10.11 8.66 10.04 8.53C9.98 8.4 9.53 7.3 9.35 6.84C9.17 6.39 8.99 6.45 8.85 6.45C8.72 6.45 8.55 6.44 8.38 6.44"/></svg>
+                  </span>
+                  <span class="contact-channel-name">WhatsApp</span>
+                </div>
+                <b class="contact-channel-val">01828157751 <span class="contact-arrow" aria-hidden="true">↗</span></b>
+                <span class="contact-item-shine" aria-hidden="true"></span>
               </a>
 
               <!-- Facebook -->
-
               <a
-
-                class="contact-item contact-link"
-
+                class="contact-item contact-link contact-item-3d"
                 href="https://www.facebook.com/profile.php?id=61591445054359"
-
                 target="_blank"
-
                 rel="noopener noreferrer"
-
                 aria-label="Open Facebook profile"
-
               >
-
-                <span>Facebook</span>
-
-                <b>Open Profile ↗</b>
-
+                <div class="contact-item-left">
+                  <span class="contact-channel-icon facebook-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"/></svg>
+                  </span>
+                  <span class="contact-channel-name">Facebook</span>
+                </div>
+                <b class="contact-channel-val">Open Profile <span class="contact-arrow" aria-hidden="true">↗</span></b>
+                <span class="contact-item-shine" aria-hidden="true"></span>
               </a>
 
               <!-- Email -->
-
               <a
-
-                class="contact-item contact-link"
-
+                class="contact-item contact-link contact-item-3d"
                 href="mailto:ksefat94@gmail.com"
-
                 aria-label="Send email"
-
               >
-
-                <span>Email</span>
-
-                <b>ksefat94@gmail.com</b>
-
+                <div class="contact-item-left">
+                  <span class="contact-channel-icon email-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                  </span>
+                  <span class="contact-channel-name">Email</span>
+                </div>
+                <b class="contact-channel-val">ksefat94@gmail.com <span class="contact-arrow" aria-hidden="true">↗</span></b>
+                <span class="contact-item-shine" aria-hidden="true"></span>
               </a>
 
               <!-- LinkedIn -->
-
               <a
-
-                class="contact-item contact-link"
-
+                class="contact-item contact-link contact-item-3d"
                 href="https://www.linkedin.com/in/sefat-bhuiyan"
-
                 target="_blank"
-
                 rel="noopener noreferrer"
-
                 aria-label="Open LinkedIn profile"
-
               >
-
-                <span>LinkedIn</span>
-
-                <b>View Profile ↗</b>
-
+                <div class="contact-item-left">
+                  <span class="contact-channel-icon linkedin-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
+                  </span>
+                  <span class="contact-channel-name">LinkedIn</span>
+                </div>
+                <b class="contact-channel-val">View Profile <span class="contact-arrow" aria-hidden="true">↗</span></b>
+                <span class="contact-item-shine" aria-hidden="true"></span>
               </a>
 
               <!-- Location -->
-
-              <div class="contact-item">
-
-                <span>Location</span>
-
-                <b>Dhaka, Bangladesh</b>
-
+              <div class="contact-item contact-item-3d">
+                <div class="contact-item-left">
+                  <span class="contact-channel-icon location-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>
+                  </span>
+                  <span class="contact-channel-name">Location</span>
+                </div>
+                <b class="contact-channel-val">Dhaka, Bangladesh</b>
+                <span class="contact-item-shine" aria-hidden="true"></span>
               </div>
-
             </div>
-
           </div>
 
-          <!-- Contact form -->
+          <!-- Contact form in 3D sculpted chassis -->
+          <form
+            class="form form-3d"
+            id="contactForm"
+            aria-label="Contact form"
+            action="https://formsubmit.co/ksefat94@gmail.com"
+            method="POST"
+          >
+            <!-- Email subject -->
+            <input
+              type="hidden"
+              name="_subject"
+              value="New Portfolio Contact — Sefat Bhuiyan"
+            />
 
-        <form
-  class="form"
-  id="contactForm"
-  aria-label="Contact form"
-  action="https://formsubmit.co/ksefat94@gmail.com"
-  method="POST"
->
+            <!-- Reply directly to visitor -->
+            <input
+              type="hidden"
+              name="_replyto"
+              value=""
+            />
 
-  <!-- Email subject -->
-  <input
-    type="hidden"
-    name="_subject"
-    value="New Portfolio Contact — Sefat Bhuiyan"
-  />
+            <!-- Use clean email template -->
+            <input
+              type="hidden"
+              name="_template"
+              value="table"
+            />
 
-  <!-- Reply directly to visitor -->
-  <input
-    type="hidden"
-    name="_replyto"
-    value=""
-  />
+            <!-- Anti-spam honeypot -->
+            <input
+              type="text"
+              name="_honey"
+              class="sr-only"
+              tabindex="-1"
+              autocomplete="off"
+            />
 
-  <!-- Use clean email template -->
-  <input
-    type="hidden"
-    name="_template"
-    value="table"
-  />
+            <!-- Visitor Name in 3D group -->
+            <div class="form-group-3d">
+              <span class="form-field-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="5"/><path d="M20 21a8 8 0 0 0-16 0"/></svg>
+              </span>
+              <label class="sr-only" for="contactName">Your Name</label>
+              <input
+                id="contactName"
+                type="text"
+                name="name"
+                placeholder="Your Name"
+                autocomplete="name"
+                minlength="2"
+                maxlength="80"
+                required
+              />
+              <span class="field-glow-beam" aria-hidden="true"></span>
+            </div>
 
-  <!-- Anti-spam honeypot -->
-  <input
-    type="text"
-    name="_honey"
-    class="sr-only"
-    tabindex="-1"
-    autocomplete="off"
-  />
+            <!-- Visitor Email in 3D group -->
+            <div class="form-group-3d">
+              <span class="form-field-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              </span>
+              <label class="sr-only" for="contactEmail">Email Address</label>
+              <input
+                id="contactEmail"
+                type="email"
+                name="email"
+                placeholder="Email Address"
+                autocomplete="email"
+                inputmode="email"
+                maxlength="120"
+                required
+              />
+              <span class="field-glow-beam" aria-hidden="true"></span>
+            </div>
 
-  <!-- Visitor Name -->
-  <label class="sr-only" for="contactName">Your Name</label>
-  <input
-    id="contactName"
-    type="text"
-    name="name"
-    placeholder="Your Name"
-    autocomplete="name"
-    minlength="2"
-    maxlength="80"
-    required
-  />
+            <!-- Subject in 3D group -->
+            <div class="form-group-3d">
+              <span class="form-field-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/></svg>
+              </span>
+              <label class="sr-only" for="contactSubject">Subject</label>
+              <input
+                id="contactSubject"
+                type="text"
+                name="subject"
+                placeholder="Subject"
+                maxlength="120"
+              />
+              <span class="field-glow-beam" aria-hidden="true"></span>
+            </div>
 
-  <!-- Visitor Email -->
-  <label class="sr-only" for="contactEmail">Email Address</label>
-  <input
-    id="contactEmail"
-    type="email"
-    name="email"
-    placeholder="Email Address"
-    autocomplete="email"
-    inputmode="email"
-    maxlength="120"
-    required
-  />
+            <!-- Message in 3D group -->
+            <div class="form-group-3d form-group-textarea">
+              <span class="form-field-icon textarea-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+              </span>
+              <label class="sr-only" for="contactMessage">Message</label>
+              <textarea
+                id="contactMessage"
+                name="message"
+                placeholder="Write your message..."
+                rows="5"
+                minlength="10"
+                maxlength="2000"
+                required
+              ></textarea>
+              <span class="field-glow-beam" aria-hidden="true"></span>
+            </div>
 
-  <!-- Subject -->
-  <label class="sr-only" for="contactSubject">Subject</label>
-  <input
-    id="contactSubject"
-    type="text"
-    name="subject"
-    placeholder="Subject"
-    maxlength="120"
-  />
+            <p class="form-help" id="formHelp">
+              Your message will be sent directly to Sefat Bhuiyan.
+            </p>
 
-  <!-- Message -->
-  <label class="sr-only" for="contactMessage">Message</label>
-  <textarea
-    id="contactMessage"
-    name="message"
-    placeholder="Write your message..."
-    rows="6"
-    minlength="10"
-    maxlength="2000"
-    required
-  ></textarea>
+            <div
+              id="formNotice"
+              class="form-notice"
+              role="status"
+              aria-live="polite"
+              aria-atomic="true"
+            ></div>
 
-  <p class="form-help" id="formHelp">
-    Your message will be sent directly to Sefat Bhuiyan.
-  </p>
-
-  <div
-    id="formNotice"
-    class="form-notice"
-    role="status"
-    aria-live="polite"
-    aria-atomic="true"
-  ></div>
-
-  <!-- Send -->
-  <button
-    class="btn primary"
-    type="submit"
-  >
-    Send Message&nbsp;→
-  </button>
-
-</form>
-
+            <!-- Send (ThreeUI Ignition Button) -->
+            <button
+              class="btn primary ignition-btn"
+              type="submit"
+              id="contactSubmitBtn"
+              aria-label="Send Message"
+            >
+              <span class="ignition-inner">
+                <canvas id="ignition-gl" class="ignition-canvas" aria-hidden="true"></canvas>
+                <span class="ignition-label">Send Message&nbsp;→</span>
+              </span>
+            </button>
+          </form>
         </div>
-
       </div>
-
     </section>
 
   </main>
@@ -1587,27 +1864,32 @@
 
   ========================== -->
 
-  <footer class="container">
+  <footer class="container footer-container-3d">
 
-    <div class="footer-top">
+    <div class="footer-top footer-top-3d">
 
-      <div class="brand">
+      <div class="brand brand-3d">
 
-        <span class="brand-badge">SB</span>
+        <span class="brand-badge brand-badge-3d">
+          <span class="brand-badge-text">SB</span>
+          <span class="brand-badge-sheen" aria-hidden="true"></span>
+        </span>
 
-        <span>
+        <span class="brand-text-wrap">
 
-          Sefat Bhuiyan
+          <span class="brand-name">Sefat Bhuiyan</span>
 
-          <small>DIGITAL MARKETER • DESIGNER</small>
+          <small class="brand-role">DIGITAL MARKETER • DESIGNER</small>
 
         </span>
 
       </div>
 
-      <a class="btn" href="#top">
+      <a class="btn back-to-top-3d" href="#top" aria-label="Back to top of page">
 
-        Back to top ↑
+        <span class="btn-top-label">Back to top</span>
+        <span class="btn-top-arrow" aria-hidden="true">↑</span>
+        <span class="btn-top-sheen" aria-hidden="true"></span>
 
       </a>
 
@@ -1654,21 +1936,89 @@
   ========================== -->
 
   <nav class="quicknav" aria-label="Quick navigation">
+    <a href="#home" title="Home" aria-label="Home" data-section="home">
+      <span class="quicknav-3d-tile">
+        <span class="quicknav-glare" aria-hidden="true"></span>
+        <span class="quicknav-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9.5 9-7 9 7v10.5a1.5 1.5 0 0 1-1.5 1.5h-4a1 1 0 0 1-1-1v-5h-5v5a1 1 0 0 1-1 1h-4A1.5 1.5 0 0 1 3 20z"/></svg>
+        </span>
+        <span class="quicknav-beacon" aria-hidden="true"></span>
+        <span class="quicknav-glow" aria-hidden="true"></span>
+      </span>
+      <span class="quicknav-tooltip" role="tooltip">Home</span>
+    </a>
 
-    <a href="#home" title="Home" aria-label="Home">⌂</a>
+    <a href="#about" title="About" aria-label="About" data-section="about">
+      <span class="quicknav-3d-tile">
+        <span class="quicknav-glare" aria-hidden="true"></span>
+        <span class="quicknav-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="7.5" r="4.5"/><path d="M4 20.5a8 8 0 0 1 16 0"/></svg>
+        </span>
+        <span class="quicknav-beacon" aria-hidden="true"></span>
+        <span class="quicknav-glow" aria-hidden="true"></span>
+      </span>
+      <span class="quicknav-tooltip" role="tooltip">About</span>
+    </a>
 
-    <a href="#about" title="About" aria-label="About">◌</a>
+    <a href="#services" title="Services" aria-label="Services" data-section="services">
+      <span class="quicknav-3d-tile">
+        <span class="quicknav-glare" aria-hidden="true"></span>
+        <span class="quicknav-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/></svg>
+        </span>
+        <span class="quicknav-beacon" aria-hidden="true"></span>
+        <span class="quicknav-glow" aria-hidden="true"></span>
+      </span>
+      <span class="quicknav-tooltip" role="tooltip">Services</span>
+    </a>
 
-    <a href="#services" title="Services" aria-label="Services">▦</a>
+    <a href="#projects" title="Projects" aria-label="Projects" data-section="projects">
+      <span class="quicknav-3d-tile">
+        <span class="quicknav-glare" aria-hidden="true"></span>
+        <span class="quicknav-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7.5A2.5 2.5 0 0 1 5.5 5h3.17a2 2 0 0 1 1.42.59l1.66 1.66A2 2 0 0 0 13.17 8H18.5A2.5 2.5 0 0 1 21 10.5v8a2.5 2.5 0 0 1-2.5 2.5h-13A2.5 2.5 0 0 1 3 18.5z"/></svg>
+        </span>
+        <span class="quicknav-beacon" aria-hidden="true"></span>
+        <span class="quicknav-glow" aria-hidden="true"></span>
+      </span>
+      <span class="quicknav-tooltip" role="tooltip">Projects</span>
+    </a>
 
-    <a href="#projects" title="Projects" aria-label="Projects">▣</a>
+    <a href="#education" title="Education" aria-label="Education" data-section="education">
+      <span class="quicknav-3d-tile">
+        <span class="quicknav-glare" aria-hidden="true"></span>
+        <span class="quicknav-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12.5v4.5c3 3 9 3 12 0v-4.5"/></svg>
+        </span>
+        <span class="quicknav-beacon" aria-hidden="true"></span>
+        <span class="quicknav-glow" aria-hidden="true"></span>
+      </span>
+      <span class="quicknav-tooltip" role="tooltip">Education</span>
+    </a>
 
-    <a href="#education" title="Education" aria-label="Education">♢</a>
+    <a href="#testimonials" title="Testimonials" aria-label="Testimonials" data-section="testimonials">
+      <span class="quicknav-3d-tile">
+        <span class="quicknav-glare" aria-hidden="true"></span>
+        <span class="quicknav-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/><path d="M8 9h8M8 13h5"/></svg>
+        </span>
+        <span class="quicknav-beacon" aria-hidden="true"></span>
+        <span class="quicknav-glow" aria-hidden="true"></span>
+      </span>
+      <span class="quicknav-tooltip" role="tooltip">Reviews</span>
+    </a>
 
-    <a href="#testimonials" title="Testimonials" aria-label="Testimonials">□</a>
-
-    <a href="#contact" title="Contact" aria-label="Contact">➤</a>
-
+    <a href="#contact" title="Contact" aria-label="Contact" data-section="contact">
+      <span class="quicknav-3d-tile">
+        <span class="quicknav-glare" aria-hidden="true"></span>
+        <span class="quicknav-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+        </span>
+        <span class="quicknav-beacon" aria-hidden="true"></span>
+        <span class="quicknav-glow" aria-hidden="true"></span>
+      </span>
+      <span class="quicknav-tooltip" role="tooltip">Contact</span>
+    </a>
   </nav>
 
   <!-- Main JavaScript -->
@@ -1676,5 +2026,6 @@
   <script src="js/script.js" defer></script>
 
 </body>
+
 
 </html>
