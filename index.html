@@ -499,14 +499,19 @@
               <!-- CARD FRONT -->
               <div class="card-face card-front">
                 <div class="card-top">
-                  <img
-                    class="portrait"
-                    src="assets/sefat02.png"
-                    alt="Profile portrait of Sefat Bhuiyan"
-                    loading="eager"
-                    fetchpriority="high"
-                    decoding="async"
-                  />
+                  <picture>
+                    <source srcset="assets/sefat02.webp" type="image/webp" />
+                    <img
+                      class="portrait"
+                      src="assets/sefat02.png"
+                      alt="Profile portrait of Sefat Bhuiyan"
+                      width="350"
+                      height="280"
+                      loading="eager"
+                      fetchpriority="high"
+                      decoding="async"
+                    />
+                  </picture>
                   <div class="card-glare-sweep"></div>
                 </div>
 

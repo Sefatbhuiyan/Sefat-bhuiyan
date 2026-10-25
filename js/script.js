@@ -333,37 +333,38 @@
   );
 
 
+  let scrollProgressTicking = false;
   function updateScrollProgress() {
+    if (scrollProgressTicking) return;
+    scrollProgressTicking = true;
+    requestAnimationFrame(() => {
+      const scrollTop =
+        window.scrollY ||
+        window.pageYOffset ||
+        0;
 
-    const scrollTop =
-      window.scrollY ||
-      window.pageYOffset ||
-      0;
+      const documentHeight =
+        document.documentElement.scrollHeight -
+        window.innerHeight;
 
-
-    const documentHeight =
-      document.documentElement.scrollHeight -
-      window.innerHeight;
-
-
-    const percentage =
-      documentHeight > 0
-        ? Math.min(
-            100,
-            Math.max(
-              0,
-              (
-                scrollTop /
-                documentHeight
-              ) * 100
+      const percentage =
+        documentHeight > 0
+          ? Math.min(
+              100,
+              Math.max(
+                0,
+                (
+                  scrollTop /
+                  documentHeight
+                ) * 100
+              )
             )
-          )
-        : 0;
+          : 0;
 
-
-    scrollProgress.style.width =
-      `${percentage}%`;
-
+      scrollProgress.style.width =
+        `${percentage}%`;
+      scrollProgressTicking = false;
+    });
   }
 
 
@@ -5369,6 +5370,8 @@
     let flash = 0;
     let z = 0;
     let last = performance.now();
+    let isBtnVisible = false;
+    let shaderRafId = null;
 
     btn.addEventListener('mouseenter', () => { warpTarget = 1; });
     btn.addEventListener('mouseleave', () => { warpTarget = 0; });
@@ -5381,20 +5384,37 @@
     });
 
     function frame(now) {
+      if (!isBtnVisible) {
+        shaderRafId = null;
+        return;
+      }
       const dt = Math.min(0.05, (now - last) / 1000);
       last = now;
       warp += (warpTarget - warp) * Math.min(1, dt * 2.6);
       flash *= Math.exp(-4.5 * dt);
       z += dt * (0.05 + warp * 1.35);
-      resize();
+
       gl.uniform2f(uRes, canvas.width, canvas.height);
       gl.uniform1f(uTime, reduced ? 4.0 : z);
       gl.uniform1f(uWarp, warp);
       gl.uniform1f(uFlash, flash);
       gl.drawArrays(gl.TRIANGLES, 0, 3);
-      requestAnimationFrame(frame);
+      shaderRafId = requestAnimationFrame(frame);
     }
-    requestAnimationFrame(frame);
+
+    if ('IntersectionObserver' in window) {
+      const observer = new IntersectionObserver((entries) => {
+        isBtnVisible = entries[0].isIntersecting;
+        if (isBtnVisible && !shaderRafId) {
+          last = performance.now();
+          shaderRafId = requestAnimationFrame(frame);
+        }
+      }, { threshold: 0.05 });
+      observer.observe(btn);
+    } else {
+      isBtnVisible = true;
+      shaderRafId = requestAnimationFrame(frame);
+    }
   }
 
   initIgnitionShaderButton();
@@ -5425,10 +5445,12 @@
     let centerY = 0;
 
     // 3D Camera & Scene Parameters
+    const isMobileDevice = window.matchMedia('(max-width: 820px), (pointer: coarse)').matches;
     const FOV = 620; // Focal length
     const DEPTH_RANGE = 750;
-    const NODE_COUNT = 80;
-    const MAX_CONNECT_DIST = 165;
+    const NODE_COUNT = isMobileDevice ? 24 : 80;
+    const MAX_CONNECT_DIST = isMobileDevice ? 100 : 165;
+    const MAX_CONNECT_DIST_SQ = MAX_CONNECT_DIST * MAX_CONNECT_DIST;
 
     let rotX = 0;
     let rotY = 0;
@@ -5507,8 +5529,8 @@
         if (this.y < -spreadY) this.y = spreadY;
         if (this.y > spreadY) this.y = -spreadY;
 
-        // Interactive gentle 3D repulsion near mouse
-        if (isMouseOver && this.projX != null) {
+        // Interactive gentle 3D repulsion near mouse (desktop only)
+        if (!isMobileDevice && isMouseOver && this.projX != null) {
           const dx = this.projX - mouse.x;
           const dy = this.projY - mouse.y;
           const dist2d = Math.hypot(dx, dy);
@@ -5551,7 +5573,9 @@
     function resize() {
       width = window.innerWidth;
       height = window.innerHeight;
-      dpr = Math.min(window.devicePixelRatio || 1, 2);
+      dpr = isMobileDevice
+        ? Math.min(window.devicePixelRatio || 1, 1.25)
+        : Math.min(window.devicePixelRatio || 1, 2);
       centerX = width / 2;
       centerY = height / 2;
 
@@ -5570,39 +5594,37 @@
     resize();
     window.addEventListener('resize', resize, { passive: true });
 
-    // Smooth mouse parallax orbit
-    window.addEventListener('mousemove', (e) => {
-      mouse.x = e.clientX;
-      mouse.y = e.clientY;
-      isMouseOver = true;
-      targetRotY = (e.clientX - centerX) * 0.0003;
-      targetRotX = -(e.clientY - centerY) * 0.00025;
-    }, { passive: true });
-
-    window.addEventListener('mouseleave', () => {
-      isMouseOver = false;
-      targetRotX = 0;
-      targetRotY = 0;
-      mouse.x = -9999;
-      mouse.y = -9999;
-    });
-
-    // Touch support for mobile 3D tilt
-    window.addEventListener('touchmove', (e) => {
-      if (e.touches && e.touches[0]) {
-        mouse.x = e.touches[0].clientX;
-        mouse.y = e.touches[0].clientY;
+    // Smooth mouse parallax orbit (desktop)
+    if (!isMobileDevice) {
+      window.addEventListener('mousemove', (e) => {
+        mouse.x = e.clientX;
+        mouse.y = e.clientY;
         isMouseOver = true;
-        targetRotY = (e.touches[0].clientX - centerX) * 0.00022;
-        targetRotX = -(e.touches[0].clientY - centerY) * 0.00018;
-      }
-    }, { passive: true });
+        targetRotY = (e.clientX - centerX) * 0.0003;
+        targetRotX = -(e.clientY - centerY) * 0.00025;
+      }, { passive: true });
 
-    window.addEventListener('touchend', () => {
-      isMouseOver = false;
-      targetRotX = 0;
-      targetRotY = 0;
-    });
+      window.addEventListener('mouseleave', () => {
+        isMouseOver = false;
+        targetRotX = 0;
+        targetRotY = 0;
+        mouse.x = -9999;
+        mouse.y = -9999;
+      });
+    }
+
+    // Mobile scroll yielding: pause canvas during active finger touch-scroll
+    let isMobileScrolling = false;
+    let mobileScrollTimer = null;
+    if (isMobileDevice) {
+      window.addEventListener('scroll', () => {
+        isMobileScrolling = true;
+        if (mobileScrollTimer) clearTimeout(mobileScrollTimer);
+        mobileScrollTimer = setTimeout(() => {
+          isMobileScrolling = false;
+        }, 90);
+      }, { passive: true });
+    }
 
     let autoAngle = 0;
     let animFrameId = null;
@@ -5618,6 +5640,12 @@
 
     function render() {
       if (!isVisible) return;
+
+      if (isMobileDevice && isMobileScrolling) {
+        // Yield 100% GPU to native mobile scrolling
+        animFrameId = requestAnimationFrame(render);
+        return;
+      }
 
       ctx.clearRect(0, 0, width, height);
 
@@ -5642,7 +5670,7 @@
       // Sort nodes by depth (painter's algorithm: draw farthest first)
       nodes.sort((a, b) => b.depthZ - a.depthZ);
 
-      // 1. Draw 3D Connection Lines
+      // 1. Draw 3D Connection Lines (Optimized squared-distance check)
       for (let i = 0; i < nodes.length; i++) {
         const a = nodes[i];
         if (!a.visible) continue;
@@ -5651,13 +5679,14 @@
           const b = nodes[j];
           if (!b.visible) continue;
 
-          // 3D Distance check
+          // 3D Squared Distance check (Fast rejection without sqrt)
           const dx = a.x - b.x;
           const dy = a.y - b.y;
           const dz = a.z - b.z;
-          const dist3d = Math.sqrt(dx * dx + dy * dy + dz * dz);
+          const distSq = dx * dx + dy * dy + dz * dz;
 
-          if (dist3d < MAX_CONNECT_DIST) {
+          if (distSq < MAX_CONNECT_DIST_SQ) {
+            const dist3d = Math.sqrt(distSq);
             const proximity = 1 - dist3d / MAX_CONNECT_DIST;
             const avgScale = (a.scale + b.scale) * 0.5;
             const alpha = proximity * proximity * avgScale * colors.lineAlphaMult;
@@ -6820,6 +6849,14 @@
       return (newest.x - oldest.x) / dt; // px/ms
     }
 
+    let isPhysicsLoopRunning = false;
+    function startPhysicsLoop() {
+      if (!isPhysicsLoopRunning) {
+        isPhysicsLoopRunning = true;
+        requestAnimationFrame(physicsTick);
+      }
+    }
+
     // Trigger glorious, ultra-smooth 4-round Chorki Spin (চরকি পাক)
     // Uses C-infinity continuous quartic ease-out: 0 torque steps, 0 dead-zones, 0 right-side snag!
     function triggerChorkiLoop(direction = 1, rounds = 4) {
@@ -6831,6 +6868,7 @@
       spinTarget = baseRev + dir * (360 * rounds);
       spinDuration = prefersReducedMotion ? 1200 : Math.round(rounds * 620); // ~2480ms for 4 rounds
       thetaVel = 0;
+      startPhysicsLoop();
     }
 
     // Pointer Event Listeners (Tactile, seamless whole-card interaction)
@@ -6854,6 +6892,8 @@
       try {
         card.setPointerCapture(e.pointerId);
       } catch (err) {}
+
+      startPhysicsLoop();
     });
 
     window.addEventListener("pointermove", (e) => {
@@ -6901,6 +6941,7 @@
       } else if (hasMoved) {
         // Gentle release: realistic physical inertia continuing into gentle pendulum swing
         thetaVel = Math.max(-6, Math.min(6, -vx * 10));
+        startPhysicsLoop();
       } else {
         // Direct click/tap without drag: triggers standard 4 full revolutions!
         triggerChorkiLoop(1, 4);
@@ -6935,13 +6976,15 @@
 
     // Physics Simulation Loop (RAF) - 100% Butter-smooth, zero GPU strain
     function physicsTick(currentTime) {
+      let keepRunning = false;
+
       if (isSpinning) {
+        keepRunning = true;
         if (spinStartTime === 0) spinStartTime = currentTime;
         const elapsed = currentTime - spinStartTime;
         const t = Math.min(1, elapsed / spinDuration);
 
         // Smooth physical friction easing (power 2.2):
-        // Decelerates uniformly across all 4 revolutions with zero premature braking or dead-zones!
         const eased = 1 - Math.pow(1 - t, 2.2);
         theta = spinStart + (spinTarget - spinStart) * eased;
 
@@ -6950,7 +6993,9 @@
           thetaVel = 0;
           isSpinning = false;
         }
-      } else if (!isDragging) {
+      } else if (isDragging) {
+        keepRunning = true;
+      } else {
         // Natural pendulum restoring sway when released gently
         const rad = (theta * Math.PI) / 180;
         const torque = -0.32 * Math.sin(rad);
@@ -6961,17 +7006,23 @@
         if (Math.abs(thetaVel) < 0.015 && Math.abs(Math.sin(rad)) < 0.02) {
           theta = Math.round(theta / 360) * 360;
           thetaVel = 0;
+          keepRunning = false;
+        } else {
+          keepRunning = true;
         }
       }
 
       // Hardware-accelerated GPU 2D affine rotation around top anchor
-      // Uses translateZ(0) so the entire assembly is a cached GPU layer (Zero dropped frames!)
       assembly.style.transform = `rotate(${theta.toFixed(2)}deg) translateZ(0)`;
 
-      requestAnimationFrame(physicsTick);
+      if (keepRunning) {
+        requestAnimationFrame(physicsTick);
+      } else {
+        isPhysicsLoopRunning = false;
+      }
     }
 
-    requestAnimationFrame(physicsTick);
+    startPhysicsLoop();
   }
 
   initHeroLanyardPhysics();
