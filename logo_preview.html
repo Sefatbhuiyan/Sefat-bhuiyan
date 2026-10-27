@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sefat Bhuiyan — 3D Brand Logo Showcase</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Outfit:wght@600;700;800;900&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --cyan-glow: #00f2fe;
+    --blue-neon: #38bdf8;
+    --purple-deep: #8b5cf6;
+    --pink-accent: #d946ef;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 30px;
+    font-family: 'Inter', system-ui, sans-serif;
+    background: radial-gradient(circle at 50% 20%, #0d1226 0%, #05060d 100%);
+    color: #fff;
+  }
+
+  .preview-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+    max-width: 860px;
+    width: 100%;
+  }
+
+  .preview-label {
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: #94a3b8;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 12px;
+  }
+  .preview-label .badge {
+    padding: 3px 10px;
+    border-radius: 999px;
+    font-size: 11px;
+    background: rgba(56, 189, 248, 0.15);
+    color: #38bdf8;
+    border: 1px solid rgba(56, 189, 248, 0.3);
+  }
+
+  /* CARD STYLES */
+  .preview-box {
+    padding: 22px 30px;
+    border-radius: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    position: relative;
+    overflow: hidden;
+    backdrop-filter: blur(20px);
+  }
+  .preview-dark {
+    background: rgba(12, 17, 34, 0.75);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.6), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  }
+  .preview-light {
+    background: rgba(255, 255, 255, 0.92);
+    border: 1px solid rgba(15, 23, 42, 0.12);
+    box-shadow: 0 25px 60px rgba(15, 23, 42, 0.12), inset 0 1px 0 rgba(255, 255, 255, 0.9);
+    color: #0f172a;
+  }
+
+  /* =========================================================
+     3D BRAND LOCKUP SYSTEM
+     ========================================================= */
+  .brand-3d-lockup {
+    display: inline-flex;
+    align-items: center;
+    gap: 13px;
+    text-decoration: none;
+    user-select: none;
+    perspective: 1000px;
+    padding: 4px 8px;
+    border-radius: 16px;
+    transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+  }
+  .brand-3d-lockup:hover {
+    transform: translateY(-2px);
+  }
+
+  /* 3D EMBLEM CONTAINER */
+  .sb-emblem-3d {
+    position: relative;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform-style: preserve-3d;
+    transition: transform 0.5s cubic-bezier(0.34, 1.56, 0.64, 1), filter 0.35s ease;
+  }
+
+  /* Floating 3D keyframe motion */
+  .sb-emblem-float {
+    animation: sbEmblemFloat 5s ease-in-out infinite alternate;
+  }
+  @keyframes sbEmblemFloat {
+    0% {
+      transform: translate3d(0, 0, 0) rotateY(0deg) rotateX(0deg);
+    }
+    50% {
+      transform: translate3d(0, -3px, 6px) rotateY(6deg) rotateX(-4deg);
+    }
+    100% {
+      transform: translate3d(0, 2px, 2px) rotateY(-5deg) rotateX(3deg);
+    }
+  }
+
+  .brand-3d-lockup:hover .sb-emblem-3d {
+    transform: scale(1.12) rotateY(12deg) rotateX(-6deg) translateZ(8px);
+  }
+
+  /* EMBLEM SVG */
+  .sb-emblem-svg {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: contain;
+    filter: drop-shadow(0 4px 14px rgba(0, 242, 254, 0.5)) drop-shadow(0 8px 24px rgba(139, 92, 246, 0.35));
+    transition: filter 0.35s ease, transform 0.35s ease;
+  }
+  .brand-3d-lockup:hover .sb-emblem-svg {
+    filter: drop-shadow(0 0 16px rgba(0, 242, 254, 0.9)) drop-shadow(0 0 28px rgba(139, 92, 246, 0.75));
+  }
+
+  /* Ambient behind emblem */
+  .sb-emblem-aura {
+    position: absolute;
+    inset: -8px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(0, 242, 254, 0.4) 0%, rgba(139, 92, 246, 0.22) 50%, transparent 72%);
+    filter: blur(10px);
+    pointer-events: none;
+    z-index: -1;
+    animation: auraPulse 4s ease-in-out infinite alternate;
+  }
+  @keyframes auraPulse {
+    0% { opacity: 0.6; transform: scale(0.92); }
+    100% { opacity: 1; transform: scale(1.15); }
+  }
+
+  /* 3D TYPOGRAPHY STYLING */
+  .brand-text-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5px;
+    transform-style: preserve-3d;
+  }
+
+  /* Top Line: Sefat Bhuiyan */
+  .brand-title-3d {
+    font-family: 'Outfit', 'Inter', sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+    display: inline-block;
+    position: relative;
+    background: linear-gradient(135deg, #ffffff 0%, #f1f5f9 25%, #bae6fd 60%, #c084fc 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: 0 2px 10px rgba(56, 189, 248, 0.4), 0 0 20px rgba(139, 92, 246, 0.3);
+    transition: all 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+    transform: translateZ(5px);
+  }
+
+  .brand-3d-lockup:hover .brand-title-3d {
+    background: linear-gradient(135deg, #ffffff 0%, #38bdf8 45%, #a855f7 80%, #f43f5e 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    transform: translateZ(10px) scale(1.02);
+    text-shadow: 0 3px 14px rgba(56, 189, 248, 0.7), 0 0 28px rgba(168, 85, 247, 0.55);
+  }
+
+  /* Bottom Line: DIGITAL MARKETER */
+  .brand-subtitle-3d {
+    font-family: 'Inter', system-ui, sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: #38bdf8;
+    text-shadow: 0 0 8px rgba(56, 189, 248, 0.55);
+    transition: all 0.35s ease;
+    transform: translateZ(3px);
+  }
+  .brand-subtitle-3d .cyber-dot {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: #00f2fe;
+    box-shadow: 0 0 8px #00f2fe, 0 0 14px #38bdf8;
+    display: inline-block;
+    animation: cyberDotPulse 2s ease-in-out infinite alternate;
+  }
+  @keyframes cyberDotPulse {
+    0% { transform: scale(0.85); opacity: 0.7; }
+    100% { transform: scale(1.3); opacity: 1; }
+  }
+
+  .brand-subtitle-3d .bracket {
+    color: rgba(139, 92, 246, 0.85);
+    font-weight: 800;
+    font-size: 11px;
+    transition: transform 0.3s ease;
+  }
+
+  .brand-3d-lockup:hover .brand-subtitle-3d {
+    color: #00f2fe;
+    letter-spacing: 0.25em;
+    text-shadow: 0 0 12px rgba(0, 242, 254, 0.9);
+  }
+  .brand-3d-lockup:hover .brand-subtitle-3d .bracket.left {
+    transform: translateX(-2px);
+  }
+  .brand-3d-lockup:hover .brand-subtitle-3d .bracket.right {
+    transform: translateX(2px);
+  }
+
+  /* LIGHT THEME (Zero dark boxes, crystal clear typography) */
+  .preview-light .sb-emblem-svg {
+    filter: drop-shadow(0 3px 8px rgba(2, 132, 199, 0.28)) drop-shadow(0 6px 16px rgba(124, 58, 237, 0.15));
+  }
+  .preview-light .sb-emblem-aura {
+    background: radial-gradient(circle, rgba(2, 132, 199, 0.2) 0%, rgba(124, 58, 237, 0.12) 50%, transparent 70%);
+  }
+  .preview-light .brand-title-3d {
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 40%, #0369a1 80%, #6366f1 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.9), 0 2px 6px rgba(15, 23, 42, 0.15);
+  }
+  .preview-light .brand-3d-lockup:hover .brand-title-3d {
+    background: linear-gradient(135deg, #0284c7 0%, #6366f1 50%, #d946ef 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    text-shadow: 0 2px 10px rgba(2, 132, 199, 0.25);
+  }
+  .preview-light .brand-subtitle-3d {
+    color: #0284c7;
+    font-weight: 800;
+    text-shadow: 0 0 4px rgba(2, 132, 199, 0.2);
+  }
+  .preview-light .brand-subtitle-3d .cyber-dot {
+    background: #0284c7;
+    box-shadow: 0 0 6px rgba(2, 132, 199, 0.6);
+  }
+  .preview-light .brand-subtitle-3d .bracket {
+    color: #7c3aed;
+  }
+</style>
+</head>
+<body>
+
+  <div class="preview-wrapper">
+    <!-- DARK MODE PREVIEW -->
+    <div>
+      <div class="preview-label">
+        <span>Dark Theme Lockup</span>
+        <span class="badge">Live Navbar Preview</span>
+      </div>
+      <div class="preview-box preview-dark">
+        <a href="#top" class="brand-3d-lockup" aria-label="Sefat Bhuiyan — Digital Marketer">
+          <div class="sb-emblem-3d sb-emblem-float">
+            <div class="sb-emblem-aura" aria-hidden="true"></div>
+            <img src="assets/sb_logo_3d.svg" alt="SB 3D Monogram" class="sb-emblem-svg" width="48" height="48" />
+          </div>
+
+          <!-- 3D Brand Typography Lockup -->
+          <div class="brand-text-block">
+            <span class="brand-title-3d">Sefat Bhuiyan</span>
+            <span class="brand-subtitle-3d">
+              <span class="bracket left" aria-hidden="true">[</span>
+              <span class="cyber-dot" aria-hidden="true"></span>
+              DIGITAL MARKETER
+              <span class="bracket right" aria-hidden="true">]</span>
+            </span>
+          </div>
+        </a>
+
+        <!-- Simulated Nav Link to verify layout spacing -->
+        <div style="display:flex; gap: 14px; font-size: 13px; color: #94a3b8;">
+          <span style="color:#38bdf8; font-weight: 600;">Home</span>
+          <span>About</span>
+          <span>Projects</span>
+          <span>Career</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- LIGHT THEME PREVIEW -->
+    <div>
+      <div class="preview-label" style="color: #64748b;">
+        <span>Light Theme Lockup</span>
+        <span class="badge" style="background: rgba(2, 132, 199, 0.15); color: #0284c7; border-color: rgba(2, 132, 199, 0.3);">100% Native Alpha — Zero Black Artifacts</span>
+      </div>
+      <div class="preview-box preview-light">
+        <a href="#top" class="brand-3d-lockup" aria-label="Sefat Bhuiyan — Digital Marketer">
+          <div class="sb-emblem-3d sb-emblem-float">
+            <div class="sb-emblem-aura" aria-hidden="true"></div>
+            <img src="assets/sb_logo_3d.svg" alt="SB 3D Monogram" class="sb-emblem-svg" width="48" height="48" />
+          </div>
+
+          <!-- 3D Brand Typography Lockup -->
+          <div class="brand-text-block">
+            <span class="brand-title-3d">Sefat Bhuiyan</span>
+            <span class="brand-subtitle-3d">
+              <span class="bracket left" aria-hidden="true">[</span>
+              <span class="cyber-dot" aria-hidden="true"></span>
+              DIGITAL MARKETER
+              <span class="bracket right" aria-hidden="true">]</span>
+            </span>
+          </div>
+        </a>
+
+        <!-- Simulated Nav Link -->
+        <div style="display:flex; gap: 14px; font-size: 13px; color: #64748b;">
+          <span style="color:#0284c7; font-weight: 600;">Home</span>
+          <span>About</span>
+          <span>Projects</span>
+          <span>Career</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

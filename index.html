@@ -22,6 +22,9 @@
   <meta name="twitter:title" content="Sefat Bhuiyan — Portfolio" />
   <meta name="twitter:description" content="Personal portfolio of Sefat Bhuiyan — Digital Marketer & Graphic Designer." />
 
+  <link rel="icon" type="image/png" href="assets/sb_logo_transparent.png" />
+  <link rel="apple-touch-icon" href="assets/sb_logo_transparent.png" />
+
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -36,7 +39,9 @@
     },
     "sameAs": [
       "https://www.facebook.com/profile.php?id=61591445054359",
-      "https://www.linkedin.com/in/sefat-bhuiyan"
+      "https://www.linkedin.com/in/sefat-bhuiyan",
+      "https://github.com/Sefatbhuiyan",
+      "https://www.instagram.com/sefatbhuiyan_marketing0101?psln=MTAwa3Jqd214YWg4OQ=="
     ]
   }
   </script>
@@ -59,10 +64,8 @@
 
   <link
 
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
-
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Outfit:wght@600;700;800;900&display=swap"
     rel="stylesheet"
-
   />
 
   <!-- Main stylesheet -->
@@ -92,21 +95,22 @@
 
   <header class="topbar">
 
-    <a class="brand brand-3d" href="#top" aria-label="Sefat Bhuiyan Portfolio Home">
-
-      <span class="brand-badge brand-badge-3d">
-        <span class="brand-badge-text">SB</span>
-        <span class="brand-badge-sheen" aria-hidden="true"></span>
+    <a class="brand brand-3d" href="#top" aria-label="Sefat Bhuiyan — Digital Marketer">
+      <span class="brand-lockup-3d">
+        <span class="sb-emblem-3d sb-emblem-float">
+          <span class="sb-emblem-aura" aria-hidden="true"></span>
+          <img src="assets/sb_logo_3d.svg" alt="SB 3D Monogram" class="brand-sb-logo-3d" width="44" height="44" />
+        </span>
+        <span class="brand-text-block">
+          <span class="brand-title-3d">Sefat Bhuiyan</span>
+          <span class="brand-subtitle-3d">
+            <span class="bracket left" aria-hidden="true">[</span>
+            <span class="cyber-dot" aria-hidden="true"></span>
+            DIGITAL MARKETER
+            <span class="bracket right" aria-hidden="true">]</span>
+          </span>
+        </span>
       </span>
-
-      <span class="brand-text-wrap">
-
-        <span class="brand-name">Sefat Bhuiyan</span>
-
-        <small class="brand-role">PORTFOLIO</small>
-
-      </span>
-
     </a>
 
     <nav class="nav nav-3d" id="mainNavigation" aria-label="Primary navigation">
@@ -148,6 +152,29 @@
   <span></span>
 
 </button>
+
+    <!-- 3D Mobile Version Topbar Switcher -->
+    <a
+      href="https://sefatbhuiyan.qrioustechbd.com/"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="mobile-version-topbar-btn"
+      id="topbarMobileBtn"
+      aria-label="Switch to Mobile Version"
+      title="Switch to Mobile Version (মোবাইল ভার্সন)"
+    >
+      <span class="mv-top-halo" aria-hidden="true"></span>
+      <span class="mv-top-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="5" y="2" width="14" height="20" rx="3" ry="3"></rect>
+          <line x1="12" y1="18" x2="12.01" y2="18"></line>
+        </svg>
+        <span class="mv-live-dot"></span>
+      </span>
+      <span class="mv-top-text" id="topbarMobileText">Mobile Version</span>
+      <span class="mv-top-badge">NEW</span>
+      <span class="mv-top-arrow" aria-hidden="true">↗</span>
+    </a>
 
 <!-- Language Switcher -->
 
@@ -248,6 +275,42 @@
       <span>عربي</span>
 
       <small>Arabic</small>
+
+    </button>
+
+    <button
+
+      type="button"
+
+      class="language-option"
+
+      data-lang="zh"
+
+      role="menuitem"
+
+    >
+
+      <span>中文</span>
+
+      <small>Chinese</small>
+
+    </button>
+
+    <button
+
+      type="button"
+
+      class="language-option"
+
+      data-lang="hi"
+
+      role="menuitem"
+
+    >
+
+      <span>हिन्दी</span>
+
+      <small>Hindi</small>
 
     </button>
 
@@ -365,6 +428,30 @@
 
             </a>
 
+            <!-- 3D Holographic Mobile Version Action Button -->
+            <a
+              class="btn mobile-version-hero-btn shader-btn"
+              id="heroMobileBtn"
+              href="https://sefatbhuiyan.qrioustechbd.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Open Mobile Version of Portfolio"
+              title="Open Mobile Version (মোবাইল ভার্সন)"
+            >
+              <span class="mv-hero-glow" aria-hidden="true"></span>
+              <span class="mv-hero-icon-box" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="5" y="2" width="14" height="20" rx="3" ry="3"></rect>
+                  <line x1="12" y1="18" x2="12.01" y2="18"></line>
+                </svg>
+                <span class="mv-pulse-ring"></span>
+              </span>
+              <span class="label" id="heroMobileLabel">Mobile Version</span>
+              <span class="mv-hero-tag">Specialized 📱</span>
+              <svg class="shader-icon mv-ext-icon" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              <span class="shine" aria-hidden="true"></span>
+            </a>
+
           </div>
 
           <!-- Social links -->
@@ -425,6 +512,31 @@
 
             <a
 
+              class="social-btn-3d social-instagram"
+
+              id="socialInstagram"
+
+              href="https://www.instagram.com/sefatbhuiyan_marketing0101?psln=MTAwa3Jqd214YWg4OQ=="
+
+              target="_blank"
+
+              rel="noopener noreferrer"
+
+              aria-label="Instagram Profile"
+
+              title="Instagram"
+
+            >
+
+              <span class="social-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+              </span>
+              <span class="social-shine" aria-hidden="true"></span>
+
+            </a>
+
+            <a
+
               class="social-btn-3d social-linkedin"
 
               id="socialLinkedIn"
@@ -443,6 +555,31 @@
 
               <span class="social-icon" aria-hidden="true">
                 <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
+              </span>
+              <span class="social-shine" aria-hidden="true"></span>
+
+            </a>
+
+            <a
+
+              class="social-btn-3d social-github"
+
+              id="socialGitHub"
+
+              href="https://github.com/Sefatbhuiyan"
+
+              target="_blank"
+
+              rel="noopener noreferrer"
+
+              aria-label="GitHub Profile"
+
+              title="GitHub"
+
+            >
+
+              <span class="social-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
               </span>
               <span class="social-shine" aria-hidden="true"></span>
 
@@ -578,7 +715,7 @@
 
                   <div class="card-back-main">
                     <div class="back-avatar-circle">
-                      <span class="back-monogram">SB</span>
+                      <img src="assets/sb_logo_3d.svg" alt="SB 3D Monogram" class="back-avatar-img-3d" />
                     </div>
                     <h4 class="back-name">SEFAT BHUIYAN</h4>
                     <p class="back-sub">Creative Director &amp; Marketing Strategist</p>
@@ -878,7 +1015,7 @@
 
         <div>
 
-          <div class="eyebrow">Selected Works</div>
+          <div class="eyebrow">Portfolio &amp; Cloud Archive</div>
 
           <h2>
 
@@ -892,125 +1029,10 @@
 
         <p class="section-desc">
 
-          Want to see all of my work in one place? Open my complete project collection on Google Drive.
+          All of my professional design assets, marketing campaigns, and creative case studies are securely organized in one verified Google Drive cloud archive.
 
         </p>
 
-      </div>
-
-      
-      <div class="featured-projects" id="featuredProjects">
-        <div class="featured-projects-head">
-          <div>
-            <span class="eyebrow" id="featuredProjectsEyebrow">Featured Project Focus</span>
-            <h3 id="featuredProjectsHeading">Selected creative directions for brands &amp; social media.</h3>
-          </div>
-          <p id="featuredProjectsDescription">
-            Explore a few core project categories and open the full collection to see the detailed work.
-          </p>
-        </div>
-
-        <div class="featured-project-grid featured-grid-3d">
-
-          <article class="featured-project-card project-card-3d">
-            <div class="project-card-glow" aria-hidden="true"></div>
-            <div class="featured-project-preview featured-preview-1" aria-hidden="true">
-              <span class="preview-index">01</span>
-              <span class="preview-label">SOCIAL</span>
-              <span class="preview-orbit orbit-a"></span>
-              <span class="preview-orbit orbit-b"></span>
-              <span class="preview-bar bar-a"></span>
-              <span class="preview-bar bar-b"></span>
-            </div>
-
-            <div class="featured-project-body">
-              <div class="featured-project-meta">
-                <span>01</span>
-                <span class="featured-project-category">Social Media Marketing</span>
-              </div>
-              <h4>Social Media Campaign</h4>
-              <p>Page visuals, content planning, and growth-focused creative direction.</p>
-              <a
-                class="featured-project-link btn-3d-glow"
-                href="https://drive.google.com/file/d/1Pnhet0Yw46Bn68PqGluOJuRoGNqUbBhj/view?usp=sharing"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Open social media campaign work"
-              >
-                <span>View Collection</span>
-                <span class="btn-arrow" aria-hidden="true">↗</span>
-                <span class="btn-shine" aria-hidden="true"></span>
-              </a>
-            </div>
-            <span class="project-card-sheen" aria-hidden="true"></span>
-          </article>
-
-          <article class="featured-project-card project-card-3d">
-            <div class="project-card-glow" aria-hidden="true"></div>
-            <div class="featured-project-preview featured-preview-2" aria-hidden="true">
-              <span class="preview-index">02</span>
-              <span class="preview-label">BRAND</span>
-              <span class="preview-card card-a"></span>
-              <span class="preview-card card-b"></span>
-              <span class="preview-dot dot-a"></span>
-              <span class="preview-dot dot-b"></span>
-            </div>
-
-            <div class="featured-project-body">
-              <div class="featured-project-meta">
-                <span>02</span>
-                <span class="featured-project-category">Graphic Design</span>
-              </div>
-              <h4>Brand Visual Design</h4>
-              <p>Clean visual assets, campaign creatives, and consistent brand presentation.</p>
-              <a
-                class="featured-project-link btn-3d-glow"
-                href="https://drive.google.com/file/d/1Mx41R4mh6wBb_MWzTWb5ji8LdALnd33S/view?usp=sharing"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Open brand visual design work"
-              >
-                <span>View Collection</span>
-                <span class="btn-arrow" aria-hidden="true">↗</span>
-                <span class="btn-shine" aria-hidden="true"></span>
-              </a>
-            </div>
-            <span class="project-card-sheen" aria-hidden="true"></span>
-          </article>
-
-          <article class="featured-project-card project-card-3d">
-            <div class="project-card-glow" aria-hidden="true"></div>
-            <div class="featured-project-preview featured-preview-3" aria-hidden="true">
-              <span class="preview-index">03</span>
-              <span class="preview-label">CONTENT</span>
-              <span class="preview-frame frame-a"></span>
-              <span class="preview-frame frame-b"></span>
-              <span class="preview-play">▶</span>
-            </div>
-
-            <div class="featured-project-body">
-              <div class="featured-project-meta">
-                <span>03</span>
-                <span class="featured-project-category">Content Creation</span>
-              </div>
-              <h4>Content &amp; Ad Creative</h4>
-              <p>Creative concepts, ad-ready visuals, scripts, and branded content direction.</p>
-              <a
-                class="featured-project-link btn-3d-glow"
-                href="https://drive.google.com/file/d/1SbGnlIN3IYTsNqmap2QX8vh-jUJY6Kp_/view?usp=sharing"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Open content and ad creative work"
-              >
-                <span>View Collection</span>
-                <span class="btn-arrow" aria-hidden="true">↗</span>
-                <span class="btn-shine" aria-hidden="true"></span>
-              </a>
-            </div>
-            <span class="project-card-sheen" aria-hidden="true"></span>
-          </article>
-
-        </div>
       </div>
 
       <div class="all-projects-card all-projects-3d">
@@ -1027,21 +1049,36 @@
 
         <div class="all-projects-icon" aria-hidden="true">
 
-          <span>✦</span>
+          <svg class="drive-cloud-svg" viewBox="0 0 24 24" width="38" height="38" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"/>
+          </svg>
 
         </div>
 
         <div class="all-projects-copy">
 
-          <span class="all-projects-kicker">Complete Portfolio Collection</span>
+          <div class="all-projects-badge-row">
+            <span class="all-projects-kicker">OFFICIAL GOOGLE DRIVE REPOSITORY</span>
+            <span class="all-projects-drive-tag">
+              <svg viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true">
+                <path d="M7.71 3.5L1.15 15l3.43 6 6.55-11.5-3.42-6zm3.43 6l3.43 6h6.86l-3.43-6h-6.86zm8.57 6l3.43-6-3.43-6H9.14l3.43 6 3.43 6h3.71z"/>
+              </svg>
+              Google Drive Cloud
+            </span>
+          </div>
 
-          <h3>সবগুলো Project দেখতে এখানে ক্লিক করুন</h3>
+          <h3>Access Complete Project Archive on Google Drive</h3>
 
           <p>
-
-            আমার সব ডিজাইন, marketing creatives, social media work এবং অন্যান্য project একসাথে দেখতে নিচের button-এ click করুন।
-
+            Browse my complete collection of graphic design deliverables, high-converting social media marketing campaigns, branding identities, ad creatives, and video assets. Everything is curated in high-resolution directly inside my verified Google Drive folder.
           </p>
+
+          <div class="all-projects-highlights">
+            <span class="highlight-chip">📁 Verified Cloud Storage</span>
+            <span class="highlight-chip">⚡ 100+ High-Res Assets</span>
+            <span class="highlight-chip">🎯 Live Campaign Results</span>
+            <span class="highlight-chip">🚀 Ready-to-Implement Files</span>
+          </div>
 
         </div>
 
@@ -1055,11 +1092,11 @@
 
           rel="noopener noreferrer"
 
-          aria-label="Open all projects on Google Drive"
+          aria-label="Open complete project collection on Google Drive"
 
         >
 
-          <span>All Projects</span>
+          <span class="btn-text">Open Google Drive Portfolio</span>
 
           <span class="all-projects-arrow" aria-hidden="true">↗</span>
 
@@ -1069,13 +1106,15 @@
 
         <div class="all-projects-tags" aria-hidden="true">
 
-          <span>Design</span>
+          <span>Social Media Marketing</span>
 
-          <span>Marketing</span>
+          <span>Graphic Design</span>
 
-          <span>Content</span>
+          <span>Content Creation</span>
 
-          <span>Creative</span>
+          <span>Brand Identity</span>
+
+          <span>Ad Creatives</span>
 
         </div>
 
@@ -1674,19 +1713,21 @@
                 <span class="contact-item-shine" aria-hidden="true"></span>
               </a>
 
-              <!-- Email -->
+              <!-- Instagram -->
               <a
                 class="contact-item contact-link contact-item-3d"
-                href="mailto:ksefat94@gmail.com"
-                aria-label="Send email"
+                href="https://www.instagram.com/sefatbhuiyan_marketing0101?psln=MTAwa3Jqd214YWg4OQ=="
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Open Instagram profile"
               >
                 <div class="contact-item-left">
-                  <span class="contact-channel-icon email-icon" aria-hidden="true">
-                    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                  <span class="contact-channel-icon instagram-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
                   </span>
-                  <span class="contact-channel-name">Email</span>
+                  <span class="contact-channel-name">Instagram</span>
                 </div>
-                <b class="contact-channel-val">ksefat94@gmail.com <span class="contact-arrow" aria-hidden="true">↗</span></b>
+                <b class="contact-channel-val">@sefatbhuiyan_marketing0101 <span class="contact-arrow" aria-hidden="true">↗</span></b>
                 <span class="contact-item-shine" aria-hidden="true"></span>
               </a>
 
@@ -1705,6 +1746,40 @@
                   <span class="contact-channel-name">LinkedIn</span>
                 </div>
                 <b class="contact-channel-val">View Profile <span class="contact-arrow" aria-hidden="true">↗</span></b>
+                <span class="contact-item-shine" aria-hidden="true"></span>
+              </a>
+
+              <!-- GitHub -->
+              <a
+                class="contact-item contact-link contact-item-3d"
+                href="https://github.com/Sefatbhuiyan"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Open GitHub profile"
+              >
+                <div class="contact-item-left">
+                  <span class="contact-channel-icon github-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+                  </span>
+                  <span class="contact-channel-name">GitHub</span>
+                </div>
+                <b class="contact-channel-val">Sefatbhuiyan <span class="contact-arrow" aria-hidden="true">↗</span></b>
+                <span class="contact-item-shine" aria-hidden="true"></span>
+              </a>
+
+              <!-- Email -->
+              <a
+                class="contact-item contact-link contact-item-3d"
+                href="mailto:ksefat94@gmail.com"
+                aria-label="Send email"
+              >
+                <div class="contact-item-left">
+                  <span class="contact-channel-icon email-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                  </span>
+                  <span class="contact-channel-name">Email</span>
+                </div>
+                <b class="contact-channel-val">ksefat94@gmail.com <span class="contact-arrow" aria-hidden="true">↗</span></b>
                 <span class="contact-item-shine" aria-hidden="true"></span>
               </a>
 
@@ -1861,6 +1936,58 @@
       </div>
     </section>
 
+    <!-- =========================================================
+         3D MOBILE PORTFOLIO SHOWCASE BANNER
+         Prominent Interactive Callout for Handheld Experience
+         ========================================================= -->
+    <section class="mobile-portfolio-banner-section container" aria-label="Mobile Portfolio Version">
+      <div class="mpb-glass-card">
+        <div class="mpb-ambient-light" aria-hidden="true"></div>
+        <div class="mpb-grid">
+          <div class="mpb-visual" aria-hidden="true">
+            <div class="mpb-phone-3d">
+              <div class="mpb-phone-notch"></div>
+              <div class="mpb-phone-screen">
+                <div class="mpb-screen-header">
+                  <span class="mpb-screen-dot"></span>
+                  <span class="mpb-screen-logo">SB</span>
+                  <span class="mpb-screen-signal">5G ●●●</span>
+                </div>
+                <div class="mpb-screen-content">
+                  <span class="mpb-screen-badge">Mobile Version</span>
+                  <span class="mpb-screen-headline">Engineered for Phones</span>
+                  <div class="mpb-screen-skeleton">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                </div>
+              </div>
+              <div class="mpb-phone-glow"></div>
+            </div>
+          </div>
+          <div class="mpb-content">
+            <span class="mpb-pill">
+              <span class="mpb-pill-dot"></span>
+              TOUCH-OPTIMIZED &amp; ULTRA-FAST
+            </span>
+            <h3 class="mpb-title">Browsing from a Mobile Device?</h3>
+            <p class="mpb-desc">
+              Experience the dedicated mobile edition of Sefat Bhuiyan's portfolio — specifically crafted for smartphones with touch-friendly navigation, quick-load assets, and a fluid mobile UI.
+            </p>
+            <div class="mpb-actions">
+              <a href="https://sefatbhuiyan.qrioustechbd.com/" target="_blank" rel="noopener noreferrer" class="btn mpb-btn shader-btn" id="footerBannerMobileBtn" title="Open Mobile Version (মোবাইল ভার্সন)">
+                <span class="label">Open Mobile Version</span>
+                <svg class="shader-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <span class="shine" aria-hidden="true"></span>
+              </a>
+              <span class="mpb-hint">Direct URL: <code>sefatbhuiyan.qrioustechbd.com</code></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
   </main>
 
   <!-- =========================
@@ -1874,20 +2001,21 @@
     <div class="footer-top footer-top-3d">
 
       <div class="brand brand-3d">
-
-        <span class="brand-badge brand-badge-3d">
-          <span class="brand-badge-text">SB</span>
-          <span class="brand-badge-sheen" aria-hidden="true"></span>
+        <span class="brand-lockup-3d">
+          <span class="sb-emblem-3d sb-emblem-float">
+            <span class="sb-emblem-aura" aria-hidden="true"></span>
+            <img src="assets/sb_logo_3d.svg" alt="SB 3D Monogram" class="brand-sb-logo-3d" width="44" height="44" />
+          </span>
+          <span class="brand-text-block">
+            <span class="brand-title-3d">Sefat Bhuiyan</span>
+            <span class="brand-subtitle-3d">
+              <span class="bracket left" aria-hidden="true">[</span>
+              <span class="cyber-dot" aria-hidden="true"></span>
+              DIGITAL MARKETER
+              <span class="bracket right" aria-hidden="true">]</span>
+            </span>
+          </span>
         </span>
-
-        <span class="brand-text-wrap">
-
-          <span class="brand-name">Sefat Bhuiyan</span>
-
-          <small class="brand-role">DIGITAL MARKETER • DESIGNER</small>
-
-        </span>
-
       </div>
 
       <a class="btn back-to-top-3d" href="#top" aria-label="Back to top of page">
@@ -1921,6 +2049,8 @@
         <a href="#education">Education</a>
 
         <a href="#contact">Contact</a>
+
+        <a href="https://sefatbhuiyan.qrioustechbd.com/" target="_blank" rel="noopener noreferrer" class="footer-mobile-link" title="Open Mobile Version (মোবাইল ভার্সন)">📱 Mobile Version ↗</a>
 
       </div>
 
@@ -2024,7 +2154,191 @@
       </span>
       <span class="quicknav-tooltip" role="tooltip">Contact</span>
     </a>
+
+    <!-- 3D Mobile Version Quicknav Tile -->
+    <a href="https://sefatbhuiyan.qrioustechbd.com/" target="_blank" rel="noopener noreferrer" class="quicknav-mobile-link" title="Mobile Version (মোবাইল ভার্সন)" aria-label="Open Mobile Version">
+      <span class="quicknav-3d-tile quicknav-mobile-tile">
+        <span class="quicknav-glare" aria-hidden="true"></span>
+        <span class="quicknav-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="5" y="2" width="14" height="20" rx="3" ry="3"></rect>
+            <line x1="12" y1="18" x2="12.01" y2="18"></line>
+          </svg>
+        </span>
+        <span class="quicknav-beacon quicknav-beacon-active quicknav-mobile-beacon" aria-hidden="true"></span>
+        <span class="quicknav-glow quicknav-mobile-glow" aria-hidden="true"></span>
+      </span>
+      <span class="quicknav-tooltip" role="tooltip">Mobile 📱</span>
+    </a>
   </nav>
+
+  <!-- =========================================================
+       FLOATING 3D MOBILE VERSION SWITCHER WIDGET
+       Sticky Quick Switcher with 3D Holographic Depth
+       ========================================================= -->
+  <aside class="floating-mobile-switcher" id="floatingMobileSwitcher" aria-label="Switch to Mobile Version">
+    <a
+      href="https://sefatbhuiyan.qrioustechbd.com/"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="fms-pill-link"
+      title="Open Mobile Version (মোবাইলের জন্য বিশেষ পোর্টফোলিও)"
+      aria-label="Open Mobile Version of Portfolio"
+    >
+      <span class="fms-icon-wrap" aria-hidden="true">
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="5" y="2" width="14" height="20" rx="3" ry="3"></rect>
+          <line x1="12" y1="18" x2="12.01" y2="18"></line>
+        </svg>
+        <span class="fms-pulse"></span>
+      </span>
+      <span class="fms-text-block">
+        <span class="fms-label">Mobile Version</span>
+        <span class="fms-sublabel">মোবাইলের জন্য ↗</span>
+      </span>
+      <span class="fms-arrow" aria-hidden="true">↗</span>
+    </a>
+    <button type="button" class="fms-close-btn" id="fmsCloseBtn" title="Dismiss switcher" aria-label="Dismiss mobile version switcher">×</button>
+  </aside>
+
+  <!-- =========================================================
+       3D AI ASSISTANT CHATBOT — SEFAT AI
+       Interactive 3D Virtual Consultant with Real-Time Smart Replies
+       ========================================================= -->
+  <div class="sefat-ai-container" id="sefatAiRoot">
+    <!-- Attention-Grabbing 3D Floating Speech Bubble Callout -->
+    <div class="sefat-ai-callout" id="sefatAiCallout" role="tooltip" aria-live="polite">
+      <div class="callout-glass">
+        <div class="callout-header">
+          <span class="callout-badge-pulse"></span>
+          <span class="callout-tag">SEFAT AI</span>
+          <button type="button" class="callout-close" id="sefatAiCalloutClose" aria-label="Dismiss greeting">×</button>
+        </div>
+        <p class="callout-text">
+          👋 Need help with <b>Marketing &amp; Design</b>? Ask me anything about services, pricing or portfolio!
+        </p>
+        <button type="button" class="callout-action-btn" id="sefatAiCalloutAction">Chat Now ✦</button>
+      </div>
+      <div class="callout-tail"></div>
+    </div>
+
+    <!-- 3D Futuristic Holographic Launcher Bubble -->
+    <button
+      type="button"
+      class="sefat-ai-launcher"
+      id="sefatAiLauncher"
+      aria-label="Open Sefat AI Assistant"
+      aria-expanded="false"
+      aria-controls="sefatAiWindow"
+    >
+      <span class="ai-orbital-ring ring-1" aria-hidden="true"></span>
+      <span class="ai-orbital-ring ring-2" aria-hidden="true"></span>
+      <span class="ai-orbital-ring ring-3" aria-hidden="true"></span>
+      
+      <span class="ai-orb-core">
+        <img src="assets/sb_logo_3d.svg" alt="Sefat AI" class="ai-orb-logo" width="38" height="38" />
+        <span class="ai-orb-specular" aria-hidden="true"></span>
+      </span>
+
+      <span class="ai-status-beacon" aria-hidden="true" title="Online"></span>
+      <span class="ai-pulse-wave" aria-hidden="true"></span>
+      <span class="ai-unread-badge" id="sefatAiBadge">1</span>
+    </button>
+
+    <!-- 3D Glassmorphic Holographic Chat Window -->
+    <div
+      class="sefat-ai-window"
+      id="sefatAiWindow"
+      role="dialog"
+      aria-modal="false"
+      aria-label="Sefat AI Chat Assistant"
+      hidden
+    >
+      <!-- Chat Header -->
+      <div class="ai-chat-header">
+        <div class="ai-header-profile">
+          <div class="ai-avatar-wrap-3d">
+            <img src="assets/sb_logo_3d.svg" alt="Sefat AI" class="ai-avatar-img" width="36" height="36" />
+            <span class="ai-avatar-halo" aria-hidden="true"></span>
+            <span class="ai-avatar-status" aria-hidden="true"></span>
+          </div>
+          <div class="ai-header-info">
+            <div class="ai-name-row">
+              <b class="ai-bot-name">Sefat AI</b>
+              <span class="ai-pro-badge">PRO ASSISTANT</span>
+            </div>
+            <div class="ai-status-row">
+              <span class="ai-status-text">Instant answers in 5 languages</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="ai-header-actions">
+          <button type="button" class="ai-hdr-btn sound-toggle" id="sefatAiSoundToggle" title="Toggle audio feedback" aria-label="Toggle audio feedback">
+            <svg class="sound-on-icon" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/></svg>
+            <svg class="sound-off-icon sr-only" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2"><line x1="1" y1="1" x2="23" y2="23"/><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M15.54 8.46a5 5 0 0 1 0 2.83M19.07 4.93a10 10 0 0 1 0 6.07"/></svg>
+          </button>
+          <button type="button" class="ai-hdr-btn" id="sefatAiClearBtn" title="Clear conversation" aria-label="Clear chat">
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg>
+          </button>
+          <button type="button" class="ai-hdr-btn" id="sefatAiCloseBtn" title="Close chat" aria-label="Close chat">
+            <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Quick Suggestion Prompt Chips -->
+      <div class="ai-chips-shelf" id="sefatAiChipsShelf" aria-label="Quick questions">
+        <button type="button" class="ai-chip" data-question="What services do you offer?">💼 Services</button>
+        <button type="button" class="ai-chip" data-question="Can I see your design and marketing portfolio?">🎨 Portfolio</button>
+        <button type="button" class="ai-chip ai-chip-mobile" data-question="Where can I find the mobile version of your portfolio?">📱 Mobile Version</button>
+        <button type="button" class="ai-chip" data-question="What is your pricing and rates?">💰 Pricing</button>
+        <button type="button" class="ai-chip" data-question="How can I contact and hire Sefat?">🚀 Hire / Contact</button>
+        <button type="button" class="ai-chip" data-question="What are your skills and tools?">⚡ Skills &amp; Tools</button>
+      </div>
+
+      <!-- Messages Body -->
+      <div class="ai-messages-body" id="sefatAiMessages" role="log" aria-live="polite">
+        <!-- Messages dynamically rendered here -->
+      </div>
+
+      <!-- 3D Typing Indicator (Hidden by default) -->
+      <div class="ai-typing-indicator" id="sefatAiTyping" hidden>
+        <div class="ai-typing-avatar">
+          <img src="assets/sb_logo_3d.svg" alt="Sefat AI" width="22" height="22" />
+        </div>
+        <div class="ai-typing-bubble">
+          <span class="ai-type-dot"></span>
+          <span class="ai-type-dot"></span>
+          <span class="ai-type-dot"></span>
+          <span class="ai-type-status">Sefat AI is thinking...</span>
+        </div>
+      </div>
+
+      <!-- Chat Input Area -->
+      <form class="ai-input-form" id="sefatAiForm" autocomplete="off">
+        <div class="ai-input-wrapper">
+          <input
+            type="text"
+            id="sefatAiInput"
+            class="ai-input-field"
+            placeholder="Ask Sefat AI anything..."
+            aria-label="Message to Sefat AI"
+            maxlength="400"
+          />
+          <button type="submit" class="ai-send-btn" id="sefatAiSendBtn" aria-label="Send message">
+            <span class="ai-send-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/></svg>
+            </span>
+            <span class="ai-send-glow" aria-hidden="true"></span>
+          </button>
+        </div>
+        <div class="ai-input-footer">
+          <span class="ai-disclaimer">Powered by Sefat AI Knowledge Engine • 24/7 Support</span>
+        </div>
+      </form>
+    </div>
+  </div>
 
   <!-- Main JavaScript -->
 

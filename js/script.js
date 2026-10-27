@@ -956,31 +956,32 @@
       projects: {
 
         eyebrow:
-          "Selected Works",
+          "Portfolio & Cloud Archive",
 
         heading:
           `Explore My <span class="gradient">Projects</span>`,
 
         description:
-          "Want to see all of my work in one place? Open my complete project collection on Google Drive.",
+          "All of my professional design assets, marketing campaigns, and creative case studies are securely organized in one verified Google Drive cloud archive.",
 
         kicker:
-          "Complete Portfolio Collection",
+          "OFFICIAL GOOGLE DRIVE REPOSITORY",
 
         headingCard:
-          "সবগুলো Project দেখতে এখানে ক্লিক করুন",
+          "Access Complete Project Archive on Google Drive",
 
         descriptionCard:
-          "আমার সব ডিজাইন, marketing creatives, social media work এবং অন্যান্য project একসাথে দেখতে নিচের button-এ click করুন।",
+          "Browse my complete collection of graphic design deliverables, high-converting social media marketing campaigns, branding identities, ad creatives, and video assets. Everything is curated in high-resolution directly inside my verified Google Drive folder.",
 
         button:
-          "All Projects",
+          "Open Google Drive Portfolio",
 
         tags: [
-          "Design",
-          "Marketing",
-          "Content",
-          "Creative"
+          "Social Media Marketing",
+          "Graphic Design",
+          "Content Creation",
+          "Brand Identity",
+          "Ad Creatives"
         ]
 
       },
@@ -1180,16 +1181,20 @@
         labels: [
           "WhatsApp",
           "Facebook",
-          "Email",
+          "Instagram",
           "LinkedIn",
+          "GitHub",
+          "Email",
           "Location"
         ],
 
         values: [
           "01828157751",
           "Open Profile ↗",
-          "ksefat94@gmail.com",
+          "@sefatbhuiyan_marketing0101 ↗",
           "View Profile ↗",
+          "Sefatbhuiyan ↗",
+          "ksefat94@gmail.com",
           "Dhaka, Bangladesh"
         ],
 
@@ -1245,11 +1250,17 @@
         facebook:
           "Open Facebook profile",
 
-        email:
-          "Send email",
+        instagram:
+          "Open Instagram profile",
 
         linkedin:
           "Open LinkedIn profile",
+
+        github:
+          "Open GitHub profile",
+
+        email:
+          "Send email",
 
         resume:
           "Open Sefat Bhuiyan resume"
@@ -1264,7 +1275,22 @@
         "SOCIAL MEDIA",
         "BRAND VISUALS",
         "CREATIVE STRATEGY"
-      ]
+      ],
+
+      ai: {
+        callout: "👋 Need help with <b>Marketing &amp; Design</b>? Ask me anything about services, pricing or portfolio!",
+        placeholder: "Ask Sefat AI anything...",
+        status: "Instant answers in 5 languages",
+        thinking: "Sefat AI is thinking...",
+        welcome: "Hello! 👋 I'm **Sefat AI**, the personal virtual assistant for **Sefat Bhuiyan** — Digital Marketer & Graphic Designer.\n\nHow can I help you today? Ask me about marketing campaigns, graphic designs, pricing, or review the portfolio!",
+        chips: [
+          "💼 Services",
+          "💰 Pricing",
+          "🎨 Portfolio",
+          "🚀 Hire / Contact",
+          "⚡ Skills & Tools"
+        ]
+      }
 
     },
 
@@ -1417,31 +1443,32 @@
       projects: {
 
         eyebrow:
-          "নির্বাচিত কাজ",
+          "পোর্টফোলিও ও ক্লাউড আর্কাইভ",
 
         heading:
           `আমার <span class="gradient">প্রজেক্টসমূহ</span> দেখুন`,
 
         description:
-          "আমার সব কাজ এক জায়গায় দেখতে complete project collection খুলুন।",
+          "আমার সব ডিজাইন, সোশ্যাল মিডিয়া মার্কেটিং ক্যাম্পেইন ও ক্রিয়েটিভ কাজের সম্পূর্ণ কালেকশন গুগল ড্রাইভে সুবিন্যস্তভাবে সাজানো রয়েছে।",
 
         kicker:
-          "সম্পূর্ণ পোর্টফোলিও কালেকশন",
+          "অফিসিয়াল গুগল ড্রাইভ রিপোজিটরি",
 
         headingCard:
-          "সবগুলো Project দেখতে এখানে ক্লিক করুন",
+          "গুগল ড্রাইভে সম্পূর্ণ প্রজেক্ট আর্কাইভ দেখুন",
 
         descriptionCard:
-          "আমার সব ডিজাইন, marketing creatives, social media work এবং অন্যান্য project একসাথে দেখতে নিচের button-এ click করুন।",
+          "আমার সব গ্রাফিক ডিজাইন ফাইল, হাই-কনভার্টিং সোশ্যাল মিডিয়া মার্কেটিং ক্যাম্পেইন, ব্র্যান্ডিং আইডেন্টিটি, অ্যাড ক্রিয়েটিভ ও কনটেন্ট সরাসরি গুগল ড্রাইভ ফোল্ডারে হাই-রেজোলিউশনে সাজিয়ে রাখা হয়েছে। নিচের বাটনে ক্লিক করে সহজেই পুরো সংগ্রহ দেখুন।",
 
         button:
-          "সব প্রজেক্ট",
+          "গুগল ড্রাইভ পোর্টফোলিও খুলুন",
 
         tags: [
-          "ডিজাইন",
-          "মার্কেটিং",
-          "কনটেন্ট",
-          "ক্রিয়েটিভ"
+          "সোশ্যাল মিডিয়া মার্কেটিং",
+          "গ্রাফিক ডিজাইন",
+          "কনটেন্ট ক্রিয়েশন",
+          "ব্র্যান্ড আইডেন্টিটি",
+          "অ্যাড ক্রিয়েটিভ"
         ]
 
       },
@@ -1641,16 +1668,20 @@
         labels: [
           "WhatsApp",
           "Facebook",
-          "Email",
+          "Instagram",
           "LinkedIn",
+          "GitHub",
+          "Email",
           "অবস্থান"
         ],
 
         values: [
           "01828157751",
           "প্রোফাইল খুলুন ↗",
-          "ksefat94@gmail.com",
+          "@sefatbhuiyan_marketing0101 ↗",
           "প্রোফাইল দেখুন ↗",
+          "Sefatbhuiyan ↗",
+          "ksefat94@gmail.com",
           "ঢাকা, বাংলাদেশ"
         ],
 
@@ -1706,11 +1737,17 @@
         facebook:
           "Facebook প্রোফাইল খুলুন",
 
-        email:
-          "ইমেইল পাঠান",
+        instagram:
+          "Instagram প্রোফাইল খুলুন",
 
         linkedin:
           "LinkedIn প্রোফাইল খুলুন",
+
+        github:
+          "GitHub প্রোফাইল খুলুন",
+
+        email:
+          "ইমেইল পাঠান",
 
         resume:
           "সিফাত ভুঁইয়ার রেজুমে খুলুন"
@@ -1725,7 +1762,22 @@
         "সোশ্যাল মিডিয়া",
         "ব্র্যান্ড ভিজ্যুয়াল",
         "ক্রিয়েটিভ স্ট্র্যাটেজি"
-      ]
+      ],
+
+      ai: {
+        callout: "👋 <b>মার্কেটিং ও ডিজাইন</b> নিয়ে সাহায্য দরকার? সার্ভিস, প্রাইসিং বা পোর্টফোলিও সম্পর্কে যে কোনো প্রশ্ন করুন!",
+        placeholder: "সিফাত এআই-কে যেকোনো প্রশ্ন করুন...",
+        status: "৫টি ভাষায় তাৎক্ষণিক উত্তর",
+        thinking: "সিফাত এআই ভাবছে...",
+        welcome: "হ্যালো! 👋 আমি **সিফাত এআই**, ডিজিটাল মার্কেটার ও গ্রাফিক্স ডিজাইনার **সিফাত ভূঁইয়া**-র পার্সোনাল ডিজিটাল অ্যাসিস্ট্যান্ট।\n\nআজ আপনাকে কীভাবে সাহায্য করতে পারি? সোশ্যাল মিডিয়া মার্কেটিং, ব্যানার/পোস্ট ডিজাইন, প্রাইসিং বা কাজ শুরুর প্রক্রিয়া সম্পর্কে নির্দ্বিধায় জিজ্ঞাসা করুন!",
+        chips: [
+          "💼 সার্ভিসসমূহ",
+          "💰 প্রাইসিং ও খরচ",
+          "🎨 পোর্টফোলিও",
+          "🚀 যোগাযোগ ও হায়ার",
+          "⚡ স্কিল ও টুলস"
+        ]
+      }
 
     },
 
@@ -1878,31 +1930,32 @@
       projects: {
 
         eyebrow:
-          "أعمال مختارة",
+          "الأرشيف السحابي والمشاريع",
 
         heading:
           `استكشف <span class="gradient">مشاريعي</span>`,
 
         description:
-          "شاهد جميع أعمالي في مكان واحد من خلال مجموعة المشاريع الكاملة.",
+          "جميع تصاميم الجرافيك، حملات التسويق الرقمي، والأعمال الإبداعية منظمة ومحفوظة مباشرة على Google Drive.",
 
         kicker:
-          "مجموعة الأعمال الكاملة",
+          "المستودع السحابي الرسمي",
 
         headingCard:
-          "اضغط هنا لمشاهدة جميع المشاريع",
+          "استكشف أرشيف المشاريع الكامل على Google Drive",
 
         descriptionCard:
-          "شاهد جميع تصاميمي، وأعمال التسويق، ومحتوى وسائل التواصل الاجتماعي والمشاريع الأخرى في مكان واحد.",
+          "تصفح مجموعتي الكاملة من تصاميم الجرافيك، حملات التسويق، الهويات البصرية، والإعلانات الإبداعية المحفوظة بأعلى جودة مباشرة داخل مجلد Google Drive الرسمي.",
 
         button:
-          "جميع المشاريع",
+          "فتح ملفات Google Drive",
 
         tags: [
-          "تصميم",
-          "تسويق",
-          "محتوى",
-          "إبداع"
+          "التسويق الرقمي",
+          "التصميم الجرافيكي",
+          "صناعة المحتوى",
+          "الهوية البصرية",
+          "الإعلانات"
         ]
 
       },
@@ -2102,16 +2155,20 @@
         labels: [
           "واتساب",
           "فيسبوك",
-          "البريد الإلكتروني",
+          "إنستغرام",
           "لينكدإن",
+          "غيت هاب",
+          "البريد الإلكتروني",
           "الموقع"
         ],
 
         values: [
           "01828157751",
           "فتح الملف ↗",
-          "ksefat94@gmail.com",
+          "@sefatbhuiyan_marketing0101 ↗",
           "عرض الملف ↗",
+          "Sefatbhuiyan ↗",
+          "ksefat94@gmail.com",
           "دكا، بنغلاديش"
         ],
 
@@ -2167,11 +2224,17 @@
         facebook:
           "فتح ملف فيسبوك",
 
-        email:
-          "إرسال بريد إلكتروني",
+        instagram:
+          "فتح ملف إنستغرام",
 
         linkedin:
           "فتح ملف لينكدإن",
+
+        github:
+          "فتح ملف غيت هاب",
+
+        email:
+          "إرسال بريد إلكتروني",
 
         resume:
           "فتح السيرة الذاتية لسيفات بويان"
@@ -2186,8 +2249,509 @@
         "وسائل التواصل الاجتماعي",
         "الهوية البصرية",
         "الاستراتيجية الإبداعية"
-      ]
+      ],
 
+      ai: {
+        callout: "👋 هل تحتاج إلى مساعدة في <b>التسويق والتصميم</b>؟ اسألني عن الخدمات أو الأسعار أو معرض الأعمال!",
+        placeholder: "اسأل سيفات الذكاء الاصطناعي أي شيء...",
+        status: "إجابات فورية بـ 5 لغات",
+        thinking: "المساعد الذكي يفكر...",
+        welcome: "مرحباً بك! 👋 أنا **سيفات الذكاء الاصطناعي**، المساعد الرقمي لـ **سيفات بويان** — مسوق رقمي ومصمم جرافيك.\n\nكيف يمكنني مساعدتك اليوم؟ يمكنك سؤالي عن الحملات الإعلانية، تصاميم السوشيال ميديا، باقات الأسعار، أو بدء مشروع جديد!",
+        chips: [
+          "💼 الخدمات",
+          "💰 الأسعار",
+          "🎨 الأعمال",
+          "🚀 توظيف / تواصل",
+          "⚡ المهارات والأدوات"
+        ]
+      }
+
+    },
+
+    /* =======================================================
+       CHINESE (SIMPLIFIED)
+       ======================================================= */
+    zh: {
+      lang: "zh",
+      dir: "ltr",
+      short: "中",
+      title: "Sefat Bhuiyan — 个人作品集",
+      description: "Sefat Bhuiyan 个人作品集 — 数字营销专家与平面设计师。",
+      nav: ["首页", "关于", "教育", "经历", "项目"],
+      hero: {
+        availability: "可承接新项目",
+        heading: '<span class="hero-greeting-line">您好，我是</span><br /><span class="hero-name-line"><span class="gradient hero-name-vibrant">Sefat Bhuiyan</span></span>',
+        lead: "我致力于打造出色的创意数字化体验。专注于数字营销、内容创作、平面设计与现代社交媒体视觉呈现。",
+        viewWork: "查看作品&nbsp;→",
+        resume: "个人简历&nbsp;↗"
+      },
+      card: {
+        role: "数字营销师 & 平面设计师",
+        specialty: "专业领域",
+        specialtyValue: "营销与设计",
+        location: "坐标",
+        locationValue: "孟加拉国·达卡",
+        experience: "经验",
+        experienceValue: "多元创意项目",
+        status: "状态",
+        statusValue: "● 在线活跃",
+        brand: "个人品牌"
+      },
+      about: {
+        eyebrow: "关于我",
+        heading: '追求卓越的 <span class="gradient">数字创新</span>',
+        description: "我是一名充满激情的创意数字营销专家与设计师，专注于打造清晰、引人入胜且视觉冲击力强劲的数字品牌体验。融合营销策略、内容创作与视觉美学，助力品牌达成卓越沟通。",
+        stats: [
+          "创意技能",
+          "项目与设计",
+          "客户与合作",
+          "核心服务"
+        ]
+      },
+      services: {
+        eyebrow: "核心业务",
+        heading: "以创意与策略驱动品牌持续增长。",
+        description: "结合策略、设计、内容及全方位社交媒体运营的专业服务体系。",
+        items: [
+          [
+            "社交媒体营销",
+            "主页搭建、内容规划、数据驱动的增长型社媒运营。"
+          ],
+          [
+            "平面设计",
+            "海报、Banner、缩略图、宣传物料及品牌视觉系统。"
+          ],
+          [
+            "内容创作",
+            "创意文案、高转化广告素材、脚本及定制化品牌内容。"
+          ],
+          [
+            "品牌视觉体系",
+            "高辨识度视觉资产、活动推广视觉及一体化品牌呈现。"
+          ]
+        ]
+      },
+      projects: {
+        eyebrow: "作品集与云端归档",
+        heading: '探索我的 <span class="gradient">项目作品</span>',
+        description: "我所有的专业设计作品、营销实战案例与社媒视觉物料均已分类保存在 Google Drive 云端归档库中。",
+        kicker: "官方云端作品库",
+        headingCard: "在 Google Drive 查看完整项目合辑",
+        descriptionCard: "查阅涵盖平面设计、高转化社媒广告投放、品牌视觉识别系统、宣传海报与视频物料的完整作品档案，全部高清源文件均保存在 Google Drive 官方目录中。",
+        button: "打开 Google Drive 作品集",
+        tags: ["社交媒体营销", "平面设计", "创意内容", "品牌视觉", "广告素材"]
+      },
+      featured: {
+        eyebrow: "重点方向",
+        heading: "为品牌与社媒量身定制的创意方案。",
+        description: "探索核心业务板块，并开启完整作品合辑查阅详细案例。",
+        cards: [
+          [
+            "社交媒体营销",
+            "社媒整合营销战役",
+            "主页视觉、内容排期与高转化创意思维。",
+            "查看作品集",
+            "查看社媒推广案例"
+          ],
+          [
+            "平面设计",
+            "品牌视觉形象设计",
+            "极简精致的视觉资产与品牌全套展示物料。",
+            "查看作品集",
+            "查看品牌设计案例"
+          ],
+          [
+            "内容创作",
+            "内容策划与广告创意",
+            "爆款营销方案、脚本与商业转化视觉物料。",
+            "查看作品集",
+            "查看创意营销案例"
+          ]
+        ]
+      },
+      career: {
+        eyebrow: "职业旅程",
+        heading: "专业发展之路。",
+        items: [
+          [
+            "内容与社交媒体运营",
+            "自主实践 / 项目探索",
+            "通过实际项目与前沿测试，深入打磨内容创作、页面增长与社媒打法。"
+          ],
+          [
+            "平面设计专业沉淀",
+            "创意设计实践",
+            "设计大量社交媒体海报、横幅、缩略图、标志及视觉资产，建立标准化高效流程。"
+          ],
+          [
+            "数字营销与品牌设计",
+            "自由职业 / 商业合作",
+            "专注打造高品质营销活动、创意内容与数字化品牌资产，追求视觉与转化兼备。"
+          ]
+        ]
+      },
+      education: {
+        eyebrow: "教育背景",
+        heading: '学术 <span class="gradient">背景</span>',
+        description: "为我的创意与数字化专业打下坚实基石的学术与技术学习。",
+        current: "在读 / 进修",
+        completed: "已毕业",
+        items: [
+          [
+            "计算机技术专业文凭 (Diploma)",
+            "孟加拉国 · 计算机技术",
+            [
+              "计算机基础与实用技术系统学习",
+              "数字工具应用与解决实际问题实践",
+              "深入的技术学习与工程项目实操"
+            ]
+          ],
+          [
+            "中等教育毕业证书 (SSC)",
+            "孟加拉国 · SSC",
+            [
+              "顺利完成中等学历教育",
+              "为深入技术研习奠定扎实学术基础",
+              "顺利过渡至专科深造与职业技能提升阶段"
+            ]
+          ]
+        ]
+      },
+      skills: {
+        eyebrow: "专长与技能",
+        heading: "我的核心竞争力与技能树。",
+        arsenal: "技术与创意装备库",
+        traits: "专业素养",
+        traitsItems: [
+          "创新思维",
+          "问题解决",
+          "内容策略",
+          "视觉叙事",
+          "品牌一致性",
+          "高效客户沟通"
+        ],
+        learner: "持续进化",
+        learnerText: "不断探索最新数字化工具、创意工作流、前沿数字营销策略与现代设计体系。"
+      },
+      testimonials: {
+        eyebrow: "客户评价",
+        heading: "合作客户的真实反馈。",
+        clients: ["商业客户", "创意合作伙伴"],
+        roles: ["品牌主 / 企业", "创意协作"],
+        texts: [
+          "富有创意、沟通顺畅且响应迅速。交付的视觉作品非常精致，完全契合我们的品牌方向。",
+          "对细节把控极佳，且对当下社媒视觉有非常敏锐的嗅觉。非常期待再次合作！"
+        ]
+      },
+      contact: {
+        eyebrow: "联系我",
+        heading: "准备好启动新项目了吗？",
+        description: "欢迎随时沟通您的下一次营销战役、视觉设计需求或数字化品牌合作。",
+        labels: [
+          "WhatsApp",
+          "Facebook",
+          "Instagram",
+          "LinkedIn",
+          "GitHub",
+          "Email",
+          "位置"
+        ],
+        values: [
+          "01828157751",
+          "打开主页 ↗",
+          "@sefatbhuiyan_marketing0101 ↗",
+          "查看领英 ↗",
+          "Sefatbhuiyan ↗",
+          "ksefat94@gmail.com",
+          "孟加拉国·达卡"
+        ],
+        name: "您的姓名",
+        email: "电子邮箱",
+        subject: "主题",
+        message: "请输入您的留言内容...",
+        send: "发送留言&nbsp;→"
+      },
+      footer: {
+        role: "数字营销师 • 平面设计师",
+        back: "回到顶部 ↑",
+        nav: ["首页", "关于", "经历", "项目", "教育", "联系"],
+        copyright: "© 2026 Sefat Bhuiyan. 精心打造 ♥"
+      },
+      aria: {
+        changeLanguage: "切换语言",
+        whatsapp: "在 WhatsApp 上交谈",
+        facebook: "打开 Facebook 主页",
+        instagram: "打开 Instagram 主页",
+        linkedin: "打开 LinkedIn 主页",
+        github: "打开 GitHub 主页",
+        email: "发送电子邮件",
+        resume: "查看 Sefat Bhuiyan 的简历"
+      },
+      marquee: [
+        "数字营销",
+        "平面设计",
+        "内容创作",
+        "社交媒体",
+        "品牌视觉",
+        "创意策略"
+      ],
+      ai: {
+        callout: "👋 需要<b>营销与设计</b>支持吗？随时询问关于服务、报价或作品集！",
+        placeholder: "向 Sefat AI 提问任何问题...",
+        status: "5种语言即时解答",
+        thinking: "Sefat AI 正在思考...",
+        welcome: "您好！👋 我是 **Sefat AI**，数字营销师与平面设计师 **Sefat Bhuiyan** 的专属智能助手。\n\n今天有什么可以帮您？欢迎随时咨询广告投放、社交媒体设计、项目报价或查阅作品案例！",
+        chips: [
+          "💼 服务项目",
+          "💰 报价收费",
+          "🎨 作品集",
+          "🚀 合作 / 联系",
+          "⚡ 技能与工具"
+        ]
+      }
+    },
+
+    /* =======================================================
+       HINDI
+       ======================================================= */
+    hi: {
+      lang: "hi",
+      dir: "ltr",
+      short: "हि",
+      title: "Sefat Bhuiyan — पोर्टफोलियो",
+      description: "सेफ़ात भुइयां का व्यक्तिगत पोर्टफोलियो — डिजिटल मार्केटर और ग्राफिक डिज़ाइनर।",
+      nav: ["होम", "परिचय", "शिक्षा", "करियर", "प्रोजेक्ट्स"],
+      hero: {
+        availability: "काम के लिए उपलब्ध",
+        heading: '<span class="hero-greeting-line">नमस्ते, मैं हूँ</span><br /><span class="hero-name-line"><span class="gradient hero-name-vibrant">Sefat Bhuiyan</span></span>',
+        lead: "मैं बेहतरीन डिजिटल अनुभव बनाता हूँ। डिजिटल मार्केटिंग, कंटेंट निर्माण, ग्राफिक डिज़ाइन और सोशल मीडिया विजुअल्स में मेरी विशेषज्ञता है।",
+        viewWork: "काम देखें&nbsp;→",
+        resume: "बायोडाटा&nbsp;↗"
+      },
+      card: {
+        role: "डिजिटल मार्केटर और ग्राफिक डिज़ाइनर",
+        specialty: "विशेषज्ञता",
+        specialtyValue: "मार्केटिंग व डिज़ाइन",
+        location: "स्थान",
+        locationValue: "ढाका, बांग्लादेश",
+        experience: "अनुभव",
+        experienceValue: "क्रिएटिव प्रोजेक्ट्स",
+        status: "स्थिति",
+        statusValue: "● सक्रिय",
+        brand: "पर्सनल ब्रांड"
+      },
+      about: {
+        eyebrow: "मेरे बारे में",
+        heading: 'डिजिटल उत्कृष्टता के प्रति <span class="gradient">समर्पित</span>',
+        description: "मैं एक रचनात्मक डिजिटल मार्केटर और डिज़ाइनर हूँ जो प्रभावशाली और आकर्षक डिजिटल अनुभव बनाने में विश्वास रखता हूँ। मैं ब्रांड्स को आगे बढ़ाने के लिए रणनीति और डिज़ाइन का मेल करता हूँ।",
+        stats: [
+          "क्रिएटिव स्किल्स",
+          "प्रोजेक्ट्स व डिज़ाइन",
+          "क्लाइंट्स व कोलैबोरेशन",
+          "प्रमुख सेवाएं"
+        ]
+      },
+      services: {
+        eyebrow: "मेरी सेवाएं",
+        heading: "रचनात्मक सेवाएं जो आपके ब्रांड को आगे बढ़ाएं।",
+        description: "रणनीति, डिज़ाइन, कंटेंट और सोशल मीडिया का संपूर्ण समाधान।",
+        items: [
+          [
+            "सोशल मीडिया मार्केटिंग",
+            "पेज सेटअप, कंटेंट प्लानिंग, और ग्रोथ केंद्रित सोशल मीडिया सपोर्ट।"
+          ],
+          [
+            "ग्राफिक डिज़ाइन",
+            "पोस्ट, बैनर, थंबनेल, विज्ञापन और विजुअल सिस्टम।"
+          ],
+          [
+            "कंटेंट क्रिएशन",
+            "क्रिएटिव विचार, एड विजुअल्स, स्क्रिप्ट्स और ब्रांडेड कंटेंट।"
+          ],
+          [
+            "ब्रांड विजुअल्स",
+            "स्वच्छ पहचान, अभियान विजुअल्स और सुसंगत प्रस्तुति।"
+          ]
+        ]
+      },
+      projects: {
+        eyebrow: "पोर्टफोलियो और क्लाउड संग्रह",
+        heading: 'मेरे <span class="gradient">प्रोजेक्ट्स</span> देखें',
+        description: "मेरे सभी पेशेवर डिज़ाइन एसेट्स, मार्केटिंग कैंपेन और क्रिएटिव केस स्टडीज Google Drive पर सुरक्षित रूप से व्यवस्थित हैं।",
+        kicker: "आधिकारिक क्लाउड रिपॉजिटरी",
+        headingCard: "Google Drive पर सभी प्रोजेक्ट्स का संग्रह देखें",
+        descriptionCard: "मेरे सभी ग्राफिक डिज़ाइन, सोशल मीडिया मार्केटिंग अभियान, ब्रांड विजुअल्स और विज्ञापन क्रिएटिव्स Google Drive पर उच्च गुणवत्ता में व्यवस्थित रूप से सहेजे गए हैं। नीचे दिए गए बटन पर क्लिक करके पूरा संग्रह देखें।",
+        button: "Google Drive पोर्टफोलियो खोलें",
+        tags: ["सोशल मीडिया मार्केटिंग", "ग्राफिक डिज़ाइन", "कंटेंट निर्माण", "ब्रांड पहचान", "विज्ञापन क्रिएटिव्स"]
+      },
+      featured: {
+        eyebrow: "प्रमुख फोकस",
+        heading: "ब्रांड्स और सोशल मीडिया के लिए चुनिंदा रचनात्मक दिशाएं।",
+        description: "विस्तृत कार्य देखने के लिए हमारे मुख्य प्रोजेक्ट श्रेणियां देखें।",
+        cards: [
+          [
+            "सोशल मीडिया मार्केटिंग",
+            "सोशल मीडिया अभियान",
+            "पेज विजुअल्स, कंटेंट योजना और विकास केंद्रित दिशा।",
+            "संग्रह देखें",
+            "सोशल मीडिया अभियान कार्य खोलें"
+          ],
+          [
+            "ग्राफिक डिज़ाइन",
+            "ब्रांड विजुअल डिज़ाइन",
+            "सटीक विजुअल संपत्तियां और सुसंगत ब्रांड प्रस्तुति।",
+            "संग्रह देखें",
+            "ब्रांड डिज़ाइन कार्य खोलें"
+          ],
+          [
+            "कंटेंट क्रिएशन",
+            "कंटेंट और विज्ञापन क्रिएटिव",
+            "क्रिएटिव कॉन्सेप्ट्स, विज्ञापन विजुअल्स और ब्रांडेड कंटेंट।",
+            "संग्रह देखें",
+            "विज्ञापन क्रिएटिव कार्य खोलें"
+          ]
+        ]
+      },
+      career: {
+        eyebrow: "करियर यात्रा",
+        heading: "मेरा पेशेवर सफर।",
+        items: [
+          [
+            "कंटेंट और सोशल मीडिया",
+            "स्वतंत्र कार्य",
+            "व्यावहारिक प्रोजेक्ट्स के माध्यम से कंटेंट निर्माण और सोशल मीडिया रणनीति में महारत।"
+          ],
+          [
+            "ग्राफिक डिज़ाइन अभ्यास",
+            "क्रिएटिव प्रोजेक्ट्स",
+            "सोशल पोस्ट, बैनर, थंबनेल और विजुअल एसेट्स का पेशेवर डिज़ाइन कार्य।"
+          ],
+          [
+            "डिजिटल मार्केटिंग और डिज़ाइन",
+            "फ्रीलांस / प्रोजेक्ट्स",
+            "उच्च गुणवत्ता और स्पष्टता के साथ अभियान, सोशल विजुअल्स और डिजिटल ब्रांड सामग्री का निर्माण।"
+          ]
+        ]
+      },
+      education: {
+        eyebrow: "शैक्षणिक पृष्ठभूमि",
+        heading: 'शैक्षणिक <span class="gradient">पृष्ठभूमि</span>',
+        description: "शैक्षणिक और तकनीकी शिक्षा जो मेरे रचनात्मक और डिजिटल कार्य का आधार है।",
+        current: "वर्तमान",
+        completed: "पूर्ण",
+        items: [
+          [
+            "डिप्लोमा इन कंप्यूटर टेक्नोलॉजी",
+            "बांग्लादेश · कंप्यूटर टेक्नोलॉजी",
+            [
+              "कंप्यूटर फंडामेंटल्स और व्यावहारिक तकनीकी शिक्षा",
+              "डिजिटल टूल्स और समस्या समाधान अभ्यास",
+              "हैंड्स-ऑन टेक्निकल लर्निंग और प्रोजेक्ट्स"
+            ]
+          ],
+          [
+            "माध्यमिक विद्यालय प्रमाणपत्र (SSC)",
+            "बांग्लादेश · SSC",
+            [
+              "माध्यमिक शिक्षा सफलतापूर्वक पूर्ण",
+              "तकनीकी अध्ययन के लिए मजबूत शैक्षणिक आधार",
+              "डिप्लोमा और व्यावसायिक कौशल विकास की दिशा में अग्रसर"
+            ]
+          ]
+        ]
+      },
+      skills: {
+        eyebrow: "विशेषज्ञता और कौशल",
+        heading: "मेरी क्षमताएं और कौशल।",
+        arsenal: "तकनीकी और रचनात्मक शस्त्रागार",
+        traits: "व्यावसायिक लक्षण",
+        traitsItems: [
+          "रचनात्मक सोच",
+          "समस्या समाधान",
+          "कंटेंट रणनीति",
+          "विजुअल स्टोरीटेलिंग",
+          "ब्रांड निरंतरता",
+          "क्लाइंट संचार"
+        ],
+        learner: "निरंतर सीखने वाला",
+        learnerText: "लगातार नए टूल्स, रचनात्मक वर्कफ़्लो, डिजिटल मार्केटिंग तकनीकों और डिज़ाइन सिस्टम को सीखना।"
+      },
+      testimonials: {
+        eyebrow: "क्लाइंट प्रशंसापत्र",
+        heading: "जिन लोगों के साथ मैंने काम किया है।",
+        clients: ["क्लाइंट", "क्रिएटिव पार्टनर"],
+        roles: ["बिजनेस / ब्रांड", "क्रिएटिव कोलैबोरेशन"],
+        texts: [
+          "रचनात्मक, उत्तरदायी और संवाद में बहुत आसान। विजुअल्स समय पर और उत्कृष्ट गुणवत्ता के साथ प्राप्त हुए।",
+          "बारीकियों पर विशेष ध्यान और आधुनिक सोशल मीडिया का बहुत अच्छा ज्ञान। निश्चित रूप से फिर से काम करेंगे।"
+        ]
+      },
+      contact: {
+        eyebrow: "संपर्क करें",
+        heading: "क्या आपके पास कोई प्रोजेक्ट है?",
+        description: "आइए आपके अगले अभियान, डिज़ाइन आवश्यकता या डिजिटल प्रोजेक्ट पर चर्चा करें।",
+        labels: [
+          "WhatsApp",
+          "Facebook",
+          "Instagram",
+          "LinkedIn",
+          "GitHub",
+          "Email",
+          "स्थान"
+        ],
+        values: [
+          "01828157751",
+          "प्रोफाइल खोलें ↗",
+          "@sefatbhuiyan_marketing0101 ↗",
+          "प्रोफाइल देखें ↗",
+          "Sefatbhuiyan ↗",
+          "ksefat94@gmail.com",
+          "ढाका, बांग्लादेश"
+        ],
+        name: "आपका नाम",
+        email: "ईमेल पता",
+        subject: "विषय",
+        message: "अपना संदेश लिखें...",
+        send: "संदेश भेजें&nbsp;→"
+      },
+      footer: {
+        role: "डिजिटल मार्केटर • डिज़ाइनर",
+        back: "वापस ऊपर जाएं ↑",
+        nav: ["होम", "परिचय", "करियर", "प्रोजेक्ट्स", "शिक्षा", "संपर्क"],
+        copyright: "© 2026 Sefat Bhuiyan. सप्रेम निर्मित ♥"
+      },
+      aria: {
+        changeLanguage: "भाषा बदलें",
+        whatsapp: "WhatsApp पर चैट करें",
+        facebook: "Facebook प्रोफाइल खोलें",
+        instagram: "Instagram प्रोफाइल खोलें",
+        linkedin: "LinkedIn प्रोफाइल देखें",
+        github: "GitHub प्रोफाइल खोलें",
+        email: "ईमेल भेजें",
+        resume: "Sefat Bhuiyan का बायोडाटा खोलें"
+      },
+      marquee: [
+        "डिजिटल मार्केटिंग",
+        "ग्राफिक डिज़ाइन",
+        "कंटेंट निर्माण",
+        "सोशल मीडिया",
+        "ब्रांड विजुअल्स",
+        "क्रिएटिव रणनीति"
+      ],
+      ai: {
+        callout: "👋 <b>मार्केटिंग और डिज़ाइन</b> में मदद चाहिए? सेवाओं, दरों या पोर्टफोलियो के बारे में कुछ भी पूछें!",
+        placeholder: "Sefat AI से कुछ भी पूछें...",
+        status: "5 भाषाओं में त्वरित उत्तर",
+        thinking: "Sefat AI सोच रहा है...",
+        welcome: "नमस्ते! 👋 मैं **Sefat AI** हूँ, डिजिटल मार्केटर और ग्राफिक डिज़ाइनर **Sefat Bhuiyan** का पर्सनल डिजिटल असिस्टेंट।\n\nमैं आपकी क्या मदद कर सकता हूँ? आप मार्केटिंग कैंपेन, ग्राफिक डिज़ाइन, बजट या पोर्टफोलियो के बारे में बेझिझक पूछ सकते हैं!",
+        chips: [
+          "💼 सेवाएं",
+          "💰 दरें व मूल्य",
+          "🎨 पोर्टफोलियो",
+          "🚀 संपर्क व हायर",
+          "⚡ कौशल व टूल्स"
+        ]
+      }
     }
 
   };
@@ -2337,7 +2901,8 @@
 
     if (
       !data ||
-      !data.featured
+      !data.featured ||
+      !$("#featuredProjects")
     ) {
 
       return;
@@ -3353,25 +3918,34 @@
       data.aria.whatsapp
     );
 
-
     setAttr(
       "#socialFacebook",
       "aria-label",
       data.aria.facebook
     );
 
-
     setAttr(
-      "#socialEmail",
+      "#socialInstagram",
       "aria-label",
-      data.aria.email
+      data.aria.instagram
     );
-
 
     setAttr(
       "#socialLinkedIn",
       "aria-label",
       data.aria.linkedin
+    );
+
+    setAttr(
+      "#socialGitHub",
+      "aria-label",
+      data.aria.github
+    );
+
+    setAttr(
+      "#socialEmail",
+      "aria-label",
+      data.aria.email
     );
 
 
@@ -3453,6 +4027,28 @@
 
       }
     );
+
+    /* ---------- Chatbot Localized Strings ---------- */
+    if (data.ai) {
+      const calloutText = document.querySelector("#sefatAiCallout .callout-text");
+      if (calloutText) calloutText.innerHTML = data.ai.callout;
+
+      const aiInput = document.querySelector("#sefatAiInput");
+      if (aiInput) aiInput.placeholder = data.ai.placeholder;
+
+      const aiStatusText = document.querySelector(".ai-status-text");
+      if (aiStatusText) aiStatusText.textContent = data.ai.status;
+
+      const aiTypingStatus = document.querySelector(".ai-type-status");
+      if (aiTypingStatus) aiTypingStatus.textContent = data.ai.thinking;
+
+      const chipButtons = document.querySelectorAll(".ai-chips-shelf .ai-chip");
+      if (chipButtons && data.ai.chips) {
+        data.ai.chips.forEach((chipLabel, idx) => {
+          if (chipButtons[idx]) chipButtons[idx].textContent = chipLabel;
+        });
+      }
+    }
 
   }
 
@@ -7026,6 +7622,564 @@
   }
 
   initHeroLanyardPhysics();
+
+
+
+  /* =========================================================
+     3D AI ASSISTANT CHATBOT — SEFAT AI
+     Smart Multilingual Interactive Virtual Consultant
+     ========================================================= */
+
+  function initSefatAiChatbot() {
+    const root = $("#sefatAiRoot");
+    const launcher = $("#sefatAiLauncher");
+    const callout = $("#sefatAiCallout");
+    const calloutClose = $("#sefatAiCalloutClose");
+    const calloutAction = $("#sefatAiCalloutAction");
+    const chatWindow = $("#sefatAiWindow");
+    const closeBtn = $("#sefatAiCloseBtn");
+    const clearBtn = $("#sefatAiClearBtn");
+    const soundToggle = $("#sefatAiSoundToggle");
+    const form = $("#sefatAiForm");
+    const input = $("#sefatAiInput");
+    const messagesBox = $("#sefatAiMessages");
+    const typingIndicator = $("#sefatAiTyping");
+    const badge = $("#sefatAiBadge");
+    const chips = $(".ai-chip");
+
+    if (!root || !launcher || !chatWindow || !form || !input || !messagesBox) {
+      return;
+    }
+
+    let isSoundEnabled = true;
+    let audioCtx = null;
+
+    function playTone(type) {
+      if (!isSoundEnabled) return;
+      try {
+        if (!audioCtx) {
+          const AudioContextClass = window.AudioContext || window.webkitAudioContext;
+          if (AudioContextClass) audioCtx = new AudioContextClass();
+        }
+        if (!audioCtx || audioCtx.state === 'suspended') {
+          audioCtx?.resume();
+        }
+        if (!audioCtx) return;
+
+        const osc = audioCtx.createOscillator();
+        const gain = audioCtx.createGain();
+        osc.connect(gain);
+        gain.connect(audioCtx.destination);
+
+        const now = audioCtx.currentTime;
+        if (type === 'pop') {
+          osc.type = 'sine';
+          osc.frequency.setValueAtTime(420, now);
+          osc.frequency.exponentialRampToValueAtTime(780, now + 0.08);
+          gain.gain.setValueAtTime(0.12, now);
+          gain.gain.linearRampToValueAtTime(0.01, now + 0.09);
+          osc.start(now);
+          osc.stop(now + 0.09);
+        } else if (type === 'receive') {
+          osc.type = 'triangle';
+          osc.frequency.setValueAtTime(540, now);
+          osc.frequency.setValueAtTime(720, now + 0.06);
+          gain.gain.setValueAtTime(0.15, now);
+          gain.gain.linearRampToValueAtTime(0.01, now + 0.16);
+          osc.start(now);
+          osc.stop(now + 0.16);
+        }
+      } catch (err) {
+        // Audio playback optional fallback
+      }
+    }
+
+    if (soundToggle) {
+      soundToggle.addEventListener("click", () => {
+        isSoundEnabled = !isSoundEnabled;
+        soundToggle.classList.toggle("muted", !isSoundEnabled);
+        const onIcon = soundToggle.querySelector(".sound-on-icon");
+        const offIcon = soundToggle.querySelector(".sound-off-icon");
+        if (onIcon && offIcon) {
+          onIcon.classList.toggle("sr-only", !isSoundEnabled);
+          offIcon.classList.toggle("sr-only", isSoundEnabled);
+        }
+      });
+    }
+
+    // Callout behavior
+    const hasSeenCallout = sessionStorage.getItem("sb-ai-callout-dismissed");
+    if (!hasSeenCallout && callout) {
+      setTimeout(() => {
+        if (chatWindow.hasAttribute("hidden")) {
+          callout.classList.remove("dismissed");
+        }
+      }, 3200);
+    } else if (callout) {
+      callout.classList.add("dismissed");
+    }
+
+    function dismissCallout() {
+      if (callout) {
+        callout.classList.add("dismissed");
+        sessionStorage.setItem("sb-ai-callout-dismissed", "true");
+      }
+    }
+
+    if (calloutClose) {
+      calloutClose.addEventListener("click", (e) => {
+        e.stopPropagation();
+        dismissCallout();
+      });
+    }
+
+    function openChat() {
+      dismissCallout();
+      chatWindow.removeAttribute("hidden");
+      launcher.setAttribute("aria-expanded", "true");
+      if (badge) badge.style.display = "none";
+      playTone('pop');
+
+      if (messagesBox.children.length === 0) {
+        sendWelcomeMessage();
+      }
+
+      setTimeout(() => {
+        input.focus();
+        scrollBottom();
+      }, 100);
+    }
+
+    function closeChat() {
+      chatWindow.setAttribute("hidden", "");
+      launcher.setAttribute("aria-expanded", "false");
+      playTone('pop');
+    }
+
+    launcher.addEventListener("click", () => {
+      if (chatWindow.hasAttribute("hidden")) {
+        openChat();
+      } else {
+        closeChat();
+      }
+    });
+
+    if (calloutAction) {
+      calloutAction.addEventListener("click", () => {
+        openChat();
+      });
+    }
+
+    if (closeBtn) {
+      closeBtn.addEventListener("click", closeChat);
+    }
+
+    if (clearBtn) {
+      clearBtn.addEventListener("click", () => {
+        messagesBox.innerHTML = "";
+        sendWelcomeMessage();
+        playTone('pop');
+      });
+    }
+
+    function scrollBottom() {
+      messagesBox.scrollTop = messagesBox.scrollHeight;
+    }
+
+    function getCurrentTime() {
+      const now = new Date();
+      return now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+    }
+
+    function escapeHtml(text) {
+      const div = document.createElement("div");
+      div.textContent = text;
+      return div.innerHTML;
+    }
+
+    function parseMarkdown(md) {
+      let formatted = escapeHtml(md);
+      // bold
+      formatted = formatted.replace(/\*\*(.*?)\*\*/g, '<b>$1</b>');
+      // new lines
+      formatted = formatted.replace(/\n/g, '<br />');
+      return formatted;
+    }
+
+    function appendMessage(sender, text, actions = null) {
+      const msgDiv = document.createElement("div");
+      msgDiv.className = `ai-msg ${sender}`;
+
+      const avatarMarkup = sender === "bot"
+        ? `<div class="ai-msg-avatar" aria-hidden="true"><img src="assets/sb_logo_3d.svg" alt="Sefat AI" /></div>`
+        : "";
+
+      let actionsMarkup = "";
+      if (actions && actions.length > 0) {
+        actionsMarkup = `<div class="ai-actions-wrap">` +
+          actions.map(act => `<a class="ai-action-link" href="${act.url}" target="_blank" rel="noopener noreferrer">${act.icon || ''} ${act.label}</a>`).join("") +
+          `</div>`;
+      }
+
+      msgDiv.innerHTML = `
+        ${avatarMarkup}
+        <div class="ai-msg-content">
+          <div class="ai-bubble">${parseMarkdown(text)}${actionsMarkup}</div>
+          <span class="ai-msg-time">${getCurrentTime()}</span>
+        </div>
+      `;
+
+      messagesBox.appendChild(msgDiv);
+      scrollBottom();
+    }
+
+    function sendWelcomeMessage() {
+      const currentLang = document.documentElement.lang || "en";
+      const langConfig = languageData[currentLang] || languageData.en;
+      const welcome = langConfig.ai?.welcome || languageData.en.ai.welcome;
+
+      const actions = [
+        { label: "WhatsApp", icon: "💬", url: "https://wa.me/8801828157751" },
+        { label: "Portfolio", icon: "🎨", url: "https://drive.google.com/drive/folders/175e11jZ9tU21Uq4qF5M0G6yHnJ4T3w8_" },
+        { label: "Instagram", icon: "📸", url: "https://www.instagram.com/sefatbhuiyan_marketing0101?psln=MTAwa3Jqd214YWg4OQ==" }
+      ];
+
+      appendMessage("bot", welcome, actions);
+    }
+
+    // -------------------------------------------------------------
+    // Intelligent Knowledge Engine & Response Generator
+    // -------------------------------------------------------------
+    function generateSmartResponse(query) {
+      const q = query.toLowerCase().trim();
+      const currentLang = document.documentElement.lang || "en";
+
+      // Detect language if query uses distinct script
+      let queryLang = currentLang;
+      if (/[\u0980-\u09FF]/.test(query)) queryLang = "bn";
+      else if (/[\u0600-\u06FF]/.test(query)) queryLang = "ar";
+      else if (/[\u4E00-\u9FFF]/.test(query)) queryLang = "zh";
+      else if (/[\u0900-\u097F]/.test(query)) queryLang = "hi";
+
+      // Question category matching
+      const isMobileVersion = /mobile|phone|smartphone|handheld|mobile version|মোবাইল|ফোন|মোবাইল ভার্সন|মোবাইলের জন্য|সেলফোন/.test(q);
+      const isServices = /service|offer|do you do|work|what can you do|marketing|design|social media|facebook|meta|কাজ|সার্ভিস|কি কি করেন|خدمة|خدمات|ماذا تقدم|服务|业务|做|सेवा|काम|सर्विस/.test(q);
+      const isPricing = /price|pricing|cost|rate|fee|charge|package|how much|budget|প্রাইস|দাম|খরচ|প্যাকেজ|টাকা|سعر|تكلفة|باقة|كم يكلف|报价|价格|多少钱|收费|खर्च|कीमत|रेट|पैकेज|कितना/.test(q);
+      const isPortfolio = /portfolio|sample|previous work|show me|project|drive|proof|পোর্টফোলিও|স্যাম্পল|প্রজেক্ট|আগের কাজ|معرض|أعمال|مشاريع|نموذج|作品|案例|项目|पोर्टफोलियो|सैंपल|काम दिखाएं/.test(q);
+      const isContactOrHire = /contact|hire|email|whatsapp|phone|number|call|reach|message|connect|যোগাযোগ|হায়ার|নাম্বার|কথা|হোয়াটসঅ্যাপ|تواصل|توظيف|واتساب|رقم|هاتف|联系|雇佣|微信|电话|संपर्क|हायर|फोन|नंबर|व्हाट्सएप/.test(q);
+      const isExperienceOrSkills = /experience|skill|tool|software|photoshop|illustrator|diploma|background|যোগ্যতা|অভিজ্ঞতা|টুলস|সফটওয়্যার|দক্ষতা|خبرة|مهارة|أدوات|برامج|经验|技能|软件|अनुभव|स्किल|टूल्स|सॉफ्टवेयर/.test(q);
+      const isTurnaround = /fast|how long|turnaround|delivery|time|urgent|সময়|কতদিন|কত সময়|তাড়াতাড়ি|وقت|تسليم|مدة|时间|周期|多久|समय|डिलीवरी|कितना समय/.test(q);
+      const isGreeting = /hi|hello|hey|salam|namaste|ola|hola|কেমন|হ্যালো|হাই|সালাম|مرحبا|سلام|أهلا|你好|嗨|नमस्ते|हेलो/.test(q);
+
+      // Actions templates
+      const standardActions = [
+        { label: "WhatsApp Direct", icon: "💬", url: "https://wa.me/8801828157751" },
+        { label: "Open Portfolio", icon: "🎨", url: "https://drive.google.com/drive/folders/175e11jZ9tU21Uq4qF5M0G6yHnJ4T3w8_" },
+        { label: "Email Sefat", icon: "✉️", url: "mailto:ksefat94@gmail.com" }
+      ];
+
+      // Language: BANGLA
+      if (queryLang === "bn") {
+        if (isMobileVersion) {
+          return {
+            text: "হ্যাঁ! সিফাত ভূঁইয়ার একটি **স্পেশালাইজড মোবাইল ভার্সন পোর্টফোলিও** রয়েছে, যা স্মার্টফোনে ব্যবহারের জন্য বিশেষভাবে অপ্টিমাইজ করা হয়েছে:\n\n📱 **স্মার্টফোন ও টাচ-ফ্রেন্ডলি ইন্টারফেস**\n🌐 **ওয়েবসাইট লিঙ্ক:** sefatbhuiyan.qrioustechbd.com\n\nনিচের বাটনে ক্লিক করে সরাসরি মোবাইল পোর্টফোলিও দেখুন:",
+            actions: [
+              { label: "মোবাইল ভার্সন খুলুন 📱", icon: "📱", url: "https://sefatbhuiyan.qrioustechbd.com/" },
+              { label: "WhatsApp Direct", icon: "💬", url: "https://wa.me/8801828157751" }
+            ]
+          };
+        }
+        if (isServices) {
+          return {
+            text: "**সিফাত ভূঁইয়া** মূলত দুটি প্রধান ক্ষেত্রে প্রফেশনাল সেবা প্রদান করেন:\n\n1. **সোশ্যাল মিডিয়া মার্কেটিং:**\n• মেটা ফেসবুক ও ইনস্টাগ্রাম পেইজ গ্রোথ\n• টার্গেটেড অ্যাড ক্যাম্পেইন ও লিড জেনারেশন\n• কনটেন্ট স্ট্র্যাটেজি ও শিডিউলিং\n\n2. **গ্রাফিক ডিজাইন:**\n• সোশ্যাল মিডিয়া পোস্ট, ব্যানার ও থাম্বনেইল\n• ব্র্যান্ড আইডেন্টিটি, লোগো ও পোস্টার\n• বিজনেস প্রমোশনাল ক্রিয়েটিভস",
+            actions: standardActions
+          };
+        }
+        if (isPricing) {
+          return {
+            text: "আমাদের প্রাইসিং প্যাকেজ খুবই ফ্লেক্সিবল ও ফ্রেন্ডলি:\n\n• **সিঙ্গেল পোস্ট/ব্যানার ডিজাইন:** সাশ্রয়ী মূল্যে শুরু\n• **মাসিক সোশ্যাল মিডিয়া ম্যানেজমেন্ট:** কাস্টম প্যাকেজ (নিয়মিত পোস্ট + অ্যাড সাপোর্ট)\n• **ফুল ব্র্যান্ডিং ও ক্যাম্পেইন:** প্রজেক্ট ভিত্তিক নেগোশিয়েবল রেট\n\nআপনার নির্দিষ্ট প্রজেক্ট বাজেট ও প্রয়োজন জানাতে সরাসরি WhatsApp-এ সিফাত-এর সাথে কথা বলুন!",
+            actions: [{ label: "WhatsApp-এ দরদাম জানুন", icon: "💬", url: "https://wa.me/8801828157751" }]
+          };
+        }
+        if (isPortfolio) {
+          return {
+            text: "সিফাত ভূঁইয়ার সবগুলো ডিজাইন ও সোশ্যাল মিডিয়া ক্যাম্পেইনের কাজ একসাথে দেখতে নিচের বাটনে ক্লিক করে Google Drive ফোল্ডারটি ওপেন করুন:",
+            actions: [{ label: "Google Drive পোর্টফোলিও খুলুন", icon: "📁", url: "https://drive.google.com/drive/folders/175e11jZ9tU21Uq4qF5M0G6yHnJ4T3w8_" }]
+          };
+        }
+        if (isContactOrHire) {
+          return {
+            text: "সিফাত-এর সাথে যোগাযোগ করার সব মাধ্যম:\n\n• **WhatsApp:** +8801828157751 (সবচেয়ে দ্রুত উত্তর পাবেন)\n• **ইমেইল:** ksefat94@gmail.com\n• **Instagram:** @sefatbhuiyan_marketing0101\n• **GitHub:** Sefatbhuiyan\n• **অবস্থান:** ঢাকা, বাংলাদেশ",
+            actions: standardActions
+          };
+        }
+        if (isExperienceOrSkills) {
+          return {
+            text: "সিফাত ভূঁইয়া কম্পিউটার টেকনোলজিতে ডিপ্লোমা সম্পন্ন করেছেন এবং Adobe Photoshop, Illustrator, Premiere Pro, Meta Ads Manager ও Canva-তে পারদর্শী। তিনি দীর্ঘ সময় ধরে ক্লায়েন্টদের জন্য সফল মার্কেটিং ও ডিজাইন প্রজেক্ট সম্পন্ন করেছেন।",
+            actions: standardActions
+          };
+        }
+        if (isTurnaround) {
+          return {
+            text: "সাধারণ ডিজাইন সাধারণত **২৪ থেকে ৪৮ ঘণ্টার মধ্যে** ডেলিভারি করা হয়। ক্লায়েন্ট সন্তুষ্ট না হওয়া পর্যন্ত রিভিশন সাপোর্ট থাকে। জরুরি কাজের জন্য এক্সপ্রেস ডেলিভারিও সম্ভব!",
+            actions: standardActions
+          };
+        }
+        if (isGreeting) {
+          return {
+            text: "হ্যালো! 👋 আশা করি ভালো আছেন। আমি সিফাত এআই। সিফাত ভূঁইয়ার সার্ভিস, প্রাইসিং, বা পোর্টফোলিও নিয়ে যে কোনো কিছু জানতে আমাকে জিজ্ঞাসা করুন!",
+            actions: standardActions
+          };
+        }
+        return {
+          text: "ধন্যবাদ আপনার বার্তার জন্য! সিফাত ভূঁইয়ার মার্কেটিং সেবা, ডিজাইন বা প্রজেক্ট শুরু করতে চাইলে সরাসরি WhatsApp-এ বার্তা পাঠাতে পারেন।",
+          actions: standardActions
+        };
+      }
+
+      // Language: HINDI
+      if (queryLang === "hi") {
+        if (isServices) {
+          return {
+            text: "**Sefat Bhuiyan** दो मुख्य क्षेत्रों में पेशेवर सेवाएं प्रदान करते हैं:\n\n1. **सोशल मीडिया मार्केटिंग:** Meta Ads, Facebook पेज ग्रोथ, लीड जनरेशन और कंटेंट प्लानिंग।\n2. **ग्राफिक डिज़ाइन:** सोशल मीडिया पोस्ट, बैनर, थंबनेल, विज्ञापन क्रिएटिव और ब्रांड विजुअल्स।",
+            actions: standardActions
+          };
+        }
+        if (isPricing) {
+          return {
+            text: "हमारी कीमतें बहुत किफायती और लचीली हैं:\n\n• **सिंगल डिज़ाइन/बैनर:** कम बजट से शुरुआत\n• **मासिक सोशल मीडिया पैकेज:** मासिक रिटेनर और रिपोर्टिंग\n• **कस्टम प्रोजेक्ट:** आपकी आवश्यकता के अनुसार\n\nमुफ़्त परामर्श के लिए सीधे WhatsApp पर संपर्क करें!",
+            actions: [{ label: "WhatsApp पर बात करें", icon: "💬", url: "https://wa.me/8801828157751" }]
+          };
+        }
+        if (isPortfolio) {
+          return {
+            text: "Sefat Bhuiyan के सभी काम एक जगह देखने के लिए नीचे दिए गए Google Drive लिंक पर क्लिक करें:",
+            actions: [{ label: "Google Drive पोर्टफोलियो खोलें", icon: "📁", url: "https://drive.google.com/drive/folders/175e11jZ9tU21Uq4qF5M0G6yHnJ4T3w8_" }]
+          };
+        }
+        if (isContactOrHire) {
+          return {
+            text: "Sefat से संपर्क करने के विकल्प:\n\n• **WhatsApp:** +8801828157751 (तुरंत जवाब)\n• **ईमेल:** ksefat94@gmail.com\n• **Instagram:** @sefatbhuiyan_marketing0101\n• **GitHub:** Sefatbhuiyan\n• **स्थान:** ढाका, बांग्लादेश",
+            actions: standardActions
+          };
+        }
+        if (isGreeting) {
+          return {
+            text: "नमस्ते! 👋 मैं Sefat AI हूँ। आप Sefat Bhuiyan की सेवाओं, प्रोजेक्ट्स या दरों के बारे में कुछ भी पूछ सकते हैं!",
+            actions: standardActions
+          };
+        }
+        return {
+          text: "धन्यवाद! Sefat Bhuiyan से डिजिटल मार्केटिंग या ग्राफिक डिज़ाइन के संबंध में चर्चा के लिए सीधे WhatsApp या ईमेल पर संपर्क करें।",
+          actions: standardActions
+        };
+      }
+
+      // Language: CHINESE
+      if (queryLang === "zh") {
+        if (isServices) {
+          return {
+            text: "**Sefat Bhuiyan** 提供两大核心专业服务：\n\n1. **数字与社媒营销 (Meta / FB / IG)：**\n• 页面粉丝增长与内容排期\n• 高转化精准广告投放 (Meta Ads)\n• 商业文案与受众定位\n\n2. **平面设计与品牌视觉：**\n• 社交媒体海报、横幅、YouTube 缩略图\n• 品牌视觉识别系统、标志与宣传画册",
+            actions: standardActions
+          };
+        }
+        if (isPricing) {
+          return {
+            text: "报价机制透明且具备高度灵活性：\n\n• **单项平面设计：** 极具竞争力的亲民起价\n• **月度社媒托管包：** 定期发布 + 广告代投综合方案\n• **定制整合项目：** 根据品牌需求量身定制\n\n欢迎随时在 WhatsApp 交流获取详细项目报价单！",
+            actions: [{ label: "通过 WhatsApp 咨询报价", icon: "💬", url: "https://wa.me/8801828157751" }]
+          };
+        }
+        if (isPortfolio) {
+          return {
+            text: "欢迎查阅 Sefat Bhuiyan 在 Google Drive 上的完整商业设计与营销作品合辑：",
+            actions: [{ label: "开启 Google Drive 作品集", icon: "📁", url: "https://drive.google.com/drive/folders/175e11jZ9tU21Uq4qF5M0G6yHnJ4T3w8_" }]
+          };
+        }
+        if (isContactOrHire) {
+          return {
+            text: "联系 Sefat Bhuiyan 的官方渠道：\n\n• **WhatsApp:** +8801828157751 (实时响应)\n• **电子邮箱:** ksefat94@gmail.com\n• **Instagram:** @sefatbhuiyan_marketing0101\n• **GitHub:** Sefatbhuiyan\n• **所在地:** 孟加拉国·达卡",
+            actions: standardActions
+          };
+        }
+        if (isGreeting) {
+          return {
+            text: "您好！👋 我是 Sefat AI。很高兴为您服务！您可以向我咨询关于 Sefat Bhuiyan 的营销服务、设计能力或项目报价。",
+            actions: standardActions
+          };
+        }
+        return {
+          text: "感谢您的留言！若需启动新项目或咨询业务细节，欢迎随时联系 Sefat。",
+          actions: standardActions
+        };
+      }
+
+      // Language: ARABIC
+      if (queryLang === "ar") {
+        if (isServices) {
+          return {
+            text: "يقدم **سيفات بويان** خدمات مهنية متكاملة في مجالين رئيسيين:\n\n1. **التسويق الرقمي وإعلانات السوشيال ميديا:**\n• إدارة وتنمية صفحات فيسبوك وإنستغرام\n• حملات إعلانية ممولة عالية التحويل (Meta Ads)\n• كتابة المحتوى الإعلاني والاستراتيجية الرقمية\n\n2. **التصميم الجرافيكي:**\n• تصاميم منشورات السوشيال ميديا والبنرات\n• الهوية البصرية والشعارات للمشاريع الناشئة",
+            actions: standardActions
+          };
+        }
+        if (isPricing) {
+          return {
+            text: "باقات الأسعار مرنة واقتصادية للغاية:\n\n• **تصاميم فردية:** بأسعار مناسبة جداً\n• **باقات إدارة شهرية:** خطة محتوى متكاملة مع إعلانات\n• **عقود مخصصة:** بحسب متطلبات مشروعك\n\nتواصل عبر واتساب لمناقشة ميزانيتك!",
+            actions: [{ label: "تواصل عبر واتساب", icon: "💬", url: "https://wa.me/8801828157751" }]
+          };
+        }
+        if (isPortfolio) {
+          return {
+            text: "يمكنك استعراض مجلد الأعمال الكامل لسيفات بويان على Google Drive بالنقر على الرابط أدناه:",
+            actions: [{ label: "فتح معرض أعمال Google Drive", icon: "📁", url: "https://drive.google.com/drive/folders/175e11jZ9tU21Uq4qF5M0G6yHnJ4T3w8_" }]
+          };
+        }
+        if (isContactOrHire) {
+          return {
+            text: "طرق التواصل المباشرة مع سيفات:\n\n• **واتساب:** +8801828157751 (استجابة فورية)\n• **البريد:** ksefat94@gmail.com\n• **إنستغرام:** @sefatbhuiyan_marketing0101\n• **غيت هاب:** Sefatbhuiyan\n• **الموقع:** دكا، بنغلاديش",
+            actions: standardActions
+          };
+        }
+        if (isGreeting) {
+          return {
+            text: "أهلاً بك! 👋 أنا سيفات الذكاء الاصطناعي. كيف يمكنني مساعدتك اليوم بخصوص خدمات التسويق أو التصميم؟",
+            actions: standardActions
+          };
+        }
+        return {
+          text: "شكراً لتواصلك! يمكنك التحدث مباشرة مع سيفات بويان عبر واتساب لبدء مشروعك القادم.",
+          actions: standardActions
+        };
+      }
+
+      // Default: ENGLISH
+      if (isMobileVersion) {
+        return {
+          text: "Yes! Sefat Bhuiyan has created a dedicated **Mobile Version Portfolio** optimized specifically for smartphones and handheld devices:\n\n📱 **Ultra-fast, touch-optimized & responsive UI**\n🌐 **Direct URL:** `sefatbhuiyan.qrioustechbd.com`\n\nClick the button below to visit the mobile version directly:",
+          actions: [
+            { label: "Open Mobile Version 📱", icon: "📱", url: "https://sefatbhuiyan.qrioustechbd.com/" },
+            { label: "WhatsApp Direct", icon: "💬", url: "https://wa.me/8801828157751" }
+          ]
+        };
+      }
+      if (isServices) {
+        return {
+          text: "**Sefat Bhuiyan** specializes in high-impact creative and digital solutions:\n\n1. **Digital & Social Media Marketing:**\n• Facebook & Instagram Meta Ads Management\n• Page Growth, Audience Targeting & Lead Gen\n• Content Strategy & Creative Direction\n\n2. **Graphic Design:**\n• Social Media Posts, Ad Creatives & Web Banners\n• YouTube Thumbnails & Promo Materials\n• Brand Identity, Logo Systems & Visual Polish",
+          actions: standardActions
+        };
+      }
+      if (isPricing) {
+        return {
+          text: "Pricing is transparent, competitive, and scalable for businesses of all sizes:\n\n• **Individual Creatives / Banners:** Affordable per-asset rates\n• **Monthly Social Growth Retainer:** Dedicated posting, creative design & ad management\n• **Full Campaign Packages:** Customized according to your brand goals\n\nFor a tailored quote and free initial strategy chat, reach out directly on WhatsApp!",
+          actions: [{ label: "Chat on WhatsApp for Rates", icon: "💬", url: "https://wa.me/8801828157751" }]
+        };
+      }
+      if (isPortfolio) {
+        return {
+          text: "Want to see Sefat's full collection of design and marketing work? Click below to access the full verified Google Drive portfolio:",
+          actions: [{ label: "Open Full Google Drive Portfolio", icon: "🎨", url: "https://drive.google.com/drive/folders/175e11jZ9tU21Uq4qF5M0G6yHnJ4T3w8_" }]
+        };
+      }
+      if (isContactOrHire) {
+        return {
+          text: "Here is how you can directly connect with Sefat Bhuiyan:\n\n• **WhatsApp:** +8801828157751 (Fastest response)\n• **Email:** ksefat94@gmail.com\n• **Instagram:** @sefatbhuiyan_marketing0101\n• **GitHub:** https://github.com/Sefatbhuiyan\n• **LinkedIn:** in/sefat-bhuiyan\n• **Location:** Dhaka, Bangladesh",
+          actions: standardActions
+        };
+      }
+      if (isExperienceOrSkills) {
+        return {
+          text: "Sefat holds a **Diploma in Computer Technology** with deep hands-on expertise in **Adobe Photoshop, Illustrator, Premiere Pro, Meta Business Suite, Canva, and modern digital branding systems**. He combines analytical tech knowledge with modern visual design.",
+          actions: standardActions
+        };
+      }
+      if (isTurnaround) {
+        return {
+          text: "Standard graphic design assets are usually delivered within **24 to 48 hours**. Urgent express turnarounds are available upon request, and all projects include revisions until you are completely satisfied!",
+          actions: standardActions
+        };
+      }
+      if (isGreeting) {
+        return {
+          text: "Hey there! 👋 I'm **Sefat AI**. I'm here 24/7 to answer your questions about Sefat's marketing services, design work, pricing, or turnaround times. What can I help you with?",
+          actions: standardActions
+        };
+      }
+
+      return {
+        text: "Thank you for asking! Sefat Bhuiyan is ready to assist you with your marketing campaigns, design needs, or social media growth. Would you like to check his portfolio or chat directly on WhatsApp?",
+        actions: standardActions
+      };
+    }
+
+    // Submit handler
+    function handleUserSubmit(userQuestion) {
+      if (!userQuestion || !userQuestion.trim()) return;
+
+      appendMessage("user", userQuestion);
+      input.value = "";
+      playTone('pop');
+
+      // Show typing indicator
+      if (typingIndicator) {
+        typingIndicator.removeAttribute("hidden");
+        scrollBottom();
+      }
+
+      // Simulate realistic AI thought process & generate response
+      const delay = Math.floor(Math.random() * 300) + 550;
+      setTimeout(() => {
+        if (typingIndicator) {
+          typingIndicator.setAttribute("hidden", "");
+        }
+        const resp = generateSmartResponse(userQuestion);
+        appendMessage("bot", resp.text, resp.actions);
+        playTone('receive');
+      }, delay);
+    }
+
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+      handleUserSubmit(input.value);
+    });
+
+    // Quick chips handler
+    chips.forEach(chip => {
+      chip.addEventListener("click", () => {
+        const q = chip.dataset.question || chip.textContent;
+        handleUserSubmit(q);
+      });
+    });
+
+    // 3D physics hover on launcher
+    if (launcher) {
+      launcher.addEventListener("mousemove", (e) => {
+        const rect = launcher.getBoundingClientRect();
+        const x = e.clientX - rect.left - rect.width / 2;
+        const y = e.clientY - rect.top - rect.height / 2;
+        launcher.style.transform = `perspective(600px) rotateY(${x * 0.35}deg) rotateX(${-y * 0.35}deg) scale(1.08) translateZ(10px)`;
+      });
+      launcher.addEventListener("mouseleave", () => {
+        launcher.style.transform = "";
+      });
+    }
+  }
+
+  initSefatAiChatbot();
+
+  // Floating Mobile Version Switcher dismiss & 3D tilt
+  (function initFloatingMobileSwitcher() {
+    const fmsClose = document.getElementById("fmsCloseBtn");
+    const fmsRoot = document.getElementById("floatingMobileSwitcher");
+    if (fmsClose && fmsRoot) {
+      fmsClose.addEventListener("click", () => {
+        fmsRoot.style.opacity = "0";
+        fmsRoot.style.transform = "scale(0.8) translateY(10px)";
+        fmsRoot.style.transition = "opacity 0.3s ease, transform 0.3s ease";
+        setTimeout(() => {
+          fmsRoot.style.display = "none";
+        }, 300);
+      });
+    }
+  })();
 
 
   /* =========================================================
