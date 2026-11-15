@@ -1,0 +1,18 @@
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Local SQLite databases & temporary files
+data/*.db
+data/*.db-journal
+data/*.db-wal
+data/*.db-shm
+data/*.tmp
+
+# Logs & System files
+*.log
+.DS_Store
+Thumbs.db
+node_modules/
+

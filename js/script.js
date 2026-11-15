@@ -1278,17 +1278,19 @@
       ],
 
       ai: {
-        callout: "👋 Need help with <b>Marketing &amp; Design</b>? Ask me anything about services, pricing or portfolio!",
-        placeholder: "Ask Sefat AI anything...",
-        status: "Instant answers in 5 languages",
+        callout: "👋 Need help with <b>Marketing &amp; Design</b>? Sefat AI handles your inquiries 24/7 even while Sefat is offline!",
+        placeholder: "Ask Sefat AI anything... (or ask to call)",
+        status: "24/7 Virtual Representative • Active",
         thinking: "Sefat AI is thinking...",
-        welcome: "Hello! 👋 I'm **Sefat AI**, the personal virtual assistant for **Sefat Bhuiyan** — Digital Marketer & Graphic Designer.\n\nHow can I help you today? Ask me about marketing campaigns, graphic designs, pricing, or review the portfolio!",
+        welcome: "Hello! 👋 I'm **Sefat AI**, the official 24/7 Virtual Client Representative for **Sefat Bhuiyan** — Digital Marketer & Graphic Designer.\n\nEven when Sefat is offline or in client sessions, I am here 24/7 to answer your questions, handle your project details, and provide estimates!\n\n📞 **Urgent Project or Direct Talk?** You can place a **Direct SIM Call** to Sefat's office line: **01828157751**.",
         chips: [
           "💼 Services",
           "💰 Pricing",
           "🎨 Portfolio",
-          "🚀 Hire / Contact",
-          "⚡ Skills & Tools"
+          "📞 Call: 01828157751",
+          "🚀 Start Project",
+          "📱 Mobile Version",
+          "💳 Payment"
         ]
       }
 
@@ -1765,17 +1767,19 @@
       ],
 
       ai: {
-        callout: "👋 <b>মার্কেটিং ও ডিজাইন</b> নিয়ে সাহায্য দরকার? সার্ভিস, প্রাইসিং বা পোর্টফোলিও সম্পর্কে যে কোনো প্রশ্ন করুন!",
+        callout: "👋 <b>মার্কেটিং ও ডিজাইন</b> নিয়ে প্রশ্ন? সিফাত অফলাইনে থাকলেও আমি ২৪/৭ আপনার প্রজেক্টের সব তথ্য দিতে প্রস্তুত!",
         placeholder: "সিফাত এআই-কে যেকোনো প্রশ্ন করুন...",
-        status: "৫টি ভাষায় তাৎক্ষণিক উত্তর",
+        status: "২৪/৭ ক্লায়েন্ট প্রতিনিধি • সক্রিয়",
         thinking: "সিফাত এআই ভাবছে...",
-        welcome: "হ্যালো! 👋 আমি **সিফাত এআই**, ডিজিটাল মার্কেটার ও গ্রাফিক্স ডিজাইনার **সিফাত ভূঁইয়া**-র পার্সোনাল ডিজিটাল অ্যাসিস্ট্যান্ট।\n\nআজ আপনাকে কীভাবে সাহায্য করতে পারি? সোশ্যাল মিডিয়া মার্কেটিং, ব্যানার/পোস্ট ডিজাইন, প্রাইসিং বা কাজ শুরুর প্রক্রিয়া সম্পর্কে নির্দ্বিধায় জিজ্ঞাসা করুন!",
+        welcome: "হ্যালো! 👋 আমি **সিফাত এআই**, ডিজিটাল মার্কেটার ও গ্রাফিক্স ডিজাইনার **সিফাত ভূঁইয়া**-র সার্বক্ষণিক ভার্চুয়াল ক্লায়েন্ট রিপ্রেজেন্টেটিভ।\n\nসিফাত বর্তমানে লাইভ প্রজেক্টে ব্যস্ত বা অফলাইনে থাকলেও, আপনার সব প্রশ্নের উত্তর দিতে, প্রজেক্টের তথ্য গ্রহণ করতে এবং সঠিক গাইডলাইন দিতে আমি প্রস্তুত!\n\n📞 **জরুরি প্রজেক্ট বা সরাসরি কথা বলতে চান?** সরাসরি সিফাতের অফিসিয়াল ডাইরেক্ট সিম নম্বরে কল দিন: **01828157751**",
         chips: [
           "💼 সার্ভিসসমূহ",
           "💰 প্রাইসিং ও খরচ",
           "🎨 পোর্টফোলিও",
-          "🚀 যোগাযোগ ও হায়ার",
-          "⚡ স্কিল ও টুলস"
+          "📞 কল: 01828157751",
+          "🚀 কাজ শুরু করুন",
+          "📱 মোবাইল ভার্সন",
+          "💳 পেমেন্ট মাধ্যম"
         ]
       }
 
@@ -2252,17 +2256,19 @@
       ],
 
       ai: {
-        callout: "👋 هل تحتاج إلى مساعدة في <b>التسويق والتصميم</b>؟ اسألني عن الخدمات أو الأسعار أو معرض الأعمال!",
+        callout: "👋 هل تحتاج إلى مساعدة في <b>التسويق والتصميم</b>؟ المساعد الذكي متاح 24/7 للإجابة حتى أثناء عدم تواجد سيفات!",
         placeholder: "اسأل سيفات الذكاء الاصطناعي أي شيء...",
-        status: "إجابات فورية بـ 5 لغات",
+        status: "ممثل عملاء 24/7 • نشط",
         thinking: "المساعد الذكي يفكر...",
-        welcome: "مرحباً بك! 👋 أنا **سيفات الذكاء الاصطناعي**، المساعد الرقمي لـ **سيفات بويان** — مسوق رقمي ومصمم جرافيك.\n\nكيف يمكنني مساعدتك اليوم؟ يمكنك سؤالي عن الحملات الإعلانية، تصاميم السوشيال ميديا، باقات الأسعار، أو بدء مشروع جديد!",
+        welcome: "مرحباً بك! 👋 أنا **سيفات الذكاء الاصطناعي**، الممثل الرقمي لـ **سيفات بويان** — مسوق رقمي ومصمم جرافيك.\n\nحتى عندما يكون سيفات غير متصل بالإنترنت، أنا متاح 24/7 لتلقي متطلبات مشروعك وتقديم عروض الأسعار!\n\n📞 **للحالات العاجلة والتواصل المباشر:** يمكنك الاتصال مباشرة على خط المكتب: **01828157751**.",
         chips: [
           "💼 الخدمات",
           "💰 الأسعار",
           "🎨 الأعمال",
-          "🚀 توظيف / تواصل",
-          "⚡ المهارات والأدوات"
+          "📞 اتصال: 01828157751",
+          "🚀 بدء مشروع",
+          "📱 نسخة الهاتف",
+          "💳 الدفع"
         ]
       }
 
@@ -2496,17 +2502,19 @@
         "创意策略"
       ],
       ai: {
-        callout: "👋 需要<b>营销与设计</b>支持吗？随时询问关于服务、报价或作品集！",
+        callout: "👋 需要<b>营销与设计</b>支持吗？Sefat 即使离线，AI 助手也能 24/7 全天候为您解答！",
         placeholder: "向 Sefat AI 提问任何问题...",
-        status: "5种语言即时解答",
+        status: "24/7 全天候客户代表 • 在线",
         thinking: "Sefat AI 正在思考...",
-        welcome: "您好！👋 我是 **Sefat AI**，数字营销师与平面设计师 **Sefat Bhuiyan** 的专属智能助手。\n\n今天有什么可以帮您？欢迎随时咨询广告投放、社交媒体设计、项目报价或查阅作品案例！",
+        welcome: "您好！👋 我是 **Sefat AI**，数字营销师与平面设计师 **Sefat Bhuiyan** 的官方 24/7 虚拟客户代表。\n\n即使 Sefat 处于离线状态，我也全天候在此为您登记项目需求并提供报价与方案！\n\n📞 **紧急洽谈请直接致电办公专线：** **01828157751**。",
         chips: [
           "💼 服务项目",
           "💰 报价收费",
           "🎨 作品集",
-          "🚀 合作 / 联系",
-          "⚡ 技能与工具"
+          "📞 拨打电话: 01828157751",
+          "🚀 启动项目",
+          "📱 手机版网站",
+          "💳 付款方式"
         ]
       }
     },
@@ -2739,17 +2747,19 @@
         "क्रिएटिव रणनीति"
       ],
       ai: {
-        callout: "👋 <b>मार्केटिंग और डिज़ाइन</b> में मदद चाहिए? सेवाओं, दरों या पोर्टफोलियो के बारे में कुछ भी पूछें!",
+        callout: "👋 <b>मार्केटिंग और डिज़ाइन</b> में मदद चाहिए? Sefat ऑफलाइन होने पर भी AI असिस्टेंट 24/7 आपकी सेवा में तत्पर है!",
         placeholder: "Sefat AI से कुछ भी पूछें...",
-        status: "5 भाषाओं में त्वरित उत्तर",
+        status: "24/7 वर्चुअल प्रतिनिधि • सक्रिय",
         thinking: "Sefat AI सोच रहा है...",
-        welcome: "नमस्ते! 👋 मैं **Sefat AI** हूँ, डिजिटल मार्केटर और ग्राफिक डिज़ाइनर **Sefat Bhuiyan** का पर्सनल डिजिटल असिस्टेंट।\n\nमैं आपकी क्या मदद कर सकता हूँ? आप मार्केटिंग कैंपेन, ग्राफिक डिज़ाइन, बजट या पोर्टफोलियो के बारे में बेझिझक पूछ सकते हैं!",
+        welcome: "नमस्ते! 👋 मैं **Sefat AI** हूँ, डिजिटल मार्केटर और ग्राफिक डिज़ाइनर **Sefat Bhuiyan** का 24/7 आधिकारिक वर्चुअल क्लाइंट प्रतिनिधि।\n\nयदि Sefat ऑफलाइन हैं, तब भी मैं आपके प्रोजेक्ट विवरण लेने और दरों की जानकारी देने के लिए 24/7 तैयार हूँ!\n\n📞 **अत्यंत आवश्यक चर्चा के लिए सीधे कॉल करें:** **01828157751**",
         chips: [
           "💼 सेवाएं",
           "💰 दरें व मूल्य",
           "🎨 पोर्टफोलियो",
-          "🚀 संपर्क व हायर",
-          "⚡ कौशल व टूल्स"
+          "📞 कॉल करें: 01828157751",
+          "🚀 प्रोजेक्ट शुरू करें",
+          "📱 मोबाइल वर्जन",
+          "💳 भुगतान विधियां"
         ]
       }
     }
@@ -3317,6 +3327,107 @@
 
       }
     );
+
+
+    /* ---------- About Video Showcase Translations ---------- */
+    const videoBadge = $("#aboutVideoBadgeText");
+    const videoCaption = $("#aboutVideoCaptionText");
+    const soundLabel = $("#soundToggleLabel");
+    const fsLabel = $("#fullscreenToggleLabel");
+    const playLabel = $("#playToggleLabel");
+    const statusText = $("#videoStatusText");
+    const pausedTitle = $("#videoPausedTitle");
+    const pausedHint = $("#videoPausedHint");
+    const pipLabel = $("#pipToggleLabel");
+
+    if (videoBadge && videoCaption) {
+      const vTrans = {
+        en: {
+          badge: "FEATURED SHOWCASE",
+          caption: "Visual Storytelling, Branding & Digital Growth Strategy in Action",
+          mute: "Mute",
+          unmute: "Unmute",
+          fullscreen: "Fullscreen",
+          play: "Play",
+          pause: "Pause",
+          playing: "PLAYING",
+          paused: "PAUSED",
+          pausedTitle: "SHOWCASE PAUSED",
+          pausedHint: "Click anywhere to resume playback",
+          mini: "Mini"
+        },
+        bn: {
+          badge: "ফিচার্ড ভিডিও শোকেস",
+          caption: "ভিজ্যুয়াল স্টোরিটেলিং, ব্র্যান্ডিং ও ডিজিটাল গ্রোথ স্ট্র্যাটেজি",
+          mute: "শব্দ বন্ধ",
+          unmute: "শব্দ চালু",
+          fullscreen: "ফুলস্ক্রিন",
+          play: "ভিডিও চালান",
+          pause: "ভিডিও বন্ধ",
+          playing: "চলছে",
+          paused: "থামানো",
+          pausedTitle: "ভিডিও পজ করা আছে",
+          pausedHint: "চালু করতে যেকোনো জায়গায় ক্লিক করুন",
+          mini: "মিনি"
+        },
+        ar: {
+          badge: "العرض المميز",
+          caption: "السرد البصري، بناء الهوية واستراتيجية النمو الرقمي",
+          mute: "كتم",
+          unmute: "تشغيل الصوت",
+          fullscreen: "شاشة كاملة",
+          play: "تشغيل",
+          pause: "إيقاف",
+          playing: "يعرض الآن",
+          paused: "متوقف",
+          pausedTitle: "تم إيقاف الفيديو مؤقتاً",
+          pausedHint: "انقر في أي مكان للاستئناف",
+          mini: "مصغر"
+        },
+        es: {
+          badge: "PRESENTACIÓN DESTACADA",
+          caption: "Narrativa visual, branding y estrategia digital en acción",
+          mute: "Silenciar",
+          unmute: "Activar sonido",
+          fullscreen: "Pantalla completa",
+          play: "Reproducir",
+          pause: "Pausar",
+          playing: "REPRODUCIENDO",
+          paused: "PAUSADO",
+          pausedTitle: "PRESENTACIÓN EN PAUSA",
+          pausedHint: "Haz clic en cualquier parte para reanudar",
+          mini: "Mini"
+        },
+        de: {
+          badge: "FEATURED SHOWCASE",
+          caption: "Visuelles Storytelling, Branding & digitales Wachstum in Aktion",
+          mute: "Stummschalten",
+          unmute: "Ton an",
+          fullscreen: "Vollbild",
+          play: "Abspielen",
+          pause: "Pause",
+          playing: "LÄUFT",
+          paused: "PAUSIERT",
+          pausedTitle: "SHOWCASE PAUSIERT",
+          pausedHint: "Klicken zum Fortsetzen",
+          mini: "Mini"
+        }
+      };
+      const curV = vTrans[language] || vTrans.en;
+      videoBadge.textContent = curV.badge;
+      videoCaption.textContent = curV.caption;
+      const player = $("#aboutPlayer");
+      const isPaused = player ? player.paused : false;
+      const isMuted = player ? player.muted : true;
+
+      if (soundLabel) soundLabel.textContent = isMuted ? curV.unmute : curV.mute;
+      if (fsLabel) fsLabel.textContent = curV.fullscreen;
+      if (playLabel) playLabel.textContent = isPaused ? curV.play : curV.pause;
+      if (statusText) statusText.textContent = isPaused ? curV.paused : curV.playing;
+      if (pausedTitle) pausedTitle.textContent = curV.pausedTitle;
+      if (pausedHint) pausedHint.textContent = curV.pausedHint;
+      if (pipLabel) pipLabel.textContent = curV.mini;
+    }
 
 
     /* ---------- Services ---------- */
@@ -4208,6 +4319,7 @@
       .about-copy,
       .stats,
       .stat,
+      .about-video-card,
       .service,
       .project,
       .timeline-item,
@@ -7130,6 +7242,318 @@
 
 
   /* =========================================================
+     CINEMATIC 3D ABOUT VIDEO SHOWCASE ENGINE
+     Continuous Nonstop Playback, Video Off/On, Interactive Scrubber,
+     Audio Waveform, PiP, Fullscreen & Dynamic Ambilight Spotlight
+     ========================================================= */
+
+  function initAboutVideoShowcase() {
+    const video = document.getElementById("aboutPlayer");
+    const videoCard = document.querySelector(".about-video-card");
+    const videoScreen = document.getElementById("aboutVideoScreen");
+    const playToggle = document.getElementById("aboutVideoPlayToggle");
+    const soundToggle = document.getElementById("aboutVideoSoundToggle");
+    const pipBtn = document.getElementById("aboutVideoPip");
+    const fsBtn = document.getElementById("aboutVideoFullscreen");
+    const centerBtn = document.getElementById("videoCenterBtn");
+    const statusTag = document.getElementById("videoStatusTag");
+    const statusText = document.getElementById("videoStatusText");
+    const progressTrack = document.getElementById("videoProgressTrack");
+    const progressFill = document.getElementById("videoProgressFill");
+    const progressBuffered = document.getElementById("videoProgressBuffered");
+    const progressThumb = document.getElementById("videoProgressThumb");
+    const timeCurrent = document.getElementById("videoTimeCurrent");
+    const timeDuration = document.getElementById("videoTimeDuration");
+
+    if (!video) return;
+
+    // Format seconds into mm:ss
+    function formatTime(sec) {
+      if (isNaN(sec) || sec < 0) return "00:00";
+      const m = Math.floor(sec / 60);
+      const s = Math.floor(sec % 60);
+      return `${m < 10 ? '0' : ''}${m}:${s < 10 ? '0' : ''}${s}`;
+    }
+
+    // Get current language dictionary
+    function getLangStrings() {
+      const curLang = document.documentElement.lang || "en";
+      const vTrans = {
+        en: { play: "Play", pause: "Pause", playing: "PLAYING", paused: "PAUSED", mute: "Mute", unmute: "Unmute" },
+        bn: { play: "ভিডিও চালান", pause: "ভিডিও বন্ধ", playing: "চলছে", paused: "থামানো", mute: "শব্দ বন্ধ", unmute: "শব্দ চালু" },
+        ar: { play: "تشغيل", pause: "إيقاف", playing: "يعرض الآن", paused: "متوقف", mute: "كتم", unmute: "تشغيل الصوت" },
+        es: { play: "Reproducir", pause: "Pausar", playing: "REPRODUCIENDO", paused: "PAUSADO", mute: "Silenciar", unmute: "Activar sonido" },
+        de: { play: "Abspielen", pause: "Pause", playing: "LÄUFT", paused: "PAUSIERT", mute: "Stummschalten", unmute: "Ton an" }
+      };
+      return vTrans[curLang] || vTrans.en;
+    }
+
+    // Update UI states based on play/pause
+    function updatePlayState(isPaused) {
+      const strings = getLangStrings();
+      if (videoScreen) {
+        videoScreen.classList.toggle("is-paused", isPaused);
+      }
+      if (playToggle) {
+        playToggle.classList.toggle("paused-state", isPaused);
+        const playIcon = playToggle.querySelector(".play-icon");
+        const pauseIcon = playToggle.querySelector(".pause-icon");
+        const playLabel = playToggle.querySelector(".control-label");
+
+        if (isPaused) {
+          if (playIcon) playIcon.classList.remove("sr-only");
+          if (pauseIcon) pauseIcon.classList.add("sr-only");
+          if (playLabel) playLabel.textContent = strings.play;
+          playToggle.setAttribute("title", strings.play);
+        } else {
+          if (playIcon) playIcon.classList.add("sr-only");
+          if (pauseIcon) pauseIcon.classList.remove("sr-only");
+          if (playLabel) playLabel.textContent = strings.pause;
+          playToggle.setAttribute("title", strings.pause);
+        }
+      }
+
+      if (centerBtn) {
+        const centerPlay = centerBtn.querySelector(".center-play-icon");
+        const centerPause = centerBtn.querySelector(".center-pause-icon");
+        if (isPaused) {
+          if (centerPlay) centerPlay.classList.remove("sr-only");
+          if (centerPause) centerPause.classList.add("sr-only");
+        } else {
+          if (centerPlay) centerPlay.classList.add("sr-only");
+          if (centerPause) centerPause.classList.remove("sr-only");
+        }
+      }
+
+      if (statusTag && statusText) {
+        statusTag.classList.toggle("paused", isPaused);
+        statusText.textContent = isPaused ? strings.paused : strings.playing;
+      }
+    }
+
+    // Toggle Play / Pause function
+    let userExplicitlyPaused = false;
+    function togglePlayback() {
+      if (video.paused) {
+        userExplicitlyPaused = false;
+        video.play().then(() => updatePlayState(false)).catch(() => {});
+      } else {
+        userExplicitlyPaused = true;
+        video.pause();
+        updatePlayState(true);
+      }
+    }
+
+    // Setup initial playback
+    video.muted = true;
+    video.defaultMuted = true;
+    video.loop = true;
+    video.playsInline = true;
+
+    function startInitialPlay() {
+      const playPromise = video.play();
+      if (playPromise !== undefined) {
+        playPromise.then(() => updatePlayState(false)).catch(() => {
+          updatePlayState(true);
+          const onFirstInteract = () => {
+            if (!userExplicitlyPaused) {
+              video.play().then(() => updatePlayState(false)).catch(() => {});
+            }
+            window.removeEventListener("click", onFirstInteract);
+            window.removeEventListener("touchstart", onFirstInteract);
+            window.removeEventListener("scroll", onFirstInteract);
+          };
+          window.addEventListener("click", onFirstInteract, { once: true });
+          window.addEventListener("touchstart", onFirstInteract, { once: true });
+          window.addEventListener("scroll", onFirstInteract, { once: true });
+        });
+      }
+    }
+    startInitialPlay();
+
+    // Event listeners on video element
+    video.addEventListener("play", () => updatePlayState(false));
+    video.addEventListener("pause", () => {
+      updatePlayState(true);
+      // Auto-resume only if user didn't explicitly pause it
+      if (!userExplicitlyPaused && !document.hidden && !video.seeking) {
+        setTimeout(() => {
+          if (!userExplicitlyPaused) video.play().catch(() => {});
+        }, 300);
+      }
+    });
+
+    video.addEventListener("ended", () => {
+      video.currentTime = 0;
+      if (!userExplicitlyPaused) video.play().catch(() => {});
+    });
+
+    // Play/Pause button click
+    if (playToggle) {
+      playToggle.addEventListener("click", (e) => {
+        e.stopPropagation();
+        togglePlayback();
+      });
+    }
+
+    // Center button and video screen click
+    if (centerBtn) {
+      centerBtn.addEventListener("click", (e) => {
+        e.stopPropagation();
+        togglePlayback();
+      });
+    }
+
+    if (videoScreen) {
+      videoScreen.addEventListener("click", (e) => {
+        // Ignore clicks if clicking inside the scrubber track
+        if (e.target.closest(".video-scrubber-shelf")) return;
+        togglePlayback();
+      });
+    }
+
+    // Progress Scrubber & Live Timestamp updates
+    video.addEventListener("loadedmetadata", () => {
+      if (timeDuration) timeDuration.textContent = formatTime(video.duration);
+    });
+
+    video.addEventListener("timeupdate", () => {
+      if (!video.duration) return;
+      const pct = (video.currentTime / video.duration) * 100;
+      if (progressFill) progressFill.style.width = `${pct}%`;
+      if (progressThumb) progressThumb.style.left = `${pct}%`;
+      if (timeCurrent) timeCurrent.textContent = formatTime(video.currentTime);
+      if (progressTrack) progressTrack.setAttribute("aria-valuenow", Math.round(pct));
+    });
+
+    video.addEventListener("progress", () => {
+      if (!video.duration || video.buffered.length === 0) return;
+      const bufEnd = video.buffered.end(video.buffered.length - 1);
+      const bufPct = (bufEnd / video.duration) * 100;
+      if (progressBuffered) progressBuffered.style.width = `${bufPct}%`;
+    });
+
+    // Seek on scrubber click / drag
+    if (progressTrack) {
+      function seek(e) {
+        const rect = progressTrack.getBoundingClientRect();
+        const clientX = e.touches ? e.touches[0].clientX : e.clientX;
+        const pos = Math.max(0, Math.min(1, (clientX - rect.left) / rect.width));
+        if (video.duration) {
+          video.currentTime = pos * video.duration;
+        }
+      }
+
+      let isSeeking = false;
+      progressTrack.parentElement.addEventListener("mousedown", (e) => {
+        isSeeking = true;
+        seek(e);
+      });
+      window.addEventListener("mousemove", (e) => {
+        if (isSeeking) seek(e);
+      });
+      window.addEventListener("mouseup", () => {
+        isSeeking = false;
+      });
+
+      // Mobile touch seeking
+      progressTrack.parentElement.addEventListener("touchstart", (e) => {
+        isSeeking = true;
+        seek(e);
+      }, { passive: true });
+      window.addEventListener("touchmove", (e) => {
+        if (isSeeking) seek(e);
+      }, { passive: true });
+      window.addEventListener("touchend", () => {
+        isSeeking = false;
+      });
+    }
+
+    // Sound toggle handler with Equalizer Waveform activation
+    if (soundToggle) {
+      soundToggle.addEventListener("click", (e) => {
+        e.stopPropagation();
+        video.muted = !video.muted;
+        soundToggle.classList.toggle("active", !video.muted);
+        const soundOff = soundToggle.querySelector(".sound-off-icon");
+        const soundOn = soundToggle.querySelector(".sound-on-icon");
+        const label = soundToggle.querySelector(".control-label");
+        const strings = getLangStrings();
+
+        if (video.muted) {
+          if (soundOff) soundOff.classList.remove("sr-only");
+          if (soundOn) soundOn.classList.add("sr-only");
+          if (label) label.textContent = strings.unmute;
+          soundToggle.setAttribute("title", strings.unmute);
+        } else {
+          if (soundOff) soundOff.classList.add("sr-only");
+          if (soundOn) soundOn.classList.remove("sr-only");
+          if (label) label.textContent = strings.mute;
+          soundToggle.setAttribute("title", strings.mute);
+          if (video.paused && !userExplicitlyPaused) video.play().catch(() => {});
+        }
+      });
+    }
+
+    // Picture in Picture (Floating mini player)
+    if (pipBtn) {
+      if (document.pictureInPictureEnabled) {
+        pipBtn.addEventListener("click", async (e) => {
+          e.stopPropagation();
+          try {
+            if (document.pictureInPictureElement) {
+              await document.exitPictureInPicture();
+            } else {
+              await video.requestPictureInPicture();
+            }
+          } catch (err) {
+            console.warn("PiP not available:", err);
+          }
+        });
+      } else {
+        pipBtn.style.display = "none";
+      }
+    }
+
+    // Fullscreen toggle handler
+    if (fsBtn) {
+      fsBtn.addEventListener("click", (e) => {
+        e.stopPropagation();
+        const target = videoScreen || video;
+        if (!document.fullscreenElement && !document.webkitFullscreenElement) {
+          if (target.requestFullscreen) {
+            target.requestFullscreen().catch(() => {});
+          } else if (target.webkitRequestFullscreen) {
+            target.webkitRequestFullscreen();
+          } else if (video.webkitEnterFullscreen) {
+            video.webkitEnterFullscreen();
+          }
+        } else {
+          if (document.exitFullscreen) {
+            document.exitFullscreen().catch(() => {});
+          } else if (document.webkitExitFullscreen) {
+            document.webkitExitFullscreen();
+          }
+        }
+      });
+    }
+
+    // Dynamic 3D Spotlight Glow tracking mouse cursor on video card
+    if (videoCard && !prefersReducedMotion && hasFinePointer) {
+      videoCard.addEventListener("mousemove", (e) => {
+        const rect = videoCard.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+        videoCard.style.setProperty("--video-mouse-x", `${x}px`);
+        videoCard.style.setProperty("--video-mouse-y", `${y}px`);
+      });
+    }
+  }
+
+  initAboutVideoShowcase();
+
+
+  /* =========================================================
      EXECUTIVE 3D SERVICES INTERACTION ENGINE
      ========================================================= */
 
@@ -7811,13 +8235,18 @@
       msgDiv.className = `ai-msg ${sender}`;
 
       const avatarMarkup = sender === "bot"
-        ? `<div class="ai-msg-avatar" aria-hidden="true"><img src="assets/sb_logo_3d.svg" alt="Sefat AI" /></div>`
+        ? `<div class="ai-msg-avatar" aria-hidden="true"><img src="assets/sb_logo_monogram.png" alt="Sefat AI" /></div>`
         : "";
 
       let actionsMarkup = "";
       if (actions && actions.length > 0) {
         actionsMarkup = `<div class="ai-actions-wrap">` +
-          actions.map(act => `<a class="ai-action-link" href="${act.url}" target="_blank" rel="noopener noreferrer">${act.icon || ''} ${act.label}</a>`).join("") +
+          actions.map(act => {
+            const isTel = act.url && act.url.startsWith("tel:");
+            const extraCls = act.type ? ` ${act.type}` : (isTel ? ' call-action' : '');
+            const targetAttr = isTel ? '' : ' target="_blank" rel="noopener noreferrer"';
+            return `<a class="ai-action-link${extraCls}" href="${act.url}"${targetAttr}>${act.icon || ''} ${act.label}</a>`;
+          }).join("") +
           `</div>`;
       }
 
@@ -7839,16 +8268,17 @@
       const welcome = langConfig.ai?.welcome || languageData.en.ai.welcome;
 
       const actions = [
-        { label: "WhatsApp", icon: "💬", url: "https://wa.me/8801828157751" },
+        { label: "📞 Direct Call: 01828157751", icon: "📞", url: "tel:01828157751", type: "call-action" },
+        { label: "WhatsApp Direct", icon: "💬", url: "https://wa.me/8801828157751" },
         { label: "Portfolio", icon: "🎨", url: "https://drive.google.com/drive/folders/175e11jZ9tU21Uq4qF5M0G6yHnJ4T3w8_" },
-        { label: "Instagram", icon: "📸", url: "https://www.instagram.com/sefatbhuiyan_marketing0101?psln=MTAwa3Jqd214YWg4OQ==" }
+        { label: "Mobile Version 📱", icon: "📱", url: "https://sefatbhuiyan.qrioustechbd.com/" }
       ];
 
       appendMessage("bot", welcome, actions);
     }
 
     // -------------------------------------------------------------
-    // Intelligent Knowledge Engine & Response Generator
+    // Intelligent Knowledge Engine & 24/7 Virtual Client Representative
     // -------------------------------------------------------------
     function generateSmartResponse(query) {
       const q = query.toLowerCase().trim();
@@ -7861,251 +8291,431 @@
       else if (/[\u4E00-\u9FFF]/.test(query)) queryLang = "zh";
       else if (/[\u0900-\u097F]/.test(query)) queryLang = "hi";
 
-      // Question category matching
-      const isMobileVersion = /mobile|phone|smartphone|handheld|mobile version|মোবাইল|ফোন|মোবাইল ভার্সন|মোবাইলের জন্য|সেলফোন/.test(q);
-      const isServices = /service|offer|do you do|work|what can you do|marketing|design|social media|facebook|meta|কাজ|সার্ভিস|কি কি করেন|خدمة|خدمات|ماذا تقدم|服务|业务|做|सेवा|काम|सर्विस/.test(q);
-      const isPricing = /price|pricing|cost|rate|fee|charge|package|how much|budget|প্রাইস|দাম|খরচ|প্যাকেজ|টাকা|سعر|تكلفة|باقة|كم يكلف|报价|价格|多少钱|收费|खर्च|कीमत|रेट|पैकेज|कितना/.test(q);
-      const isPortfolio = /portfolio|sample|previous work|show me|project|drive|proof|পোর্টফোলিও|স্যাম্পল|প্রজেক্ট|আগের কাজ|معرض|أعمال|مشاريع|نموذج|作品|案例|项目|पोर्टफोलियो|सैंपल|काम दिखाएं/.test(q);
-      const isContactOrHire = /contact|hire|email|whatsapp|phone|number|call|reach|message|connect|যোগাযোগ|হায়ার|নাম্বার|কথা|হোয়াটসঅ্যাপ|تواصل|توظيف|واتساب|رقم|هاتف|联系|雇佣|微信|电话|संपर्क|हायर|फोन|नंबर|व्हाट्सएप/.test(q);
-      const isExperienceOrSkills = /experience|skill|tool|software|photoshop|illustrator|diploma|background|যোগ্যতা|অভিজ্ঞতা|টুলস|সফটওয়্যার|দক্ষতা|خبرة|مهارة|أدوات|برامج|经验|技能|软件|अनुभव|स्किल|टूल्स|सॉफ्टवेयर/.test(q);
-      const isTurnaround = /fast|how long|turnaround|delivery|time|urgent|সময়|কতদিন|কত সময়|তাড়াতাড়ি|وقت|تسليم|مدة|时间|周期|多久|समय|डिलीवरी|कितना समय/.test(q);
-      const isGreeting = /hi|hello|hey|salam|namaste|ola|hola|কেমন|হ্যালো|হাই|সালাম|مرحبا|سلام|أهلا|你好|嗨|नमस्ते|हेलो/.test(q);
+      // Reusable Action Link Objects
+      const urgentCallAction = { label: "📞 Direct SIM Call (01828157751)", icon: "📞", url: "tel:01828157751", type: "call-action" };
+      const whatsAppDirect = { label: "WhatsApp Direct", icon: "💬", url: "https://wa.me/8801828157751" };
+      const whatsAppUrgent = { label: "WhatsApp Urgent Chat", icon: "💬", url: "https://wa.me/8801828157751?text=Hello%20Sefat,%20I%20have%20an%20urgent%20project%20inquiry!" };
+      const whatsAppProject = { label: "WhatsApp-এ প্রজেক্ট ব্রিফ পাঠান", icon: "💬", url: "https://wa.me/8801828157751?text=Hello%20Sefat,%20I%20want%20to%20discuss%20a%20new%20project!" };
+      const portfolioDrive = { label: "Google Drive পোর্টফোলিও", icon: "🎨", url: "https://drive.google.com/drive/folders/175e11jZ9tU21Uq4qF5M0G6yHnJ4T3w8_" };
+      const mobileVersion = { label: "মোবাইল ভার্সন 📱", icon: "📱", url: "https://sefatbhuiyan.qrioustechbd.com/" };
+      const emailSefat = { label: "Email Sefat", icon: "✉️", url: "mailto:ksefat94@gmail.com" };
 
-      // Actions templates
       const standardActions = [
-        { label: "WhatsApp Direct", icon: "💬", url: "https://wa.me/8801828157751" },
-        { label: "Open Portfolio", icon: "🎨", url: "https://drive.google.com/drive/folders/175e11jZ9tU21Uq4qF5M0G6yHnJ4T3w8_" },
-        { label: "Email Sefat", icon: "✉️", url: "mailto:ksefat94@gmail.com" }
+        urgentCallAction,
+        whatsAppDirect,
+        portfolioDrive
       ];
 
-      // Language: BANGLA
-      if (queryLang === "bn") {
-        if (isMobileVersion) {
+      // Semantic Intent Classifiers
+      const isUrgentOrDirectCall = /(urgent|emergency|asap|today|ajkei|ajke|right now|immediately|khub joruri|joruri|জরুরি|জরুরী|আর্জেন্ট|খুব দরকার|তাড়াতাড়ি|আজকেই|এখনই|আজকে লাগবে|সরাসরি কথা|ডাইরেক্ট কল|সিম কল|সিম কার্ড|অফিস কল|নাম্বার|মোবাইল নাম্বার|ফোন নাম্বার|কল দিতে চাই|কথা বলব|ফোন দিতে চাই|কথা বলতে চাই|ফোন করব|direct call|phone call|voice call|sim call|call him|speak to sefat|office line|office number|phone number|mobile number|meeting|মিটিং|contact number|voice chat|sim e call|direct kotha|phone e kotha|number dao|number ta)/i.test(q);
+      const isContactInfoCaptured = /(01[3-9]\d{8}|\+?8801[3-9]\d{8}|[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}|আমার নাম|my name is|আমার ফোন|আমার নাম্বার|amar number|amar phone|contact me|call me|যোগাযোগ করবেন)/i.test(q);
+      const isLeadIntakeOrHire = /(hire|start project|want to start|কাজ শুরু|হায়ার|অর্ডার|বুকিং|নিতে চাই|প্রজেক্ট দিতে চাই|কাজ করাতে চাই|কাজ দিতে চাই|নতুন প্রজেক্ট|কাজ আছে|order|book|onboard|collaborate|client|agency|চুক্তি|কাজ করাব|kaj shuru|korte chai|shuru korbo)/i.test(q);
+      const isOfflineStatusQuery = /(offline|অফলাইন|অফলাইনে|কোথায়|কোথায় আছেন|আছেন|লাইভে আছেন|active|available|online acho|kothay|where are you|available now|are you there|online ache|sefat kothay)/i.test(q);
+      const isPaymentMethods = /(payment|pay|bkash|nagad|rocket|bank|advance|wise|paypal|বিকাশ|নগদ|রকেট|ব্যাংক|টাকা|পেমেন্ট|টাকা কিভাবে|বিল|অগ্রিম|এডভান্স|টাকা পাঠাব)/i.test(q);
+      const isWorkflowAndProcess = /(process|workflow|steps|how does it work|how we work|প্রসেস|পদ্ধতি|কীভাবে কাজ করেন|কাজের নিয়ম|ধাপ|কিভাবে শুরু করব|কাজের নিয়ম কি|kivabe kaj)/i.test(q);
+      const isRevisionsAndGuarantee = /(revision|changes|edit|guarantee|satisfaction|রিভিশন|পরিবর্তন|সংশোধন|পছন্দ না হলে|খারাপ লাগলে|নিশ্চয়তা|গ্যারান্টি|change korben)/i.test(q);
+      const isTurnaroundAndDelivery = /(turnaround|delivery|time|how long|fast|urgent delivery|সময়|কতক্ষণ|কতদিন|ডেলিভারি|তাড়াতাড়ি ডেলিভারি|সময়সীমা|কত সময় লাগবে|kotodin|koto shomoy)/i.test(q);
+      const isServicesMarketing = /(marketing|meta|facebook ads|instagram ads|ad campaign|boost|leads|sales|ফেসবুক অ্যাড|মার্কেটিং|বুস্ট|বিজ্ঞাপন|সেলস|গ্রোথ|লিড|পিক্সেল|pixel|capi|audience|roas)/i.test(q);
+      const isServicesDesign = /(graphic|design|banner|poster|thumbnail|logo|branding|carousel|গ্রাফিক|ডিজাইন|লোগো|ব্যানার|থাম্বনেইল|ক্যারোসেল|পোস্টার|ভেক্টর)/i.test(q);
+      const isServicesGeneral = /(service|services|offer|what do you do|work|what can you do|কাজ|সার্ভিস|কি কি করেন|خدمة|خدمات|服务|业务|सेवा|सर्विस)/i.test(q);
+      const isPricing = /(price|pricing|cost|rate|fee|charge|package|how much|budget|প্রাইস|দাম|খরচ|প্যাকেজ|টাকা|বাজেট|রেট|কত টাকা|কতো টাকা|koto taka|budget koto)/i.test(q);
+      const isPortfolio = /(portfolio|sample|previous work|show me|project|drive|proof|পোর্টফোলিও|স্যাম্পল|প্রজেক্ট|আগের কাজ|কাজের প্রমাণ|স্যাম্পল দেখান|work sample)/i.test(q);
+      const isMobileVersion = /(mobile|phone|smartphone|handheld|mobile version|মোবাইল|ফোন|মোবাইল ভার্সন|মোবাইলের জন্য|সেলফোন)/i.test(q);
+      const isExperienceOrSkills = /(experience|skill|tool|software|photoshop|illustrator|premiere|diploma|background|যোগ্যতা|অভিজ্ঞতা|টুলস|সফটওয়্যার|দক্ষতা|خبرة|مهارة|经验|技能|अनुभव|स्किल)/i.test(q);
+      const isLocation = /(location|where are you located|address|city|country|কোথায় থাকেন|ঠিকানা|বাসা কোথায়|অফিস কোথায়|লোকেশন|dhaka)/i.test(q);
+      const isGreeting = /(hi|hello|hey|salam|namaste|ola|hola|ke kemon|হ্যালো|হাই|সালাম|আসসালামু আলাইকুম|কেমন আছেন|আদাব|assalamu alaikum|vai|bhai)/i.test(q);
+
+      // =========================================================
+      // HIGHEST PRIORITY 1: URGENT / DIRECT PHONE CALL PROTOCOL
+      // Triggered when client needs immediate talk, emergency, or direct SIM call
+      // =========================================================
+      if (isUrgentOrDirectCall) {
+        if (queryLang === "bn") {
           return {
-            text: "হ্যাঁ! সিফাত ভূঁইয়ার একটি **স্পেশালাইজড মোবাইল ভার্সন পোর্টফোলিও** রয়েছে, যা স্মার্টফোনে ব্যবহারের জন্য বিশেষভাবে অপ্টিমাইজ করা হয়েছে:\n\n📱 **স্মার্টফোন ও টাচ-ফ্রেন্ডলি ইন্টারফেস**\n🌐 **ওয়েবসাইট লিঙ্ক:** sefatbhuiyan.qrioustechbd.com\n\nনিচের বাটনে ক্লিক করে সরাসরি মোবাইল পোর্টফোলিও দেখুন:",
+            text: "🚨 **জরুরি প্রজেক্ট বা সরাসরি কথা বলার অফিস লাইন:**\n\nসিফাত ভূঁইয়া বর্তমানে লাইভ ক্লায়েন্ট ক্যাম্পেইনে ব্যস্ত বা ডেস্কে অফলাইনে থাকতে পারেন। আপনার কোনো জরুরি ডেডলাইন, সরাসরি প্রাইসিং নেগোশিয়েশন বা আর্জেন্ট কনসালটেশনের জন্য এখনই সিফাতের **অফিসিয়াল Direct Phone / SIM Line (সরাসরি সিম কার্ডে ফোন কল)**-এ যোগাযোগ করুন:\n\n📞 **সরাসরি ফোন নম্বর:** `01828157751`\n\n*নিচের সবুজ বাটনে ট্যাপ করে সরাসরি আপনার ফোন থেকে ডায়াল করতে পারেন অথবা দ্রুত হোয়াটসঅ্যাপে মেসেজ দিন:*",
             actions: [
-              { label: "মোবাইল ভার্সন খুলুন 📱", icon: "📱", url: "https://sefatbhuiyan.qrioustechbd.com/" },
-              { label: "WhatsApp Direct", icon: "💬", url: "https://wa.me/8801828157751" }
+              urgentCallAction,
+              whatsAppUrgent,
+              emailSefat
             ]
           };
         }
-        if (isServices) {
+        if (queryLang === "ar") {
           return {
-            text: "**সিফাত ভূঁইয়া** মূলত দুটি প্রধান ক্ষেত্রে প্রফেশনাল সেবা প্রদান করেন:\n\n1. **সোশ্যাল মিডিয়া মার্কেটিং:**\n• মেটা ফেসবুক ও ইনস্টাগ্রাম পেইজ গ্রোথ\n• টার্গেটেড অ্যাড ক্যাম্পেইন ও লিড জেনারেশন\n• কনটেন্ট স্ট্র্যাটেজি ও শিডিউলিং\n\n2. **গ্রাফিক ডিজাইন:**\n• সোশ্যাল মিডিয়া পোস্ট, ব্যানার ও থাম্বনেইল\n• ব্র্যান্ড আইডেন্টিটি, লোগো ও পোস্টার\n• বিজনেস প্রমোশনাল ক্রিয়েটিভস",
-            actions: standardActions
+            text: "🚨 **خط الطوارئ والاستشارة المباشرة:**\n\nقد يكون سيفات بويان حالياً منشغلاً في إدارة حملات إعلانية للعملاء أو غير متصل بالمكتب. إذا كان لديك موعد تسليم عاجل أو ترغب في التحدث مباشرة عبر الهاتف، يرجى الاتصال المباشر على خط المكتب عبر شريحة SIM:\n\n📞 **رقم الهاتف المباشر:** `01828157751` (+8801828157751)\n\n*انقر على الزر الأخضر للاتصال فوراً أو المحادثة عبر واتساب:*",
+            actions: [
+              urgentCallAction,
+              whatsAppUrgent,
+              emailSefat
+            ]
           };
         }
-        if (isPricing) {
+        if (queryLang === "zh") {
           return {
-            text: "আমাদের প্রাইসিং প্যাকেজ খুবই ফ্লেক্সিবল ও ফ্রেন্ডলি:\n\n• **সিঙ্গেল পোস্ট/ব্যানার ডিজাইন:** সাশ্রয়ী মূল্যে শুরু\n• **মাসিক সোশ্যাল মিডিয়া ম্যানেজমেন্ট:** কাস্টম প্যাকেজ (নিয়মিত পোস্ট + অ্যাড সাপোর্ট)\n• **ফুল ব্র্যান্ডিং ও ক্যাম্পেইন:** প্রজেক্ট ভিত্তিক নেগোশিয়েবল রেট\n\nআপনার নির্দিষ্ট প্রজেক্ট বাজেট ও প্রয়োজন জানাতে সরাসরি WhatsApp-এ সিফাত-এর সাথে কথা বলুন!",
-            actions: [{ label: "WhatsApp-এ দরদাম জানুন", icon: "💬", url: "https://wa.me/8801828157751" }]
+            text: "🚨 **紧急项目咨询与专属电话热线：**\n\nSefat Bhuiyan 目前可能正忙于处理海外客户的实时营销活动或暂离电脑。如您有紧急截止日期或需要立即进行商务沟通，请直接拨打 Sefat 的官方直拨电话（SIM卡热线）：\n\n📞 **直拨办公电话：** `01828157751` (+8801828157751)\n\n*请点击下方绿色按钮立即致电或在 WhatsApp 上发送紧急消息：*",
+            actions: [
+              urgentCallAction,
+              whatsAppUrgent,
+              emailSefat
+            ]
           };
         }
-        if (isPortfolio) {
+        if (queryLang === "hi") {
           return {
-            text: "সিফাত ভূঁইয়ার সবগুলো ডিজাইন ও সোশ্যাল মিডিয়া ক্যাম্পেইনের কাজ একসাথে দেখতে নিচের বাটনে ক্লিক করে Google Drive ফোল্ডারটি ওপেন করুন:",
-            actions: [{ label: "Google Drive পোর্টফোলিও খুলুন", icon: "📁", url: "https://drive.google.com/drive/folders/175e11jZ9tU21Uq4qF5M0G6yHnJ4T3w8_" }]
-          };
-        }
-        if (isContactOrHire) {
-          return {
-            text: "সিফাত-এর সাথে যোগাযোগ করার সব মাধ্যম:\n\n• **WhatsApp:** +8801828157751 (সবচেয়ে দ্রুত উত্তর পাবেন)\n• **ইমেইল:** ksefat94@gmail.com\n• **Instagram:** @sefatbhuiyan_marketing0101\n• **GitHub:** Sefatbhuiyan\n• **অবস্থান:** ঢাকা, বাংলাদেশ",
-            actions: standardActions
-          };
-        }
-        if (isExperienceOrSkills) {
-          return {
-            text: "সিফাত ভূঁইয়া কম্পিউটার টেকনোলজিতে ডিপ্লোমা সম্পন্ন করেছেন এবং Adobe Photoshop, Illustrator, Premiere Pro, Meta Ads Manager ও Canva-তে পারদর্শী। তিনি দীর্ঘ সময় ধরে ক্লায়েন্টদের জন্য সফল মার্কেটিং ও ডিজাইন প্রজেক্ট সম্পন্ন করেছেন।",
-            actions: standardActions
-          };
-        }
-        if (isTurnaround) {
-          return {
-            text: "সাধারণ ডিজাইন সাধারণত **২৪ থেকে ৪৮ ঘণ্টার মধ্যে** ডেলিভারি করা হয়। ক্লায়েন্ট সন্তুষ্ট না হওয়া পর্যন্ত রিভিশন সাপোর্ট থাকে। জরুরি কাজের জন্য এক্সপ্রেস ডেলিভারিও সম্ভব!",
-            actions: standardActions
-          };
-        }
-        if (isGreeting) {
-          return {
-            text: "হ্যালো! 👋 আশা করি ভালো আছেন। আমি সিফাত এআই। সিফাত ভূঁইয়ার সার্ভিস, প্রাইসিং, বা পোর্টফোলিও নিয়ে যে কোনো কিছু জানতে আমাকে জিজ্ঞাসা করুন!",
-            actions: standardActions
+            text: "🚨 **तत्काल प्रोजेक्ट या सीधी बात के लिए ऑफिस लाइन:**\n\nSefat Bhuiyan वर्तमान में किसी क्लाइंट कैंपेन में व्यस्त या ऑफलाइन हो सकते हैं। यदि आपका प्रोजेक्ट बहुत ज़रूरी है या आप तुरंत बात करना चाहते हैं, तो कृपया उनके आधिकारिक डायरेक्ट फोन / सिम नंबर पर सीधे कॉल करें:\n\n📞 **डायरेक्ट फोन नंबर:** `01828157751` (+8801828157751)\n\n*सीधे कॉल करने के लिए नीचे दिए गए हरे बटन पर टैप करें या WhatsApp पर संपर्क करें:*",
+            actions: [
+              urgentCallAction,
+              whatsAppUrgent,
+              emailSefat
+            ]
           };
         }
         return {
-          text: "ধন্যবাদ আপনার বার্তার জন্য! সিফাত ভূঁইয়ার মার্কেটিং সেবা, ডিজাইন বা প্রজেক্ট শুরু করতে চাইলে সরাসরি WhatsApp-এ বার্তা পাঠাতে পারেন।",
-          actions: standardActions
-        };
-      }
-
-      // Language: HINDI
-      if (queryLang === "hi") {
-        if (isServices) {
-          return {
-            text: "**Sefat Bhuiyan** दो मुख्य क्षेत्रों में पेशेवर सेवाएं प्रदान करते हैं:\n\n1. **सोशल मीडिया मार्केटिंग:** Meta Ads, Facebook पेज ग्रोथ, लीड जनरेशन और कंटेंट प्लानिंग।\n2. **ग्राफिक डिज़ाइन:** सोशल मीडिया पोस्ट, बैनर, थंबनेल, विज्ञापन क्रिएटिव और ब्रांड विजुअल्स।",
-            actions: standardActions
-          };
-        }
-        if (isPricing) {
-          return {
-            text: "हमारी कीमतें बहुत किफायती और लचीली हैं:\n\n• **सिंगल डिज़ाइन/बैनर:** कम बजट से शुरुआत\n• **मासिक सोशल मीडिया पैकेज:** मासिक रिटेनर और रिपोर्टिंग\n• **कस्टम प्रोजेक्ट:** आपकी आवश्यकता के अनुसार\n\nमुफ़्त परामर्श के लिए सीधे WhatsApp पर संपर्क करें!",
-            actions: [{ label: "WhatsApp पर बात करें", icon: "💬", url: "https://wa.me/8801828157751" }]
-          };
-        }
-        if (isPortfolio) {
-          return {
-            text: "Sefat Bhuiyan के सभी काम एक जगह देखने के लिए नीचे दिए गए Google Drive लिंक पर क्लिक करें:",
-            actions: [{ label: "Google Drive पोर्टफोलियो खोलें", icon: "📁", url: "https://drive.google.com/drive/folders/175e11jZ9tU21Uq4qF5M0G6yHnJ4T3w8_" }]
-          };
-        }
-        if (isContactOrHire) {
-          return {
-            text: "Sefat से संपर्क करने के विकल्प:\n\n• **WhatsApp:** +8801828157751 (तुरंत जवाब)\n• **ईमेल:** ksefat94@gmail.com\n• **Instagram:** @sefatbhuiyan_marketing0101\n• **GitHub:** Sefatbhuiyan\n• **स्थान:** ढाका, बांग्लादेश",
-            actions: standardActions
-          };
-        }
-        if (isGreeting) {
-          return {
-            text: "नमस्ते! 👋 मैं Sefat AI हूँ। आप Sefat Bhuiyan की सेवाओं, प्रोजेक्ट्स या दरों के बारे में कुछ भी पूछ सकते हैं!",
-            actions: standardActions
-          };
-        }
-        return {
-          text: "धन्यवाद! Sefat Bhuiyan से डिजिटल मार्केटिंग या ग्राफिक डिज़ाइन के संबंध में चर्चा के लिए सीधे WhatsApp या ईमेल पर संपर्क करें।",
-          actions: standardActions
-        };
-      }
-
-      // Language: CHINESE
-      if (queryLang === "zh") {
-        if (isServices) {
-          return {
-            text: "**Sefat Bhuiyan** 提供两大核心专业服务：\n\n1. **数字与社媒营销 (Meta / FB / IG)：**\n• 页面粉丝增长与内容排期\n• 高转化精准广告投放 (Meta Ads)\n• 商业文案与受众定位\n\n2. **平面设计与品牌视觉：**\n• 社交媒体海报、横幅、YouTube 缩略图\n• 品牌视觉识别系统、标志与宣传画册",
-            actions: standardActions
-          };
-        }
-        if (isPricing) {
-          return {
-            text: "报价机制透明且具备高度灵活性：\n\n• **单项平面设计：** 极具竞争力的亲民起价\n• **月度社媒托管包：** 定期发布 + 广告代投综合方案\n• **定制整合项目：** 根据品牌需求量身定制\n\n欢迎随时在 WhatsApp 交流获取详细项目报价单！",
-            actions: [{ label: "通过 WhatsApp 咨询报价", icon: "💬", url: "https://wa.me/8801828157751" }]
-          };
-        }
-        if (isPortfolio) {
-          return {
-            text: "欢迎查阅 Sefat Bhuiyan 在 Google Drive 上的完整商业设计与营销作品合辑：",
-            actions: [{ label: "开启 Google Drive 作品集", icon: "📁", url: "https://drive.google.com/drive/folders/175e11jZ9tU21Uq4qF5M0G6yHnJ4T3w8_" }]
-          };
-        }
-        if (isContactOrHire) {
-          return {
-            text: "联系 Sefat Bhuiyan 的官方渠道：\n\n• **WhatsApp:** +8801828157751 (实时响应)\n• **电子邮箱:** ksefat94@gmail.com\n• **Instagram:** @sefatbhuiyan_marketing0101\n• **GitHub:** Sefatbhuiyan\n• **所在地:** 孟加拉国·达卡",
-            actions: standardActions
-          };
-        }
-        if (isGreeting) {
-          return {
-            text: "您好！👋 我是 Sefat AI。很高兴为您服务！您可以向我咨询关于 Sefat Bhuiyan 的营销服务、设计能力或项目报价。",
-            actions: standardActions
-          };
-        }
-        return {
-          text: "感谢您的留言！若需启动新项目或咨询业务细节，欢迎随时联系 Sefat。",
-          actions: standardActions
-        };
-      }
-
-      // Language: ARABIC
-      if (queryLang === "ar") {
-        if (isServices) {
-          return {
-            text: "يقدم **سيفات بويان** خدمات مهنية متكاملة في مجالين رئيسيين:\n\n1. **التسويق الرقمي وإعلانات السوشيال ميديا:**\n• إدارة وتنمية صفحات فيسبوك وإنستغرام\n• حملات إعلانية ممولة عالية التحويل (Meta Ads)\n• كتابة المحتوى الإعلاني والاستراتيجية الرقمية\n\n2. **التصميم الجرافيكي:**\n• تصاميم منشورات السوشيال ميديا والبنرات\n• الهوية البصرية والشعارات للمشاريع الناشئة",
-            actions: standardActions
-          };
-        }
-        if (isPricing) {
-          return {
-            text: "باقات الأسعار مرنة واقتصادية للغاية:\n\n• **تصاميم فردية:** بأسعار مناسبة جداً\n• **باقات إدارة شهرية:** خطة محتوى متكاملة مع إعلانات\n• **عقود مخصصة:** بحسب متطلبات مشروعك\n\nتواصل عبر واتساب لمناقشة ميزانيتك!",
-            actions: [{ label: "تواصل عبر واتساب", icon: "💬", url: "https://wa.me/8801828157751" }]
-          };
-        }
-        if (isPortfolio) {
-          return {
-            text: "يمكنك استعراض مجلد الأعمال الكامل لسيفات بويان على Google Drive بالنقر على الرابط أدناه:",
-            actions: [{ label: "فتح معرض أعمال Google Drive", icon: "📁", url: "https://drive.google.com/drive/folders/175e11jZ9tU21Uq4qF5M0G6yHnJ4T3w8_" }]
-          };
-        }
-        if (isContactOrHire) {
-          return {
-            text: "طرق التواصل المباشرة مع سيفات:\n\n• **واتساب:** +8801828157751 (استجابة فورية)\n• **البريد:** ksefat94@gmail.com\n• **إنستغرام:** @sefatbhuiyan_marketing0101\n• **غيت هاب:** Sefatbhuiyan\n• **الموقع:** دكا، بنغلاديش",
-            actions: standardActions
-          };
-        }
-        if (isGreeting) {
-          return {
-            text: "أهلاً بك! 👋 أنا سيفات الذكاء الاصطناعي. كيف يمكنني مساعدتك اليوم بخصوص خدمات التسويق أو التصميم؟",
-            actions: standardActions
-          };
-        }
-        return {
-          text: "شكراً لتواصلك! يمكنك التحدث مباشرة مع سيفات بويان عبر واتساب لبدء مشروعك القادم.",
-          actions: standardActions
-        };
-      }
-
-      // Default: ENGLISH
-      if (isMobileVersion) {
-        return {
-          text: "Yes! Sefat Bhuiyan has created a dedicated **Mobile Version Portfolio** optimized specifically for smartphones and handheld devices:\n\n📱 **Ultra-fast, touch-optimized & responsive UI**\n🌐 **Direct URL:** `sefatbhuiyan.qrioustechbd.com`\n\nClick the button below to visit the mobile version directly:",
+          text: "🚨 **Direct Urgent Hotline & Consultation:**\n\nSefat Bhuiyan may currently be in a live client campaign session or temporarily away from desk. For high-priority deadlines, direct negotiations, or emergency consultation, please place a **Direct Phone / SIM Call** to his official office line:\n\n📞 **Direct Line:** `01828157751` (+8801828157751)\n\n*Tap the button below to dial directly from your mobile device or desktop:*",
           actions: [
-            { label: "Open Mobile Version 📱", icon: "📱", url: "https://sefatbhuiyan.qrioustechbd.com/" },
-            { label: "WhatsApp Direct", icon: "💬", url: "https://wa.me/8801828157751" }
+            urgentCallAction,
+            whatsAppUrgent,
+            emailSefat
           ]
         };
       }
-      if (isServices) {
+
+      // =========================================================
+      // HIGHEST PRIORITY 2: CLIENT CONTACT CAPTURE / LOG
+      // Triggered when client provides phone, email or identity
+      // =========================================================
+      if (isContactInfoCaptured) {
+        if (queryLang === "bn") {
+          return {
+            text: "✅ **আপনার যোগাযোগের তথ্য ও প্রজেক্ট রিকোয়েস্ট সফলভাবে গ্রহণ করা হয়েছে!**\n\nসিফাত ভূঁইয়ার পার্সোনাল ক্লায়েন্ট অ্যাসিস্ট্যান্ট হিসেবে আমি আপনার বার্তাটি সর্বোচ্চ অগ্রাধিকারে সংরক্ষণ করেছি। সিফাত অনলাইনে আসা মাত্রই আপনাকে সরাসরি কল বা ফিরতি মেসেজ করবেন।\n\n💡 আপনার বিষয়টি যদি অতি জরুরি হয় এবং এখনই কথা বলতে চান, তবে সরাসরি এই নম্বরে **Direct SIM Call** দিন: **01828157751**",
+            actions: [
+              urgentCallAction,
+              whatsAppDirect
+            ]
+          };
+        }
         return {
-          text: "**Sefat Bhuiyan** specializes in high-impact creative and digital solutions:\n\n1. **Digital & Social Media Marketing:**\n• Facebook & Instagram Meta Ads Management\n• Page Growth, Audience Targeting & Lead Gen\n• Content Strategy & Creative Direction\n\n2. **Graphic Design:**\n• Social Media Posts, Ad Creatives & Web Banners\n• YouTube Thumbnails & Promo Materials\n• Brand Identity, Logo Systems & Visual Polish",
-          actions: standardActions
+          text: "✅ **Your Contact Details & Request Have Been Logged!**\n\nAs Sefat's official virtual representative, I have recorded your details with top priority. Sefat will reach out to you via phone or message as soon as he is back online.\n\n💡 If this requires urgent discussion right now, please call his direct office line: **01828157751**.",
+          actions: [
+            urgentCallAction,
+            whatsAppDirect
+          ]
         };
       }
-      if (isPricing) {
+
+      // =========================================================
+      // HIGHEST PRIORITY 3: CLIENT INTAKE & NEW PROJECT START
+      // =========================================================
+      if (isLeadIntakeOrHire) {
+        if (queryLang === "bn") {
+          return {
+            text: "স্বাগতম! নতুন প্রজেক্ট শুরু করতে পেরে আমরা আনন্দিত। 🎉\n\nসিফাত অফলাইনে থাকলেও আমি আপনার প্রজেক্টের রিকোয়ারমেন্ট গ্রহণ করতে প্রস্তুত। দয়া করে নিচের তথ্যগুলো এখানে লিখে পাঠান:\n\n1️⃣ **আপনার ব্র্যান্ড বা বিজনেসের নাম ও ধরণ**\n2️⃣ **প্রয়োজনীয় সার্ভিস** (মেটা ফেসবুক/ইন্সটা অ্যাডস, গ্রাফিক ব্যানার, পোস্টার, লোগো ইত্যাদি)\n3️⃣ **আপনার আনুমানিক বাজেট ও সময়সীমা**\n4️⃣ **আপনার ফোন নম্বর বা WhatsApp নম্বর**\n\nঅথবা এক ক্লিকে সরাসরি WhatsApp-এ সিফাতকে প্রজেক্ট ব্রিফ পাঠাতে পারেন বা জরুরি হলে কল দিন:",
+            actions: [
+              { label: "💬 WhatsApp-এ প্রজেক্ট শুরু করুন", icon: "💬", url: "https://wa.me/8801828157751?text=Hello%20Sefat,%20I%20want%20to%20start%20a%20new%20project!" },
+              urgentCallAction,
+              portfolioDrive
+            ]
+          };
+        }
         return {
-          text: "Pricing is transparent, competitive, and scalable for businesses of all sizes:\n\n• **Individual Creatives / Banners:** Affordable per-asset rates\n• **Monthly Social Growth Retainer:** Dedicated posting, creative design & ad management\n• **Full Campaign Packages:** Customized according to your brand goals\n\nFor a tailored quote and free initial strategy chat, reach out directly on WhatsApp!",
-          actions: [{ label: "Chat on WhatsApp for Rates", icon: "💬", url: "https://wa.me/8801828157751" }]
+          text: "Welcome! We're excited to collaborate on your next growth milestone. 🎉\n\nEven when Sefat is offline, I can log your project requirements directly. Please share:\n\n1️⃣ **Your Business / Brand Name**\n2️⃣ **Services Needed** (Meta Ads, Social Media Creatives, Logo, Campaign)\n3️⃣ **Estimated Budget & Target Deadline**\n4️⃣ **Your Phone / WhatsApp Contact**\n\nYou can also transmit your brief directly to Sefat's WhatsApp with one tap:",
+          actions: [
+            { label: "💬 Submit Brief on WhatsApp", icon: "💬", url: "https://wa.me/8801828157751?text=Hello%20Sefat,%20I%20want%20to%20start%20a%20new%20project!" },
+            urgentCallAction,
+            portfolioDrive
+          ]
         };
       }
-      if (isPortfolio) {
+
+      // =========================================================
+      // HIGHEST PRIORITY 4: OFFLINE STATUS / AVAILABILITY
+      // =========================================================
+      if (isOfflineStatusQuery) {
+        if (queryLang === "bn") {
+          return {
+            text: "সিফাত ভূঁইয়া বর্তমানে লাইভ ক্লায়েন্ট ক্যাম্পেইনে ব্যস্ত বা ডেস্কে অফলাইনে থাকতে পারেন, তবে তাঁর পার্সোনাল ভার্চুয়াল রিপ্রেজেন্টেটিভ হিসেবে আমি ২৪/৭ আপনার সব তথ্য ও ক্লায়েন্ট রিকোয়েস্ট প্রসেস করতে প্রস্তুত!\n\n💡 আপনার কাজের বিষয়ে আমাকে যেকোনো প্রশ্ন করতে পারেন, আর যদি এখনই সরাসরি সিফাতের সাথে ফোনে কথা বলা প্রয়োজন হয়, তবে তাঁর সরাসরি অফিস নম্বরে কল দিন:\n📞 **01828157751**",
+            actions: [
+              urgentCallAction,
+              whatsAppDirect
+            ]
+          };
+        }
         return {
-          text: "Want to see Sefat's full collection of design and marketing work? Click below to access the full verified Google Drive portfolio:",
-          actions: [{ label: "Open Full Google Drive Portfolio", icon: "🎨", url: "https://drive.google.com/drive/folders/175e11jZ9tU21Uq4qF5M0G6yHnJ4T3w8_" }]
+          text: "Sefat Bhuiyan is currently in active campaign production or temporarily away from desk. However, as his dedicated 24/7 AI Representative, I am fully equipped to assist you, take your orders, and provide answers!\n\n📞 If you need to speak with Sefat immediately, please dial his direct office SIM line: **01828157751**.",
+          actions: [
+            urgentCallAction,
+            whatsAppDirect
+          ]
         };
       }
-      if (isContactOrHire) {
+
+      // =========================================================
+      // PAYMENT METHODS & POLICIES
+      // =========================================================
+      if (isPaymentMethods) {
+        if (queryLang === "bn") {
+          return {
+            text: "💳 **নিরাপদ পেমেন্ট মেথড ও পলিসি:**\n\n• **বাংলাদেশি ক্লায়েন্টদের জন্য:** বিকাশ (bKash Personal & Merchant), নগদ (Nagad), রকেট (Rocket), এবং যেকোনো ব্যাংক অ্যাকাউন্ট ট্রান্সফার।\n• **আন্তর্জাতিক ক্লায়েন্টদের জন্য:** Wise, Bank Wire ট্রান্সফার ও নিরাপদ ইনভয়েস।\n\n📌 **কাজের শর্তাবলী:** প্রজেক্ট শুরু করতে সাধারণত ৫০% অগ্রিম এবং ফাইনাল ফাইল রিভিউ ও অনুমোদনের পর বাকি ৫০% পেমেন্ট সম্পন্ন করতে হয়। বিস্তারিত পেমেন্ট অ্যাকাউন্টের জন্য WhatsApp বা সরাসরি কলে কথা বলুন।",
+            actions: [
+              whatsAppDirect,
+              urgentCallAction
+            ]
+          };
+        }
         return {
-          text: "Here is how you can directly connect with Sefat Bhuiyan:\n\n• **WhatsApp:** +8801828157751 (Fastest response)\n• **Email:** ksefat94@gmail.com\n• **Instagram:** @sefatbhuiyan_marketing0101\n• **GitHub:** https://github.com/Sefatbhuiyan\n• **LinkedIn:** in/sefat-bhuiyan\n• **Location:** Dhaka, Bangladesh",
-          actions: standardActions
+          text: "💳 **Secure Payment Methods & Terms:**\n\n• **Bangladesh:** bKash, Nagad, Rocket, and Direct Bank Transfer.\n• **International:** Wise, Direct Bank Wire, and Invoiced Payments.\n\n📌 **Standard Milestone:** 50% upfront to initiate onboarding & strategy, and remaining 50% upon final creative review and approval.",
+          actions: [
+            whatsAppDirect,
+            urgentCallAction
+          ]
         };
       }
-      if (isExperienceOrSkills) {
+
+      // =========================================================
+      // WORKFLOW & PROCESS
+      // =========================================================
+      if (isWorkflowAndProcess) {
+        if (queryLang === "bn") {
+          return {
+            text: "🔄 **সিফাত ভূঁইয়ার কাজের ৪টি সহজ ধাপ:**\n\n1️⃣ **রিকোয়ারমেন্ট অ্যানালাইসিস:** আপনার বিজনেসের গোল, অডিয়েন্স এবং কাঙ্ক্ষিত ফলাফল নির্ধারণ।\n2️⃣ **স্ট্র্যাটেজি ও ক্রিয়েটিভ ড্রাফট:** আধুনিক ভিজ্যুয়াল ডিজাইন বা হাই-কনভার্টিং অ্যাড ক্যাম্পেইন প্ল্যান প্রস্তুত।\n3️⃣ **রিভিউ ও রিভিশন:** আপনার ফিডব্যাক অনুযায়ী পরিবর্তন যতক্ষণ না আপনি ১০০% সন্তুষ্ট হন।\n4️⃣ **ফাইনাল ডেলিভারি ও গ্রোথ:** হাই-রেজোলিউশন সোর্স ফাইল হস্তান্তর অথবা লাইভ অ্যাড মনিটরিং শুরু।",
+            actions: standardActions
+          };
+        }
         return {
-          text: "Sefat holds a **Diploma in Computer Technology** with deep hands-on expertise in **Adobe Photoshop, Illustrator, Premiere Pro, Meta Business Suite, Canva, and modern digital branding systems**. He combines analytical tech knowledge with modern visual design.",
-          actions: standardActions
-        };
-      }
-      if (isTurnaround) {
-        return {
-          text: "Standard graphic design assets are usually delivered within **24 to 48 hours**. Urgent express turnarounds are available upon request, and all projects include revisions until you are completely satisfied!",
-          actions: standardActions
-        };
-      }
-      if (isGreeting) {
-        return {
-          text: "Hey there! 👋 I'm **Sefat AI**. I'm here 24/7 to answer your questions about Sefat's marketing services, design work, pricing, or turnaround times. What can I help you with?",
+          text: "🔄 **Sefat's 4-Step Collaborative Workflow:**\n\n1️⃣ **Discovery & Brief:** Understand your business goals, target audience, and key deliverables.\n2️⃣ **Strategy & Concept Draft:** Create high-converting ad frameworks or visual designs.\n3️⃣ **Review & Refinement:** Dedicated iterations until you are 100% satisfied.\n4️⃣ **Launch & Delivery:** Deliver production-ready source files or launch live Meta ad campaigns.",
           actions: standardActions
         };
       }
 
+      // =========================================================
+      // REVISIONS & QUALITY GUARANTEE
+      // =========================================================
+      if (isRevisionsAndGuarantee) {
+        if (queryLang === "bn") {
+          return {
+            text: "🛡️ **১০০% সন্তুষ্টি ও রিভিশন পলিসি:**\n\nসিফাত ভূঁইয়া প্রতিটি প্রজেক্টে ক্লায়েন্টের শতভাগ সন্তুষ্টি নিশ্চিত করেন। ডিজাইন ডেলিভারির পর আপনার প্রয়োজনমতো রিভিশন ও পরিবর্তন করে দেওয়া হয়। চূড়ান্ত অনুমোদনের আগ পর্যন্ত কাজ চলমান থাকে।",
+            actions: standardActions
+          };
+        }
+        return {
+          text: "🛡️ **100% Client Satisfaction & Revision Guarantee:**\n\nSefat stands behind every piece of work delivered. All graphic designs and marketing setups include iterative revisions until you are completely thrilled with the final result.",
+          actions: standardActions
+        };
+      }
+
+      // =========================================================
+      // TURNAROUND & DELIVERY TIMES
+      // =========================================================
+      if (isTurnaroundAndDelivery) {
+        if (queryLang === "bn") {
+          return {
+            text: "⚡ **ডেলিভারি সময়সীমা ও এক্সপ্রেস সার্ভিস:**\n\n• **স্ট্যান্ডার্ড গ্রাফিক ডিজাইন:** ২৪ থেকে ৪৮ ঘণ্টার মধ্যে ডেলিভারি।\n• **মেটা অ্যাড ক্যাম্পেইন সেটআপ:** ১ থেকে ২ কার্যদিবস (অডিয়েন্স রিসার্চ + অ্যাড ক্রিয়েটিভসহ)।\n• **এক্সপ্রেস/জরুরি ডেলিভারি:** জরুরি প্রজেক্টের জন্য ৬ থেকে ১২ ঘণ্টার মধ্যে ফাস্ট ট্র্যাক ডেলিভারি পাওয়া সম্ভব!\n\n💡 খুব দ্রুত বা আর্জেন্ট কাজ লাগলে সরাসরি কল দিন: **01828157751**",
+            actions: [
+              urgentCallAction,
+              whatsAppUrgent
+            ]
+          };
+        }
+        return {
+          text: "⚡ **Turnaround Time & Express Delivery:**\n\n• **Standard Creatives / Banners:** 24 to 48 hours.\n• **Meta Campaign Setup:** 1 to 2 business days.\n• **Express Emergency Delivery:** 6 to 12 hour rush delivery available upon request.\n\n📞 If you have a pressing deadline right now, call Sefat's direct line: **01828157751**.",
+          actions: [
+            urgentCallAction,
+            whatsAppUrgent
+          ]
+        };
+      }
+
+      // =========================================================
+      // MARKETING SERVICES
+      // =========================================================
+      if (isServicesMarketing) {
+        if (queryLang === "bn") {
+          return {
+            text: "📈 **মেটা ফেসবুক ও ডিজিটাল মার্কেটিং সেবা:**\n\n• **হাই-কনভার্টিং অ্যাড ক্যাম্পেইন:** সঠিক অডিয়েন্স টার্গেটিং ও রিটার্গেটিং অ্যাড যা সরাসরি সেলস বাড়ায়।\n• **Meta Pixel & CAPI সেটআপ:** ই-কমার্স ও বিজনেসের ডাটা ট্র্যাকিংয়ের জন্য মেটা পিক্সেল ও কনভার্সন এপিআই কনফিগারেশন।\n• **ROAS অপ্টিমাইজেশন:** সর্বনিম্ন খরচে সর্বোচ্চ রিটার্ন অন অ্যাড স্পেন্ড নিশ্চিত করা।\n• **সোশ্যাল মিডিয়া গ্রোথ:** পেজ এনগেজমেন্ট, অর্গানিক রিচ বৃদ্ধি ও ব্র্যান্ডিং।",
+            actions: [
+              whatsAppProject,
+              urgentCallAction,
+              portfolioDrive
+            ]
+          };
+        }
+        return {
+          text: "📈 **Meta Ads & Performance Marketing Services:**\n\n• **High-Converting Ad Campaigns:** Laser-targeted Facebook & Instagram campaigns built to scale sales and qualified leads.\n• **Meta Pixel & Conversions API (CAPI):** Full-funnel tracking and attribution setup for e-commerce and lead gen.\n• **ROAS Optimization:** Continuous A/B split testing and budget scaling to maximize ROI.\n• **Social Media Growth:** Data-driven content strategy, audience engagement, and community building.",
+          actions: [
+            whatsAppProject,
+            urgentCallAction,
+            portfolioDrive
+          ]
+        };
+      }
+
+      // =========================================================
+      // GRAPHIC DESIGN SERVICES
+      // =========================================================
+      if (isServicesDesign) {
+        if (queryLang === "bn") {
+          return {
+            text: "🎨 **গ্রাফিক ডিজাইন ও ভিজ্যুয়াল ব্র্যান্ডিং সেবা:**\n\n• **সোশ্যাল মিডিয়া পোস্ট ও ক্যারোসেল:** ফেসবুক, ইনস্টাগ্রাম ও লিঙ্কডইন-এর জন্য স্ক্রোল-স্টপিং ক্রিয়েটিভস।\n• **হাই-কনভার্টিং অ্যাড ব্যানার:** ক্যাম্পেইনের CTR বাড়াতে দৃষ্টিনন্দন বিজ্ঞাপন ডিজাইন।\n• **YouTube থাম্বনেইল:** বেশি ভিউ ও ক্লিকের জন্য অপ্টিমাইজড ক্রিয়েটিভ।\n• **ব্র্যান্ড আইডেন্টিটি ও লোগো:** আধুনিক মিনিমালিস্ট এবং ভেক্টর লোগো ডিজাইন।",
+            actions: [
+              portfolioDrive,
+              whatsAppProject,
+              urgentCallAction
+            ]
+          };
+        }
+        return {
+          text: "🎨 **Graphic Design & Brand Identity Services:**\n\n• **Social Media Posts & Carousels:** Scroll-stopping visual assets for Facebook, Instagram, and LinkedIn.\n• **High-CTR Ad Creatives:** Performance-focused promo banners and visual storytelling.\n• **YouTube Thumbnails:** Click-optimized, vibrant video thumbnails.\n• **Brand Identity & Logos:** Modern, vector logo systems, color palettes, and typography guidelines.",
+          actions: [
+            portfolioDrive,
+            whatsAppProject,
+            urgentCallAction
+          ]
+        };
+      }
+
+      // =========================================================
+      // GENERAL SERVICES OVERVIEW
+      // =========================================================
+      if (isServicesGeneral) {
+        if (queryLang === "bn") {
+          return {
+            text: "**সিফাত ভূঁইয়া** মূলত দুটি প্রধান ক্ষেত্রে প্রফেশনাল সেবা প্রদান করেন:\n\n1. **সোশ্যাল মিডিয়া ও মেটা মার্কেটিং:**\n• ফেসবুক ও ইনস্টাগ্রাম অ্যাড ক্যাম্পেইন এবং লিড জেনারেশন\n• অডিয়েন্স টার্গেটিং, পিক্সেল/CAPI ও সেলস বৃদ্ধি\n\n2. **গ্রাফিক ডিজাইন ও ব্র্যান্ডিং:**\n• সোশ্যাল মিডিয়া পোস্ট, অ্যাড ক্রিয়েটিভ, ক্যারোসেল ও ব্যানার\n• ইউটিউব থাম্বনেইল, লোগো ও ব্র্যান্ড ভিজ্যুয়াল\n\nআপনার বিজনেসের জন্য কোনটি প্রয়োজন?",
+            actions: standardActions
+          };
+        }
+        return {
+          text: "**Sefat Bhuiyan** specializes in high-impact creative and digital solutions:\n\n1. **Digital & Social Media Marketing:**\n• Facebook & Instagram Meta Ads Management\n• Page Growth, Audience Targeting & Lead Gen\n• Content Strategy & Performance Tracking\n\n2. **Graphic Design:**\n• Social Media Posts, Ad Creatives & Web Banners\n• YouTube Thumbnails & Promo Materials\n• Brand Identity, Logo Systems & Visual Polish",
+          actions: standardActions
+        };
+      }
+
+      // =========================================================
+      // PRICING & RATES
+      // =========================================================
+      if (isPricing) {
+        if (queryLang === "bn") {
+          return {
+            text: "💰 **প্রাইসিং ও বাজেট প্যাকেজ:**\n\n• **সিঙ্গেল ডিজাইন / ব্যানার:** সাশ্রয়ী মূল্যে শুরু (স্টার্টআপ ও ক্ষুদ্র ব্যবসার জন্য উপযুক্ত)।\n• **মাসিক সোশ্যাল মিডিয়া প্যাকেজ:** নির্দিষ্ট সংখ্যক পোস্ট ডিজাইন + কপিরাইটিং + পেজ মনিটরিং।\n• **মেটা অ্যাডস ম্যানেজমেন্ট রিটেইনার:** ক্যাম্পেইন সেটআপ, A/B টেস্টিং, ডেইলি অপ্টিমাইজেশন ও উইকলি রিপোর্ট।\n• **কাস্টম প্রজেক্ট:** আপনার নির্দিষ্ট বাজেট অনুযায়ী ফ্লেক্সিবল ও নেগোশিয়েবল।\n\nআপনার বাজেট ও চাহিদামতো সেরা অফার পেতে সরাসরি কথা বলুন:",
+            actions: [
+              { label: "💬 WhatsApp-এ দরদাম জানুন", icon: "💬", url: "https://wa.me/8801828157751?text=Hello%20Sefat,%20I%20want%20to%20know%20about%20pricing%20packages!" },
+              urgentCallAction
+            ]
+          };
+        }
+        return {
+          text: "💰 **Pricing & Scalable Packages:**\n\n• **Individual Creatives / Banners:** Competitive per-asset rates.\n• **Monthly Social Growth Retainer:** Regular scheduled posts, graphic design, and page monitoring.\n• **Meta Ads Management Package:** Strategic campaign architecture, audience testing, and daily performance optimization.\n• **Enterprise / Custom:** Negotiable rates tailored to your budget and growth targets.",
+          actions: [
+            { label: "💬 Chat on WhatsApp for Rates", icon: "💬", url: "https://wa.me/8801828157751?text=Hello%20Sefat,%20I%20want%20to%20know%20about%20pricing%20packages!" },
+            urgentCallAction
+          ]
+        };
+      }
+
+      // =========================================================
+      // PORTFOLIO & WORK SAMPLES
+      // =========================================================
+      if (isPortfolio) {
+        if (queryLang === "bn") {
+          return {
+            text: "সিফাত ভূঁইয়ার সবগুলো ডিজাইন ও সোশ্যাল মিডিয়া ক্যাম্পেইনের কাজ একসাথে দেখতে নিচের বাটনে ক্লিক করে Google Drive ফোল্ডারটি ওপেন করুন:",
+            actions: [
+              portfolioDrive,
+              mobileVersion,
+              whatsAppDirect
+            ]
+          };
+        }
+        return {
+          text: "Explore Sefat's complete collection of client campaigns, social media designs, and branding assets on Google Drive:",
+          actions: [
+            portfolioDrive,
+            mobileVersion,
+            whatsAppDirect
+          ]
+        };
+      }
+
+      // =========================================================
+      // MOBILE VERSION PORTFOLIO
+      // =========================================================
+      if (isMobileVersion) {
+        if (queryLang === "bn") {
+          return {
+            text: "📱 **সিফাত ভূঁইয়ার স্পেশালাইজড মোবাইল পোর্টফোলিও:**\n\nস্মার্টফোন ও টাচ-স্ক্রিন ডিভাইসে দ্রুত ব্যবহারের জন্য আলাদা মোবাইল ভার্সন তৈরি করা হয়েছে:\n🌐 `sefatbhuiyan.qrioustechbd.com`\n\nনিচের বাটনে ক্লিক করে সরাসরি মোবাইল পোর্টফোলিও ওপেন করুন:",
+            actions: [
+              mobileVersion,
+              whatsAppDirect
+            ]
+          };
+        }
+        return {
+          text: "Yes! Sefat has a dedicated **Mobile Version Portfolio** optimized specifically for smartphones and handheld devices:\n\n📱 **Fast, responsive & touch-optimized UI**\n🌐 **URL:** `sefatbhuiyan.qrioustechbd.com`\n\nClick below to open the mobile version:",
+          actions: [
+            mobileVersion,
+            whatsAppDirect
+          ]
+        };
+      }
+
+      // =========================================================
+      // EXPERIENCE, CREDENTIALS & SKILLS
+      // =========================================================
+      if (isExperienceOrSkills) {
+        if (queryLang === "bn") {
+          return {
+            text: "🎓 **সিফাত ভূঁইয়ার প্রোফাইল ও দক্ষতা:**\n\nসিফাত কম্পিউটার টেকনোলজিতে ডিপ্লোমা সম্পন্ন করেছেন এবং Adobe Photoshop, Illustrator, Premiere Pro, Meta Ads Manager, Google Analytics ও Canva-তে দীর্ঘদিনের বাস্তব অভিজ্ঞতাসম্পন্ন। টেকনিক্যাল জ্ঞান ও সৃজনশীল ডিজাইনের সমন্বয়ে তিনি ক্লায়েন্টদের বিজনেসে সর্বোচ্চ ROI এনে দেন।",
+            actions: standardActions
+          };
+        }
+        return {
+          text: "🎓 **Sefat's Background & Technical Skills:**\n\nSefat holds a **Diploma in Computer Technology** with deep hands-on expertise across **Adobe Photoshop, Illustrator, Premiere Pro, Meta Business Suite, Canva, and modern digital marketing tools**. He bridges technical precision with modern visual artistry.",
+          actions: standardActions
+        };
+      }
+
+      // =========================================================
+      // LOCATION & CLIENT REACH
+      // =========================================================
+      if (isLocation) {
+        if (queryLang === "bn") {
+          return {
+            text: "📍 **সিফাত ভূঁইয়ার অবস্থান:**\n\nসিফাত ঢাকায় অবস্থিত এবং সারা বাংলাদেশসহ আন্তর্জাতিক ক্লায়েন্টদের (যুক্তরাষ্ট্র, যুক্তরাজ্য, মধ্যপ্রাচ্য ও ইউরোপ) সাথে সফলভাবে রিমোটলি কাজ করে আসছেন।",
+            actions: standardActions
+          };
+        }
+        return {
+          text: "📍 **Location & Client Reach:**\n\nSefat is based in Dhaka, Bangladesh, and works seamlessly with clients worldwide across the USA, UK, Middle East, Europe, and Asia.",
+          actions: standardActions
+        };
+      }
+
+      // =========================================================
+      // GREETING
+      // =========================================================
+      if (isGreeting) {
+        if (queryLang === "bn") {
+          return {
+            text: "হ্যালো! 👋 আশা করি ভালো আছেন। আমি **সিফাত এআই**, সিফাত ভূঁইয়ার ২৪/৭ সার্বক্ষণিক ভার্চুয়াল ক্লায়েন্ট রিপ্রেজেন্টেটিভ।\n\nসিফাত বর্তমানে লাইভ ক্লায়েন্ট ক্যাম্পেইনে ব্যস্ত বা অফলাইনে থাকলেও, আমি আপনার সব প্রশ্নের উত্তর দিতে ও অর্ডার নিতে প্রস্তুত! সার্ভিস, প্রাইসিং, বা কাজ শুরুর বিষয়ে যেকোনো কিছু জিজ্ঞাসা করুন।\n\n💡 জরুরি প্রয়োজনে সরাসরি অফিস লাইনে কল দিতে পারেন: **01828157751**",
+            actions: standardActions
+          };
+        }
+        return {
+          text: "Hey there! 👋 I'm **Sefat AI**, the 24/7 Virtual Client Representative for Sefat Bhuiyan.\n\nEven while Sefat is offline or managing campaigns, I'm ready to assist you with services, rates, portfolios, or onboarding your new project!\n\n📞 For urgent talk, feel free to call: **01828157751**.",
+          actions: standardActions
+        };
+      }
+
+      // =========================================================
+      // INTELLIGENT 24/7 REPRESENTATIVE FALLBACK
+      // =========================================================
+      if (queryLang === "bn") {
+        return {
+          text: "আপনার বার্তার জন্য ধন্যবাদ! সিফাত ভূঁইয়া বর্তমানে লাইভ প্রজেক্টে ব্যস্ত বা অফলাইনে থাকতে পারেন, তবে আমি আপনার সব তথ্য নোট করে রাখছি। আপনার প্রজেক্ট শুরু করতে বা নির্দিষ্ট আলোচনার জন্য সরাসরি WhatsApp-এ বার্তা পাঠাতে পারেন।\n\n🚨 কোনো জরুরি বিষয়ে সরাসরি কথা বলতে এখনই কল দিন: **01828157751**",
+          actions: standardActions
+        };
+      }
       return {
-        text: "Thank you for asking! Sefat Bhuiyan is ready to assist you with your marketing campaigns, design needs, or social media growth. Would you like to check his portfolio or chat directly on WhatsApp?",
+        text: "Thank you for asking! Sefat Bhuiyan may be offline or in active campaign production, but I am logging your questions 24/7. Would you like to submit your brief on WhatsApp or review previous work?\n\n🚨 For direct urgent inquiries, call Sefat's office line: **01828157751**.",
         actions: standardActions
       };
     }

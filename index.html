@@ -22,8 +22,10 @@
   <meta name="twitter:title" content="Sefat Bhuiyan — Portfolio" />
   <meta name="twitter:description" content="Personal portfolio of Sefat Bhuiyan — Digital Marketer & Graphic Designer." />
 
-  <link rel="icon" type="image/png" href="assets/sb_logo_transparent.png" />
-  <link rel="apple-touch-icon" href="assets/sb_logo_transparent.png" />
+  <link rel="icon" type="image/png" href="assets/favicon-16.png" sizes="16x16" />
+  <link rel="icon" type="image/png" href="assets/favicon-32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="assets/favicon-48.png" sizes="48x48" />
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
 
   <script type="application/ld+json">
   {
@@ -99,7 +101,7 @@
       <span class="brand-lockup-3d">
         <span class="sb-emblem-3d sb-emblem-float">
           <span class="sb-emblem-aura" aria-hidden="true"></span>
-          <img src="assets/sb_logo_3d.svg" alt="SB 3D Monogram" class="brand-sb-logo-3d" width="44" height="44" />
+          <img src="assets/sb_logo_monogram.png" alt="Sefat Bhuiyan Official Logo" class="brand-sb-logo-3d" width="44" height="44" />
         </span>
         <span class="brand-text-block">
           <span class="brand-title-3d">Sefat Bhuiyan</span>
@@ -715,7 +717,7 @@
 
                   <div class="card-back-main">
                     <div class="back-avatar-circle">
-                      <img src="assets/sb_logo_3d.svg" alt="SB 3D Monogram" class="back-avatar-img-3d" />
+                      <img src="assets/sb_logo_monogram.png" alt="Sefat Bhuiyan Official Logo" class="back-avatar-img-3d" />
                     </div>
                     <h4 class="back-name">SEFAT BHUIYAN</h4>
                     <p class="back-sub">Creative Director &amp; Marketing Strategist</p>
@@ -886,6 +888,184 @@
 
         </div>
 
+      </div>
+
+      <!-- ==============================================
+           3D CINEMATIC ABOUT VIDEO SHOWCASE REEL
+           Nonstop Ambient Looping Reel with Glassmorphism HUD & Interactive Controls
+           ============================================== -->
+      <div class="about-video-showcase about-video-3d" id="aboutVideoShowcase">
+        <div class="about-video-card">
+          <div class="about-video-glow" aria-hidden="true"></div>
+          
+          <div class="about-video-header">
+            <div class="about-video-badge-group">
+              <div class="about-video-badge">
+                <span class="video-live-dot" aria-hidden="true"></span>
+                <span class="video-badge-text" id="aboutVideoBadgeText">FEATURED SHOWCASE</span>
+              </div>
+              <div class="video-status-tag" id="videoStatusTag">
+                <span class="status-indicator-dot"></span>
+                <span class="status-tag-text" id="videoStatusText">PLAYING</span>
+              </div>
+            </div>
+            
+            <div class="about-video-controls">
+              <!-- Video Play / Pause (Off) Toggle -->
+              <button
+                type="button"
+                class="video-control-btn play-toggle"
+                id="aboutVideoPlayToggle"
+                aria-label="Pause Video"
+                title="Pause Video"
+              >
+                <svg class="play-icon sr-only" viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true">
+                  <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                </svg>
+                <svg class="pause-icon" viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true">
+                  <rect x="6" y="4" width="4" height="16" rx="1"></rect>
+                  <rect x="14" y="4" width="4" height="16" rx="1"></rect>
+                </svg>
+                <span class="control-label" id="playToggleLabel">Pause</span>
+              </button>
+
+              <!-- Sound Toggle with Equalizer Waveform -->
+              <button
+                type="button"
+                class="video-control-btn sound-toggle"
+                id="aboutVideoSoundToggle"
+                aria-label="Toggle Sound"
+                title="Sound Muted (Click to Unmute)"
+              >
+                <svg class="sound-off-icon" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                  <line x1="23" y1="9" x2="17" y2="15"></line>
+                  <line x1="17" y1="9" x2="23" y2="15"></line>
+                </svg>
+                <svg class="sound-on-icon sr-only" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                  <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+                </svg>
+                <span class="audio-equalizer" aria-hidden="true">
+                  <span class="eq-bar bar-1"></span>
+                  <span class="eq-bar bar-2"></span>
+                  <span class="eq-bar bar-3"></span>
+                </span>
+                <span class="control-label" id="soundToggleLabel">Unmute</span>
+              </button>
+
+              <!-- Picture-in-Picture Mini Player -->
+              <button
+                type="button"
+                class="video-control-btn pip-toggle"
+                id="aboutVideoPip"
+                aria-label="Picture in Picture"
+                title="Mini Floating Player"
+              >
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <rect x="2" y="3" width="20" height="14" rx="2"></rect>
+                  <rect x="11" y="9" width="9" height="6" rx="1" fill="currentColor" fill-opacity="0.3"></rect>
+                </svg>
+                <span class="control-label sr-only-mobile" id="pipToggleLabel">Mini</span>
+              </button>
+
+              <!-- Fullscreen Button -->
+              <button
+                type="button"
+                class="video-control-btn fullscreen-toggle"
+                id="aboutVideoFullscreen"
+                aria-label="Toggle Fullscreen"
+                title="Fullscreen"
+              >
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"></path>
+                </svg>
+                <span class="control-label" id="fullscreenToggleLabel">Fullscreen</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Video Stage Container with Cyber Monitor Brackets -->
+          <div class="about-video-screen" id="aboutVideoScreen">
+            <video
+              id="aboutPlayer"
+              class="about-video-element"
+              src="assets/about_video.mp4"
+              poster="assets/about_video_poster.jpg"
+              autoplay
+              loop
+              muted
+              playsinline
+              preload="auto"
+              aria-label="Sefat Bhuiyan Portfolio Video Reel"
+            ></video>
+
+            <!-- Holographic Corner Accents -->
+            <span class="video-bracket corner-tl" aria-hidden="true"></span>
+            <span class="video-bracket corner-tr" aria-hidden="true"></span>
+            <span class="video-bracket corner-bl" aria-hidden="true"></span>
+            <span class="video-bracket corner-br" aria-hidden="true"></span>
+
+            <!-- Center Click-to-Play/Pause Feedback Button -->
+            <button type="button" class="video-center-btn" id="videoCenterBtn" aria-label="Toggle Video Playback">
+              <span class="center-btn-orb">
+                <svg class="center-play-icon sr-only" viewBox="0 0 24 24" width="28" height="28" fill="currentColor">
+                  <polygon points="6 4 20 12 6 20 6 4"></polygon>
+                </svg>
+                <svg class="center-pause-icon" viewBox="0 0 24 24" width="26" height="26" fill="currentColor">
+                  <rect x="6" y="5" width="4" height="14" rx="1"></rect>
+                  <rect x="14" y="5" width="4" height="14" rx="1"></rect>
+                </svg>
+              </span>
+              <span class="center-btn-ripple" aria-hidden="true"></span>
+            </button>
+
+            <!-- Paused Holographic State Overlay -->
+            <div class="video-paused-overlay" id="videoPausedOverlay" aria-hidden="true">
+              <div class="paused-content">
+                <div class="paused-emblem">
+                  <img src="assets/sb_logo_monogram.png" alt="SB" width="38" height="38" />
+                </div>
+                <div class="paused-title" id="videoPausedTitle">SHOWCASE PAUSED</div>
+                <div class="paused-hint" id="videoPausedHint">Click anywhere to resume playback</div>
+              </div>
+            </div>
+
+            <!-- Gradient Overlays & Cinematic Vignette -->
+            <div class="video-overlay-gradient" aria-hidden="true"></div>
+
+            <!-- Interactive Timeline Scrubber & Progress Bar -->
+            <div class="video-scrubber-shelf" id="videoScrubberShelf">
+              <div class="video-progress-track" id="videoProgressTrack" role="slider" aria-label="Video scrubber" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" tabindex="0">
+                <div class="video-progress-buffered" id="videoProgressBuffered"></div>
+                <div class="video-progress-fill" id="videoProgressFill"></div>
+                <div class="video-progress-thumb" id="videoProgressThumb"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-video-footer">
+            <div class="video-caption-wrap">
+              <span class="video-caption-icon" aria-hidden="true">🎬</span>
+              <span class="video-caption-text" id="aboutVideoCaptionText">Visual Storytelling, Branding &amp; Digital Growth Strategy in Action</span>
+            </div>
+            
+            <div class="video-footer-meta">
+              <!-- Live Video Timestamp -->
+              <div class="video-time-chip" id="videoTimeChip">
+                <span class="time-current" id="videoTimeCurrent">00:00</span>
+                <span class="time-divider">/</span>
+                <span class="time-duration" id="videoTimeDuration">00:41</span>
+              </div>
+
+              <!-- High Definition Quality Specs Badge -->
+              <div class="video-specs-pill">
+                <span class="video-spec-dot"></span>
+                <span class="video-spec-text">1080P HD • NONSTOP REEL</span>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
     </section>
@@ -2004,7 +2184,7 @@
         <span class="brand-lockup-3d">
           <span class="sb-emblem-3d sb-emblem-float">
             <span class="sb-emblem-aura" aria-hidden="true"></span>
-            <img src="assets/sb_logo_3d.svg" alt="SB 3D Monogram" class="brand-sb-logo-3d" width="44" height="44" />
+            <img src="assets/sb_logo_monogram.png" alt="Sefat Bhuiyan Official Logo" class="brand-sb-logo-3d" width="44" height="44" />
           </span>
           <span class="brand-text-block">
             <span class="brand-title-3d">Sefat Bhuiyan</span>
@@ -2215,7 +2395,7 @@
           <button type="button" class="callout-close" id="sefatAiCalloutClose" aria-label="Dismiss greeting">×</button>
         </div>
         <p class="callout-text">
-          👋 Need help with <b>Marketing &amp; Design</b>? Ask me anything about services, pricing or portfolio!
+          👋 Need help with <b>Marketing &amp; Design</b>? Sefat AI is here 24/7 to handle your project inquiries even while Sefat is offline!
         </p>
         <button type="button" class="callout-action-btn" id="sefatAiCalloutAction">Chat Now ✦</button>
       </div>
@@ -2236,7 +2416,7 @@
       <span class="ai-orbital-ring ring-3" aria-hidden="true"></span>
       
       <span class="ai-orb-core">
-        <img src="assets/sb_logo_3d.svg" alt="Sefat AI" class="ai-orb-logo" width="38" height="38" />
+        <img src="assets/sb_logo_monogram.png" alt="Sefat AI" class="ai-orb-logo" width="38" height="38" />
         <span class="ai-orb-specular" aria-hidden="true"></span>
       </span>
 
@@ -2258,17 +2438,17 @@
       <div class="ai-chat-header">
         <div class="ai-header-profile">
           <div class="ai-avatar-wrap-3d">
-            <img src="assets/sb_logo_3d.svg" alt="Sefat AI" class="ai-avatar-img" width="36" height="36" />
+            <img src="assets/sb_logo_monogram.png" alt="Sefat AI" class="ai-avatar-img" width="36" height="36" />
             <span class="ai-avatar-halo" aria-hidden="true"></span>
             <span class="ai-avatar-status" aria-hidden="true"></span>
           </div>
           <div class="ai-header-info">
             <div class="ai-name-row">
               <b class="ai-bot-name">Sefat AI</b>
-              <span class="ai-pro-badge">PRO ASSISTANT</span>
+              <span class="ai-pro-badge">24/7 AGENT</span>
             </div>
             <div class="ai-status-row">
-              <span class="ai-status-text">Instant answers in 5 languages</span>
+              <span class="ai-status-text">Client Representative • 24/7 Active</span>
             </div>
           </div>
         </div>
@@ -2290,11 +2470,12 @@
       <!-- Quick Suggestion Prompt Chips -->
       <div class="ai-chips-shelf" id="sefatAiChipsShelf" aria-label="Quick questions">
         <button type="button" class="ai-chip" data-question="What services do you offer?">💼 Services</button>
-        <button type="button" class="ai-chip" data-question="Can I see your design and marketing portfolio?">🎨 Portfolio</button>
-        <button type="button" class="ai-chip ai-chip-mobile" data-question="Where can I find the mobile version of your portfolio?">📱 Mobile Version</button>
         <button type="button" class="ai-chip" data-question="What is your pricing and rates?">💰 Pricing</button>
-        <button type="button" class="ai-chip" data-question="How can I contact and hire Sefat?">🚀 Hire / Contact</button>
-        <button type="button" class="ai-chip" data-question="What are your skills and tools?">⚡ Skills &amp; Tools</button>
+        <button type="button" class="ai-chip" data-question="Can I see your design and marketing portfolio?">🎨 Portfolio</button>
+        <button type="button" class="ai-chip ai-chip-urgent" data-question="I need urgent direct contact with Sefat Bhuiyan on direct office line">📞 Call: 01828157751</button>
+        <button type="button" class="ai-chip" data-question="How can I start a project with Sefat?">🚀 Start Project</button>
+        <button type="button" class="ai-chip ai-chip-mobile" data-question="Where can I find the mobile version of your portfolio?">📱 Mobile Version</button>
+        <button type="button" class="ai-chip" data-question="What payment methods do you accept?">💳 Payment</button>
       </div>
 
       <!-- Messages Body -->
@@ -2305,7 +2486,7 @@
       <!-- 3D Typing Indicator (Hidden by default) -->
       <div class="ai-typing-indicator" id="sefatAiTyping" hidden>
         <div class="ai-typing-avatar">
-          <img src="assets/sb_logo_3d.svg" alt="Sefat AI" width="22" height="22" />
+          <img src="assets/sb_logo_monogram.png" alt="Sefat AI" width="22" height="22" />
         </div>
         <div class="ai-typing-bubble">
           <span class="ai-type-dot"></span>
