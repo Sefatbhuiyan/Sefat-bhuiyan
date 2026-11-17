@@ -1724,113 +1724,82 @@
     ========================== -->
 
     <section class="section container" id="testimonials">
+      <div id="reviews" class="section-anchor" aria-hidden="true"></div>
 
-      <div class="section-head">
-
-        <div>
-
-          <div class="eyebrow">Client Testimonials</div>
-
-          <h2>People I have worked with.</h2>
-
+      <div class="review-system-head">
+        <div class="review-title-block">
+          <div class="eyebrow" id="reviewsEyebrowText">Client Reviews &amp; Ratings</div>
+          <h2 id="reviewsHeadingText">Trusted by Brands &amp; Creators.</h2>
+          <p class="section-subtitle-text" id="reviewsSubtitleText">
+            Verified client feedback, project ratings, and testimonials from collaborations worldwide.
+          </p>
         </div>
 
+        <div class="review-head-actions">
+          <!-- Average Rating Summary Badge -->
+          <div class="review-avg-badge" id="reviewAvgSummaryBadge" aria-label="Rating summary">
+            <span class="avg-star" aria-hidden="true">★</span>
+            <span class="avg-score" id="statAvgRatingScore">4.9</span>
+            <span class="avg-divider">/ 5.0</span>
+            <span class="avg-clients" id="statAvgClientsText">• 24+ Happy Clients</span>
+          </div>
+
+          <!-- Primary CTA: Write a Review -->
+          <button type="button" class="btn btn-primary review-cta-btn" id="openReviewModalBtn">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M12 20h9"></path>
+              <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path>
+            </svg>
+            <span id="writeReviewBtnText">Write a Review</span>
+          </button>
+
+          <!-- Secret Admin Portal Button -->
+          <button type="button" class="admin-portal-pill-btn" id="openAdminModalBtn" title="Admin Review Moderation">
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+            </svg>
+            <span id="adminPortalBtnText">Admin Moderation</span>
+          </button>
+        </div>
       </div>
 
-      <div class="testimonials testimonials-grid-3d">
+      <!-- Filter / Category Tabs -->
+      <div class="review-filter-shelf">
+        <div class="review-tabs-group" id="reviewFilterTabs" role="tablist">
+          <button type="button" class="review-tab-btn active" data-filter="all">
+            <span class="tab-label">All Reviews</span>
+            <span class="tab-count" id="countAllReviews">6</span>
+          </button>
+          <button type="button" class="review-tab-btn" data-filter="5">
+            <span class="tab-stars" aria-hidden="true">★★★★★</span>
+            <span class="tab-label">5 Stars</span>
+            <span class="tab-count" id="count5StarReviews">5</span>
+          </button>
+          <button type="button" class="review-tab-btn" data-filter="4">
+            <span class="tab-stars" aria-hidden="true">★★★★</span>
+            <span class="tab-label">4 Stars</span>
+            <span class="tab-count" id="count4StarReviews">1</span>
+          </button>
+        </div>
+      </div>
 
-        <article class="testimonial testimonial-3d">
+      <!-- Secret Admin Active Banner (Hidden by default, shown when Admin logs in) -->
+      <div class="admin-active-banner" id="adminActiveBanner" hidden>
+        <div class="admin-banner-content">
+          <span class="admin-banner-shield" aria-hidden="true">🛡️</span>
+          <span class="admin-banner-text">
+            <strong>Admin Moderation Active</strong> | You can Hide/Unhide or Delete any review.
+          </span>
+        </div>
+        <button type="button" class="admin-exit-btn" id="exitAdminModeBtn">
+          <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4M16 17l5-5-5-5M21 12H9"/></svg>
+          Exit Admin Mode
+        </button>
+      </div>
 
-          <div class="testimonial-glow" aria-hidden="true"></div>
-
-          <div class="testimonial-top">
-            <div class="quote-puck-3d" aria-hidden="true">
-              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
-                <path d="M4.583 17.321C3.553 16.227 3 15 3 13.011c0-3.5 2.457-6.637 6.03-8.188l.893 1.378c-3.335 1.804-3.987 4.145-4.247 5.621.537-.278 1.24-.375 1.929-.311 1.804.167 3.226 1.648 3.226 3.489a3.5 3.5 0 0 1-3.5 3.5c-1.073 0-2.099-.49-2.748-1.179zm10 0C13.553 16.227 13 15 13 13.011c0-3.5 2.457-6.637 6.03-8.188l.893 1.378c-3.335 1.804-3.987 4.145-4.247 5.621.537-.278 1.24-.375 1.929-.311 1.804.167 3.226 1.648 3.226 3.489a3.5 3.5 0 0 1-3.5 3.5c-1.073 0-2.099-.49-2.748-1.179z"/>
-              </svg>
-            </div>
-            <div class="testimonial-rating" aria-label="5 out of 5 stars">
-              <span class="star">★</span>
-              <span class="star">★</span>
-              <span class="star">★</span>
-              <span class="star">★</span>
-              <span class="star">★</span>
-            </div>
-          </div>
-
-          <p>
-            Creative, responsive, and easy to communicate with. The visuals
-            were delivered cleanly and matched the direction very well.
-          </p>
-
-          <div class="person">
-            <div class="avatar avatar-3d">
-              <span>A</span>
-              <span class="avatar-ring" aria-hidden="true"></span>
-            </div>
-            <div>
-              <b class="person-name">
-                <span class="person-name-text">Client</span>
-                <span class="verified-badge" aria-label="Verified">
-                  <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
-                </span>
-              </b>
-              <div class="person-role">
-                Business / Brand
-              </div>
-            </div>
-          </div>
-
-          <span class="testimonial-sheen" aria-hidden="true"></span>
-
-        </article>
-
-        <article class="testimonial testimonial-3d">
-
-          <div class="testimonial-glow" aria-hidden="true"></div>
-
-          <div class="testimonial-top">
-            <div class="quote-puck-3d" aria-hidden="true">
-              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
-                <path d="M4.583 17.321C3.553 16.227 3 15 3 13.011c0-3.5 2.457-6.637 6.03-8.188l.893 1.378c-3.335 1.804-3.987 4.145-4.247 5.621.537-.278 1.24-.375 1.929-.311 1.804.167 3.226 1.648 3.226 3.489a3.5 3.5 0 0 1-3.5 3.5c-1.073 0-2.099-.49-2.748-1.179zm10 0C13.553 16.227 13 15 13 13.011c0-3.5 2.457-6.637 6.03-8.188l.893 1.378c-3.335 1.804-3.987 4.145-4.247 5.621.537-.278 1.24-.375 1.929-.311 1.804.167 3.226 1.648 3.226 3.489a3.5 3.5 0 0 1-3.5 3.5c-1.073 0-2.099-.49-2.748-1.179z"/>
-              </svg>
-            </div>
-            <div class="testimonial-rating" aria-label="5 out of 5 stars">
-              <span class="star">★</span>
-              <span class="star">★</span>
-              <span class="star">★</span>
-              <span class="star">★</span>
-              <span class="star">★</span>
-            </div>
-          </div>
-
-          <p>
-            Strong attention to detail and a very good sense of modern social
-            media presentation. Would work together again.
-          </p>
-
-          <div class="person">
-            <div class="avatar avatar-3d">
-              <span>R</span>
-              <span class="avatar-ring" aria-hidden="true"></span>
-            </div>
-            <div>
-              <b class="person-name">
-                <span class="person-name-text">Creative Partner</span>
-                <span class="verified-badge" aria-label="Verified">
-                  <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
-                </span>
-              </b>
-              <div class="person-role">
-                Creative Collaboration
-              </div>
-            </div>
-          </div>
-
-          <span class="testimonial-sheen" aria-hidden="true"></span>
-
-        </article>
-
+      <!-- Dynamic Review Cards Grid -->
+      <div class="testimonials testimonials-grid-3d" id="reviewsContainer">
+        <!-- Rendered dynamically by js/reviews.js -->
       </div>
 
     </section>
@@ -2521,9 +2490,111 @@
     </div>
   </div>
 
-  <!-- Main JavaScript -->
+  <!-- Client Review Submission Modal -->
+  <div class="review-modal-backdrop" id="reviewSubmitModal" role="dialog" aria-modal="true" aria-labelledby="reviewModalTitle">
+    <div class="review-modal-window">
+      <div class="review-modal-header">
+        <div>
+          <span class="modal-badge">CLIENT FEEDBACK</span>
+          <h3 class="modal-title" id="reviewModalTitle">Write a Client Review</h3>
+          <p class="modal-desc">Share your experience collaborating with Sefat Bhuiyan.</p>
+        </div>
+        <button class="modal-close-btn" id="closeReviewModalBtn" aria-label="Close review modal">&times;</button>
+      </div>
 
+      <div class="review-form-alert" id="reviewFormAlert" style="display: none;"></div>
+
+      <form class="review-modal-form" id="clientReviewForm" novalidate>
+        <div class="form-group">
+          <label class="form-label" for="reviewFullName">Full Name <span class="required-star">*</span></label>
+          <input type="text" id="reviewFullName" class="form-input" placeholder="e.g., Sarah Jenkins" maxlength="80" required autocomplete="name">
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="reviewRoleCompany">Role / Company / Location <span class="required-star">*</span></label>
+          <input type="text" id="reviewRoleCompany" class="form-input" placeholder="e.g., Marketing Director @ TechFlow" maxlength="100" required autocomplete="organization">
+        </div>
+
+        <div class="form-group rating-form-group">
+          <div class="label-with-counter">
+            <span class="form-label">Star Rating <span class="required-star">*</span></span>
+            <span class="rating-feedback-text" id="ratingFeedbackText">Exceptional Work! ★★★★★</span>
+          </div>
+          <div class="interactive-star-rating" id="interactiveStarRating" role="radiogroup" aria-label="Rate from 1 to 5 stars">
+            <button type="button" class="star-rating-btn active" data-rating="1" aria-label="1 star">★</button>
+            <button type="button" class="star-rating-btn active" data-rating="2" aria-label="2 stars">★</button>
+            <button type="button" class="star-rating-btn active" data-rating="3" aria-label="3 stars">★</button>
+            <button type="button" class="star-rating-btn active" data-rating="4" aria-label="4 stars">★</button>
+            <button type="button" class="star-rating-btn active" data-rating="5" aria-label="5 stars">★</button>
+          </div>
+          <input type="hidden" id="selectedRatingInput" value="5">
+        </div>
+
+        <div class="form-group">
+          <div class="label-with-counter">
+            <label class="form-label" for="reviewContentText">Your Review &amp; Feedback <span class="required-star">*</span></label>
+            <span class="char-counter"><span id="charCountVal">0</span> / 600</span>
+          </div>
+          <textarea id="reviewContentText" class="form-textarea" placeholder="Describe your experience, campaign results, design quality, or collaboration..." minlength="15" maxlength="600" required></textarea>
+          <span class="textarea-helper">Minimum 15 characters, maximum 600 characters. Supports English, Bengali, Arabic, etc.</span>
+        </div>
+
+        <div class="form-submit-row">
+          <button type="submit" class="cta-primary-glow submit-review-btn" id="submitReviewBtn">
+            <span id="submitBtnSpinner" class="btn-spinner" style="display: none;"></span>
+            <span>Submit Review</span>
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Secret Admin Moderation Modal -->
+  <div class="review-modal-backdrop" id="adminLoginModal" role="dialog" aria-modal="true" aria-labelledby="adminModalTitle">
+    <div class="review-modal-window admin-modal-window">
+      <div class="review-modal-header">
+        <div>
+          <span class="modal-badge admin-badge">🛡️ ADMIN PORTAL</span>
+          <h3 class="modal-title" id="adminModalTitle">Admin Moderation</h3>
+          <p class="modal-desc">Enter the administrator security password to manage client reviews.</p>
+        </div>
+        <button class="modal-close-btn" id="closeAdminLoginBtn" aria-label="Close admin modal">&times;</button>
+      </div>
+
+      <div class="admin-login-alert" id="adminLoginAlert" style="display: none;"></div>
+
+      <form class="admin-password-form" id="adminLoginForm" novalidate>
+        <div class="form-group">
+          <label class="form-label" for="adminSecurityPassword">Security Password <span class="required-star">*</span></label>
+          <div class="password-input-wrap">
+            <input type="password" id="adminSecurityPassword" class="form-input" placeholder="Enter admin security password" required autocomplete="current-password">
+            <button type="button" class="password-toggle-btn" id="toggleAdminPassVisibility" aria-label="Toggle password visibility">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                <circle cx="12" cy="12" r="3"></circle>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="form-submit-row">
+          <button type="submit" class="cta-primary-glow admin-unlock-btn" id="unlockAdminBtn">
+            <span>🛡️ Unlock Moderation Controls</span>
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Floating Review Toast Notification -->
+  <div class="review-toast" id="reviewToast" role="status" aria-live="polite">
+    <span class="toast-icon">🎉</span>
+    <span id="reviewToastMsg">Thank you! Your review has been published.</span>
+  </div>
+
+  <!-- Main JavaScript & Review System -->
   <script src="js/script.js" defer></script>
+  <script src="js/reviews.js" defer></script>
 
 </body>
 

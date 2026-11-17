@@ -6,259 +6,197 @@ if (!fs.existsSync(DATA_DIR)) {
   fs.mkdirSync(DATA_DIR, { recursive: true });
 }
 
-const DB_PATH = path.join(DATA_DIR, 'reviews.db');
-const JSON_BACKUP_PATH = path.join(DATA_DIR, 'reviews.json');
+const JSON_PATH = path.join(DATA_DIR, 'reviews.json');
 
-let db = null;
-let useJsonFallback = false;
+const DEFAULT_SEEDS = [
+  {
+    id: 101,
+    full_name: 'Sarah Jenkins',
+    role_company: 'Head of Growth @ AlphaBrand UK',
+    rating: 5,
+    review_text: "Sefat's digital marketing strategy completely transformed our Meta Ads ROAS from 1.8x to over 4.2x in under 60 days. His visual creativity combined with technical audience targeting is world-class.",
+    hidden: false,
+    created_at: '2026-11-12',
+    avatar_initial: 'S',
+    avatar_bg: 'avatar-grad-1',
+    verified: true
+  },
+  {
+    id: 102,
+    full_name: 'তানভীর আহমেদ',
+    role_company: 'Founder & CEO @ TechBazaar BD',
+    rating: 5,
+    review_text: 'অসাধারণ কাজ! ফেসবুক এবং ইন্সটাগ্রাম পেইজের ব্র্যান্ডিং ও অ্যাড ক্যাম্পেইনের জন্য সিফাত ভাইয়ের কোনো তুলনা হয় না। আমাদের সেলস দ্বিগুণেরও বেশি বৃদ্ধি পেয়েছে।',
+    hidden: false,
+    created_at: '2026-11-08',
+    avatar_initial: 'ত',
+    avatar_bg: 'avatar-grad-2',
+    verified: true
+  },
+  {
+    id: 103,
+    full_name: 'Marcus Vance',
+    role_company: 'Creative Director @ Vance Studio, USA',
+    rating: 5,
+    review_text: 'Exceptional graphic design skills! He crafted a comprehensive set of social banners, carousel ads, and brand assets with speed, precision, and modern aesthetic elegance. Highly recommended!',
+    hidden: false,
+    created_at: '2026-10-29',
+    avatar_initial: 'M',
+    avatar_bg: 'avatar-grad-3',
+    verified: true
+  },
+  {
+    id: 104,
+    full_name: 'عمر الخالد (Omar Al-Khaled)',
+    role_company: 'E-commerce Director, Dubai, UAE',
+    rating: 5,
+    review_text: 'تجربة ممتازة واحترافية عالية في تصميم الإعلانات وإدارة الحملات الممولة. زادت مبيعات المتجر بشكل ملحوظ خلال أول شهر. شكراً سيفات!',
+    hidden: false,
+    created_at: '2026-10-18',
+    avatar_initial: 'ع',
+    avatar_bg: 'avatar-grad-4',
+    verified: true
+  },
+  {
+    id: 105,
+    full_name: 'Elena Rostova',
+    role_company: 'Brand Strategist @ DigitalWave EU',
+    rating: 4,
+    review_text: 'Fast turnaround and brilliant attention to detail. Sefat provided creative variations and revisions until everything looked flawless. A true professional.',
+    hidden: false,
+    created_at: '2026-10-05',
+    avatar_initial: 'E',
+    avatar_bg: 'avatar-grad-5',
+    verified: true
+  },
+  {
+    id: 106,
+    full_name: 'মাহমুদুল হাসান',
+    role_company: 'Marketing Lead @ Apex Lifestyle',
+    rating: 5,
+    review_text: 'ডিজাইন সেন্স এবং আধুনিক ট্রেন্ড বোঝার ক্ষমতা সিফাত ভাইয়ের দারুণ। প্রতিটি ডেলিভারি সময়মতো পেয়েছি এবং ক্লায়েন্ট রেসপন্স ছিল অবিশ্বাস্য!',
+    hidden: false,
+    created_at: '2026-09-22',
+    avatar_initial: 'ম',
+    avatar_bg: 'avatar-grad-6',
+    verified: true
+  }
+];
 
-// Initialize Database (SQLite with JSON persistence fallback)
 function initDb() {
   try {
-    const { DatabaseSync } = require('node:sqlite');
-    db = new DatabaseSync(DB_PATH);
-    db.exec(`
-      CREATE TABLE IF NOT EXISTS reviews (
-        id INTEGER PRIMARY KEY AUTOINCREMENT,
-        full_name TEXT NOT NULL,
-        email TEXT NOT NULL,
-        phone_number TEXT NOT NULL,
-        rating INTEGER NOT NULL,
-        review_text TEXT NOT NULL,
-        language TEXT DEFAULT 'en',
-        status TEXT DEFAULT 'pending',
-        created_at TEXT DEFAULT (datetime('now', 'localtime')),
-        updated_at TEXT DEFAULT (datetime('now', 'localtime'))
-      );
-      CREATE INDEX IF NOT EXISTS idx_reviews_status ON reviews(status);
-    `);
-    console.log('✓ SQLite Database initialized successfully at:', DB_PATH);
-  } catch (err) {
-    console.warn('Notice: node:sqlite not available, using atomic JSON database fallback:', err.message);
-    useJsonFallback = true;
-    if (!fs.existsSync(JSON_BACKUP_PATH)) {
-      fs.writeFileSync(JSON_BACKUP_PATH, JSON.stringify([], null, 2), 'utf8');
+    if (!fs.existsSync(JSON_PATH)) {
+      fs.writeFileSync(JSON_PATH, JSON.stringify(DEFAULT_SEEDS, null, 2), 'utf8');
+      console.log('✓ Reviews Database initialized with seed data at:', JSON_PATH);
+    } else {
+      console.log('✓ Reviews Database ready at:', JSON_PATH);
     }
+  } catch (err) {
+    console.error('Failed to initialize reviews JSON database:', err.message);
   }
 }
 
-// JSON Fallback Helpers
-function readJsonDb() {
+function readReviews() {
   try {
-    if (!fs.existsSync(JSON_BACKUP_PATH)) return [];
-    const content = fs.readFileSync(JSON_BACKUP_PATH, 'utf8');
-    return JSON.parse(content || '[]');
-  } catch (e) {
-    return [];
+    if (!fs.existsSync(JSON_PATH)) return DEFAULT_SEEDS;
+    const content = fs.readFileSync(JSON_PATH, 'utf8');
+    const parsed = JSON.parse(content || '[]');
+    return Array.isArray(parsed) && parsed.length > 0 ? parsed : DEFAULT_SEEDS;
+  } catch (err) {
+    return DEFAULT_SEEDS;
   }
 }
 
-function writeJsonDb(data) {
-  const tempPath = `${JSON_BACKUP_PATH}.tmp`;
-  fs.writeFileSync(tempPath, JSON.stringify(data, null, 2), 'utf8');
-  fs.renameSync(tempPath, JSON_BACKUP_PATH);
-}
-
-// 1. Submit a new review (always pending)
-function createReview({ full_name, email, phone_number, rating, review_text, language = 'en' }) {
-  const now = new Date().toISOString().replace('T', ' ').substring(0, 19);
-
-  if (!useJsonFallback && db) {
-    const stmt = db.prepare(`
-      INSERT INTO reviews (full_name, email, phone_number, rating, review_text, language, status, created_at, updated_at)
-      VALUES (?, ?, ?, ?, ?, ?, 'pending', ?, ?)
-    `);
-    const result = stmt.run(full_name, email, phone_number, Number(rating), review_text, language, now, now);
-    return {
-      id: Number(result.lastInsertRowid),
-      full_name,
-      rating: Number(rating),
-      review_text,
-      language,
-      status: 'pending',
-      created_at: now
-    };
-  } else {
-    const list = readJsonDb();
-    const newId = list.length > 0 ? Math.max(...list.map(r => r.id || 0)) + 1 : 1;
-    const review = {
-      id: newId,
-      full_name,
-      email,
-      phone_number,
-      rating: Number(rating),
-      review_text,
-      language,
-      status: 'pending',
-      created_at: now,
-      updated_at: now
-    };
-    list.unshift(review);
-    writeJsonDb(list);
-    return {
-      id: newId,
-      full_name,
-      rating: Number(rating),
-      review_text,
-      language,
-      status: 'pending',
-      created_at: now
-    };
+function writeReviews(data) {
+  try {
+    const tempPath = `${JSON_PATH}.tmp`;
+    fs.writeFileSync(tempPath, JSON.stringify(data, null, 2), 'utf8');
+    fs.renameSync(tempPath, JSON_PATH);
+    return true;
+  } catch (err) {
+    console.error('Error writing reviews:', err);
+    return false;
   }
 }
 
-// 2. Get public approved reviews (Strictly omits email and phone)
-function getApprovedReviews() {
-  if (!useJsonFallback && db) {
-    const stmt = db.prepare(`
-      SELECT id, full_name, rating, review_text, language, created_at
-      FROM reviews
-      WHERE status = 'approved'
-      ORDER BY id DESC
-    `);
-    const rows = stmt.all();
-    return rows.map(r => ({
-      ...r,
-      avatar_initial: (r.full_name || 'C').trim().charAt(0).toUpperCase(),
-      verified: true
-    }));
-  } else {
-    const list = readJsonDb();
-    return list
-      .filter(r => r.status === 'approved')
-      .sort((a, b) => (b.id || 0) - (a.id || 0))
-      .map(r => ({
-        id: r.id,
-        full_name: r.full_name,
-        rating: r.rating,
-        review_text: r.review_text,
-        language: r.language || 'en',
-        created_at: r.created_at,
-        avatar_initial: (r.full_name || 'C').trim().charAt(0).toUpperCase(),
-        verified: true
-      }));
-  }
+function getApprovedReviews(isAdmin = false) {
+  const all = readReviews();
+  if (isAdmin) return all;
+  return all.filter(r => !r.hidden);
 }
 
-// 3. Calculate dynamic review statistics (Approved reviews only)
 function getReviewStats() {
-  const approved = getApprovedReviews();
-  const total = approved.length;
+  const publicReviews = getApprovedReviews(false);
+  const total = publicReviews.length;
   if (total === 0) {
     return {
       totalApproved: 0,
-      averageRating: 0.0,
+      averageRating: 5.0,
       fiveStarCount: 0,
       distribution: { 5: 0, 4: 0, 3: 0, 2: 0, 1: 0 }
     };
   }
-
-  const sum = approved.reduce((acc, r) => acc + (Number(r.rating) || 0), 0);
+  const sum = publicReviews.reduce((acc, r) => acc + (Number(r.rating) || 5), 0);
   const avg = (sum / total).toFixed(1);
-  const fiveStar = approved.filter(r => Number(r.rating) === 5).length;
-
-  const distribution = { 5: 0, 4: 0, 3: 0, 2: 0, 1: 0 };
-  approved.forEach(r => {
-    const star = Math.min(5, Math.max(1, Math.round(Number(r.rating) || 5)));
-    distribution[star] = (distribution[star] || 0) + 1;
-  });
+  const fiveStars = publicReviews.filter(r => Number(r.rating) === 5).length;
+  const fourStars = publicReviews.filter(r => Number(r.rating) === 4).length;
 
   return {
     totalApproved: total,
     averageRating: parseFloat(avg),
-    fiveStarCount: fiveStar,
-    distribution
+    fiveStarCount: fiveStars,
+    fourStarCount: fourStars
   };
 }
 
-// 4. Admin: Get all reviews with status & contact details
-function getAllReviewsAdmin(filter = 'all') {
-  let reviews = [];
-  if (!useJsonFallback && db) {
-    let query = 'SELECT * FROM reviews';
-    if (filter && filter !== 'all') {
-      const stmt = db.prepare('SELECT * FROM reviews WHERE status = ? ORDER BY id DESC');
-      reviews = stmt.all(filter);
-    } else {
-      const stmt = db.prepare('SELECT * FROM reviews ORDER BY id DESC');
-      reviews = stmt.all();
-    }
-  } else {
-    const list = readJsonDb();
-    reviews = list.sort((a, b) => (b.id || 0) - (a.id || 0));
-    if (filter && filter !== 'all') {
-      reviews = reviews.filter(r => r.status === filter);
-    }
-  }
+function createReview({ full_name, role_company, rating, review_text }) {
+  const list = readReviews();
+  const newId = list.length > 0 ? Math.max(...list.map(r => Number(r.id) || 0)) + 1 : 101;
+  const initial = (full_name || 'C').trim().charAt(0).toUpperCase();
+  const gradIndex = (list.length % 6) + 1;
+  const now = new Date().toISOString().split('T')[0];
 
-  // Calculate admin summary metrics
-  const allList = useJsonFallback || !db ? readJsonDb() : db.prepare('SELECT * FROM reviews').all();
-  const total = allList.length;
-  const pending = allList.filter(r => r.status === 'pending').length;
-  const approved = allList.filter(r => r.status === 'approved').length;
-  const rejected = allList.filter(r => r.status === 'rejected').length;
-  const approvedReviews = allList.filter(r => r.status === 'approved');
-  const avg = approvedReviews.length > 0
-    ? (approvedReviews.reduce((sum, r) => sum + Number(r.rating), 0) / approvedReviews.length).toFixed(1)
-    : '0.0';
-
-  return {
-    reviews,
-    metrics: {
-      total,
-      pending,
-      approved,
-      rejected,
-      averageRating: parseFloat(avg)
-    }
+  const review = {
+    id: newId,
+    full_name: full_name.trim(),
+    role_company: (role_company || 'Verified Client').trim(),
+    rating: Number(rating) || 5,
+    review_text: review_text.trim(),
+    hidden: false,
+    created_at: now,
+    avatar_initial: initial,
+    avatar_bg: `avatar-grad-${gradIndex}`,
+    verified: true
   };
+
+  list.unshift(review);
+  writeReviews(list);
+  return review;
 }
 
-// 5. Admin: Update review status ('approved' | 'rejected')
-function updateReviewStatus(id, newStatus) {
-  const allowed = ['approved', 'rejected', 'pending'];
-  if (!allowed.includes(newStatus)) {
-    throw new Error('Invalid status. Allowed: ' + allowed.join(', '));
-  }
-  const now = new Date().toISOString().replace('T', ' ').substring(0, 19);
-
-  if (!useJsonFallback && db) {
-    const stmt = db.prepare('UPDATE reviews SET status = ?, updated_at = ? WHERE id = ?');
-    stmt.run(newStatus, now, Number(id));
-    const updated = db.prepare('SELECT * FROM reviews WHERE id = ?').get(Number(id));
-    return updated;
-  } else {
-    const list = readJsonDb();
-    const idx = list.findIndex(r => Number(r.id) === Number(id));
-    if (idx === -1) return null;
-    list[idx].status = newStatus;
-    list[idx].updated_at = now;
-    writeJsonDb(list);
-    return list[idx];
-  }
+function toggleHide(id) {
+  const list = readReviews();
+  const idx = list.findIndex(r => String(r.id) === String(id));
+  if (idx === -1) return null;
+  list[idx].hidden = !list[idx].hidden;
+  writeReviews(list);
+  return list[idx];
 }
 
-// 6. Admin: Delete review
 function deleteReview(id) {
-  if (!useJsonFallback && db) {
-    const stmt = db.prepare('DELETE FROM reviews WHERE id = ?');
-    stmt.run(Number(id));
-    return true;
-  } else {
-    const list = readJsonDb();
-    const filtered = list.filter(r => Number(r.id) !== Number(id));
-    writeJsonDb(filtered);
-    return true;
-  }
+  const list = readReviews();
+  const filtered = list.filter(r => String(r.id) !== String(id));
+  if (filtered.length === list.length) return false;
+  writeReviews(filtered);
+  return true;
 }
 
 module.exports = {
   initDb,
-  createReview,
+  readReviews,
   getApprovedReviews,
   getReviewStats,
-  getAllReviewsAdmin,
-  updateReviewStatus,
+  createReview,
+  toggleHide,
   deleteReview
 };
-

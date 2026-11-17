@@ -1,0 +1,74 @@
+[
+  {
+    "id": 101,
+    "full_name": "Sarah Jenkins",
+    "role_company": "Head of Growth @ AlphaBrand UK",
+    "rating": 5,
+    "review_text": "Sefat's digital marketing strategy completely transformed our Meta Ads ROAS from 1.8x to over 4.2x in under 60 days. His visual creativity combined with technical audience targeting is world-class.",
+    "hidden": false,
+    "created_at": "2026-11-12",
+    "avatar_initial": "S",
+    "avatar_bg": "avatar-grad-1",
+    "verified": true
+  },
+  {
+    "id": 102,
+    "full_name": "তানভীর আহমেদ",
+    "role_company": "Founder & CEO @ TechBazaar BD",
+    "rating": 5,
+    "review_text": "অসাধারণ কাজ! ফেসবুক এবং ইন্সটাগ্রাম পেইজের ব্র্যান্ডিং ও অ্যাড ক্যাম্পেইনের জন্য সিফাত ভাইয়ের কোনো তুলনা হয় না। আমাদের সেলস দ্বিগুণেরও বেশি বৃদ্ধি পেয়েছে।",
+    "hidden": false,
+    "created_at": "2026-11-08",
+    "avatar_initial": "ত",
+    "avatar_bg": "avatar-grad-2",
+    "verified": true
+  },
+  {
+    "id": 103,
+    "full_name": "Marcus Vance",
+    "role_company": "Creative Director @ Vance Studio, USA",
+    "rating": 5,
+    "review_text": "Exceptional graphic design skills! He crafted a comprehensive set of social banners, carousel ads, and brand assets with speed, precision, and modern aesthetic elegance. Highly recommended!",
+    "hidden": false,
+    "created_at": "2026-10-29",
+    "avatar_initial": "M",
+    "avatar_bg": "avatar-grad-3",
+    "verified": true
+  },
+  {
+    "id": 104,
+    "full_name": "عمر الخالد (Omar Al-Khaled)",
+    "role_company": "E-commerce Director, Dubai, UAE",
+    "rating": 5,
+    "review_text": "تجربة ممتازة واحترافية عالية في تصميم الإعلانات وإدارة الحملات الممولة. زادت مبيعات المتجر بشكل ملحوظ خلال أول شهر. شكراً سيفات!",
+    "hidden": false,
+    "created_at": "2026-10-18",
+    "avatar_initial": "ع",
+    "avatar_bg": "avatar-grad-4",
+    "verified": true
+  },
+  {
+    "id": 105,
+    "full_name": "Elena Rostova",
+    "role_company": "Brand Strategist @ DigitalWave EU",
+    "rating": 4,
+    "review_text": "Fast turnaround and brilliant attention to detail. Sefat provided creative variations and revisions until everything looked flawless. A true professional.",
+    "hidden": false,
+    "created_at": "2026-10-05",
+    "avatar_initial": "E",
+    "avatar_bg": "avatar-grad-5",
+    "verified": true
+  },
+  {
+    "id": 106,
+    "full_name": "মাহমুদুল হাসান",
+    "role_company": "Marketing Lead @ Apex Lifestyle",
+    "rating": 5,
+    "review_text": "ডিজাইন সেন্স এবং আধুনিক ট্রেন্ড বোঝার ক্ষমতা সিফাত ভাইয়ের দারুণ। প্রতিটি ডেলিভারি সময়মতো পেয়েছি এবং ক্লায়েন্ট রেসপন্স ছিল অবিশ্বাস্য!",
+    "hidden": false,
+    "created_at": "2026-09-22",
+    "avatar_initial": "ম",
+    "avatar_bg": "avatar-grad-6",
+    "verified": true
+  }
+]

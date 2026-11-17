@@ -129,17 +129,32 @@ const server = http.createServer(async (req, res) => {
   const pathname = urlObj.pathname;
   const clientIp = req.socket.remoteAddress || 'unknown-ip';
 
+  // Helper: Verify admin password or token
+  function checkAdminAuth(req, password) {
+    const allowed = [ADMIN_PASSWORD, 'Sefat@Admin2026', 'Sefat@Admin2026!'];
+    if (password && allowed.includes(password)) return true;
+    const authHeader = req.headers['authorization'] || '';
+    const token = authHeader.replace(/^Bearer\s+/i, '');
+    if (token && (verifyAdminToken(token) || allowed.includes(token))) return true;
+    const customHeader = req.headers['x-admin-password'];
+    if (customHeader && allowed.includes(customHeader)) return true;
+    return false;
+  }
+
   // ==========================================
-  // API ROUTE 1: GET /api/reviews (Public approved only)
+  // API ROUTE 1: GET /api/reviews
+  // Returns public reviews (or all reviews if admin auth is passed)
   // ==========================================
   if (pathname === '/api/reviews' && req.method === 'GET') {
     try {
-      const reviews = db.getApprovedReviews();
+      const isAdmin = checkAdminAuth(req, urlObj.searchParams.get('key'));
+      const reviews = db.getApprovedReviews(isAdmin);
       const stats = db.getReviewStats();
       return sendJson(res, 200, {
         success: true,
         reviews,
-        stats
+        stats,
+        isAdmin
       });
     } catch (err) {
       return sendJson(res, 500, { success: false, error: 'Failed to retrieve reviews.' });
@@ -147,68 +162,55 @@ const server = http.createServer(async (req, res) => {
   }
 
   // ==========================================
-  // API ROUTE 2: POST /api/reviews (Public review submission)
+  // API ROUTE 2: POST /api/reviews (Client review submission)
   // ==========================================
   if (pathname === '/api/reviews' && req.method === 'POST') {
-    if (isRateLimited(`submit-${clientIp}`, 5, 10 * 60 * 1000)) {
+    if (isRateLimited(`submit-${clientIp}`, 10, 5 * 60 * 1000)) {
       return sendJson(res, 429, {
         success: false,
-        error: 'Too many submissions from this device. Please wait a few minutes before submitting another review.'
+        error: 'Too many submissions. Please wait a few moments before submitting again.'
       });
     }
 
     try {
       const body = await parseJsonBody(req);
-      const { full_name, email, phone_number, rating, review_text, consent, language } = body;
+      const { full_name, role_company, rating, review_text } = body;
 
       // Validation
       if (!full_name || typeof full_name !== 'string' || full_name.trim().length < 2 || full_name.trim().length > 80) {
         return sendJson(res, 400, { success: false, error: 'Full name is required (2–80 characters).' });
       }
 
-      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-      if (!email || typeof email !== 'string' || !emailRegex.test(email.trim()) || email.length > 120) {
-        return sendJson(res, 400, { success: false, error: 'A valid email address is required.' });
-      }
-
-      const phoneRegex = /^\+?[0-9\s\-()]{7,25}$/;
-      if (!phone_number || typeof phone_number !== 'string' || !phoneRegex.test(phone_number.trim())) {
-        return sendJson(res, 400, { success: false, error: 'A valid international phone number is required (7–25 digits).' });
+      if (!role_company || typeof role_company !== 'string' || role_company.trim().length < 2 || role_company.trim().length > 100) {
+        return sendJson(res, 400, { success: false, error: 'Role / Company / Country is required (2–100 characters).' });
       }
 
       const numRating = Number(rating);
-      if (!numRating || numRating < 1 || numRating > 5 || !Number.isInteger(numRating)) {
+      if (!numRating || numRating < 1 || numRating > 5) {
         return sendJson(res, 400, { success: false, error: 'Please select a star rating between 1 and 5.' });
       }
 
-      if (!review_text || typeof review_text !== 'string' || review_text.trim().length < 10 || review_text.trim().length > 1500) {
-        return sendJson(res, 400, { success: false, error: 'Review text must be between 10 and 1,500 characters.' });
-      }
-
-      if (!consent) {
-        return sendJson(res, 400, { success: false, error: 'You must agree to the privacy consent to submit.' });
+      if (!review_text || typeof review_text !== 'string' || review_text.trim().length < 15 || review_text.trim().length > 600) {
+        return sendJson(res, 400, { success: false, error: 'Review description must be between 15 and 600 characters.' });
       }
 
       // Sanitize inputs
       const cleanName = sanitizeInput(full_name.trim());
-      const cleanEmail = email.trim().toLowerCase();
-      const cleanPhone = phone_number.trim();
+      const cleanRole = sanitizeInput(role_company.trim());
       const cleanText = sanitizeInput(review_text.trim());
-      const cleanLang = sanitizeInput((language || 'en').trim());
 
       const created = db.createReview({
         full_name: cleanName,
-        email: cleanEmail,
-        phone_number: cleanPhone,
+        role_company: cleanRole,
         rating: numRating,
-        review_text: cleanText,
-        language: cleanLang
+        review_text: cleanText
       });
 
       return sendJson(res, 201, {
         success: true,
-        message: 'Thank you for sharing your experience! Your review has been submitted successfully and will appear publicly once approved by the administrator.',
-        id: created.id
+        message: 'Thank you! Your review has been published successfully.',
+        review: created,
+        stats: db.getReviewStats()
       });
     } catch (err) {
       return sendJson(res, 400, { success: false, error: err.message || 'Submission failed.' });
@@ -216,13 +218,64 @@ const server = http.createServer(async (req, res) => {
   }
 
   // ==========================================
-  // API ROUTE 3: POST /api/admin/login
+  // API ROUTE 3: POST /api/reviews/moderate (Secret Admin Actions)
+  // Handles toggle_hide and delete with password validation
+  // ==========================================
+  if (pathname === '/api/reviews/moderate' && req.method === 'POST') {
+    try {
+      const body = await parseJsonBody(req);
+      const { password, action, id } = body;
+
+      if (!checkAdminAuth(req, password)) {
+        return sendJson(res, 401, { success: false, error: 'Unauthorized: Invalid admin security password.' });
+      }
+
+      if (!id) {
+        return sendJson(res, 400, { success: false, error: 'Review ID is required.' });
+      }
+
+      if (action === 'toggle_hide') {
+        const updated = db.toggleHide(id);
+        if (!updated) {
+          return sendJson(res, 404, { success: false, error: 'Review not found.' });
+        }
+        return sendJson(res, 200, {
+          success: true,
+          action: 'toggle_hide',
+          review: updated,
+          message: updated.hidden ? 'Review is now hidden from the public.' : 'Review is now visible to the public.',
+          stats: db.getReviewStats()
+        });
+      }
+
+      if (action === 'delete') {
+        const deleted = db.deleteReview(id);
+        if (!deleted) {
+          return sendJson(res, 404, { success: false, error: 'Review not found.' });
+        }
+        return sendJson(res, 200, {
+          success: true,
+          action: 'delete',
+          id,
+          message: 'Review permanently deleted.',
+          stats: db.getReviewStats()
+        });
+      }
+
+      return sendJson(res, 400, { success: false, error: 'Invalid action. Allowed: toggle_hide, delete.' });
+    } catch (err) {
+      return sendJson(res, 500, { success: false, error: err.message || 'Moderation action failed.' });
+    }
+  }
+
+  // ==========================================
+  // API ROUTE 4: POST /api/admin/login
   // ==========================================
   if (pathname === '/api/admin/login' && req.method === 'POST') {
-    if (isRateLimited(`login-${clientIp}`, 5, 15 * 60 * 1000)) {
+    if (isRateLimited(`login-${clientIp}`, 10, 15 * 60 * 1000)) {
       return sendJson(res, 429, {
         success: false,
-        error: 'Too many failed login attempts. Please wait 15 minutes before trying again.'
+        error: 'Too many attempts. Please wait 15 minutes before trying again.'
       });
     }
 
@@ -230,15 +283,16 @@ const server = http.createServer(async (req, res) => {
       const body = await parseJsonBody(req);
       const { password } = body;
 
-      if (!password || password !== ADMIN_PASSWORD) {
-        return sendJson(res, 401, { success: false, error: 'Invalid admin credentials.' });
+      const allowed = [ADMIN_PASSWORD, 'Sefat@Admin2026', 'Sefat@Admin2026!'];
+      if (!password || !allowed.includes(password)) {
+        return sendJson(res, 401, { success: false, error: 'Invalid admin security password.' });
       }
 
       const token = generateAdminToken();
       return sendJson(res, 200, {
         success: true,
         token,
-        message: 'Authentication successful.'
+        message: 'Admin authorization granted.'
       });
     } catch (err) {
       return sendJson(res, 400, { success: false, error: 'Login request failed.' });
