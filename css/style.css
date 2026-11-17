@@ -5046,9 +5046,9 @@ body.light .person-role {
   color: #fff;
 }
 
-/* Secret Admin Active Banner */
+/* Secret Admin Active Banner (Hidden by default, shown ONLY when admin logs in) */
 .admin-active-banner {
-  display: flex;
+  display: none !important;
   align-items: center;
   justify-content: space-between;
   gap: 16px;
@@ -5060,6 +5060,14 @@ body.light .person-role {
   box-shadow: 0 0 24px rgba(16, 185, 129, 0.25);
   backdrop-filter: blur(14px);
   animation: bannerFadeIn 0.3s ease-out;
+}
+
+.admin-active-banner.active {
+  display: flex !important;
+}
+
+.admin-active-banner[hidden] {
+  display: none !important;
 }
 
 @keyframes bannerFadeIn {

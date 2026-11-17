@@ -61,7 +61,7 @@ const DEFAULT_SEEDS = [
     id: 105,
     full_name: 'Elena Rostova',
     role_company: 'Brand Strategist @ DigitalWave EU',
-    rating: 4,
+    rating: 5,
     review_text: 'Fast turnaround and brilliant attention to detail. Sefat provided creative variations and revisions until everything looked flawless. A true professional.',
     hidden: false,
     created_at: '2026-10-05',

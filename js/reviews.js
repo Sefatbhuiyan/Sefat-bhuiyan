@@ -72,7 +72,7 @@
       id: 105,
       full_name: 'Elena Rostova',
       role_company: 'Brand Strategist @ DigitalWave EU',
-      rating: 4,
+      rating: 5,
       review_text: 'Fast turnaround and brilliant attention to detail. Sefat provided creative variations and revisions until everything looked flawless. A true professional.',
       hidden: false,
       created_at: '2026-10-05',
@@ -663,11 +663,19 @@
     isAdminActive = active;
     if (active) {
       sessionStorage.setItem(ADMIN_SESSION_KEY, 'true');
-      if (adminActiveBanner) adminActiveBanner.removeAttribute('hidden');
+      if (adminActiveBanner) {
+        adminActiveBanner.removeAttribute('hidden');
+        adminActiveBanner.classList.add('active');
+        adminActiveBanner.style.setProperty('display', 'flex', 'important');
+      }
       if (openAdminModalBtn) openAdminModalBtn.classList.add('admin-unlocked');
     } else {
       sessionStorage.removeItem(ADMIN_SESSION_KEY);
-      if (adminActiveBanner) adminActiveBanner.setAttribute('hidden', '');
+      if (adminActiveBanner) {
+        adminActiveBanner.setAttribute('hidden', '');
+        adminActiveBanner.classList.remove('active');
+        adminActiveBanner.style.setProperty('display', 'none', 'important');
+      }
       if (openAdminModalBtn) openAdminModalBtn.classList.remove('admin-unlocked');
     }
     renderReviews();
@@ -813,9 +821,11 @@
   // INITIALIZATION
   // ==========================================
   function init() {
-    // Check if admin session was previously unlocked in this browser tab
+    // Enforce regular visitor mode unless admin session was actively verified in this session
     if (sessionStorage.getItem(ADMIN_SESSION_KEY) === 'true') {
       setAdminMode(true);
+    } else {
+      setAdminMode(false);
     }
 
     // Load initial reviews & render
